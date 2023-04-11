@@ -1,0 +1,36 @@
+@import "mixin"
+  
+.feedback 
+  &__container 
+    max-width: 1320px
+
+    margin-left: auto
+    margin-right: auto
+  
+  &__card
+    max-width: 710px
+  
+.feedback-item
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+  padding: 1em
+
+  &__img-container
+    max-width: 150px
+    max-height: 150px
+    border-radius: 50%
+    overflow: hidden
+
+    flex: 2 1 25% 
+
+    img
+      @include img-fit
+
+
+  &__text-side
+    @include flex-column-space-evenly
+    flex: 1 2 75% 
+    padding: 10px auto
+    
