@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  min-width: 0;
   padding: 1em;
 }
 .feedback-item__img-container {
@@ -31,7 +32,22 @@
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1 2 75%;
-  padding: 10px auto;
+  padding: 0 10px;
+}
+.feedback-item__client-name {
+  margin: 1rem 0 0 0;
+}
+.feedback-item__client-opinion {
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.swiper {
+  max-width: 1320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid black;
 }
 
 *,
