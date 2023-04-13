@@ -3,29 +3,29 @@
 @import "colors"
 @import "breakpoints"
 @import "mixin"
+@import "variables"
 
 //General settings
 
 *,
 * ::before,
-* ::after 
-	box-sizing: inherit 
-
+* ::after
+	box-sizing: inherit
 
 // Re-usable BEM blocks
 
 // Feedback
 
-.feedback 
-	&__container 
+.feedback
+	&__container
 		max-width: 1320px
 
 		margin-left: auto
 		margin-right: auto
-  
+
 	&__card-wrap
 		max-width: 45%
-  
+
 	&__card
 		display: flex
 		justify-content: space-between
@@ -38,16 +38,15 @@
 		max-width: 25%
 		max-height: 100%
 
-		flex: 2 1 25% 
+		flex: 2 1 25%
 
 		img
 			@include img-fit
 			border-radius: 50%
 
-
 	&__text-side
 		@include flex-column-space-evenly
-		flex: 1 2 75% 
+		flex: 1 2 75%
 		padding: 0 10px
 
 	&__client-name
@@ -59,7 +58,6 @@
 
 .button-consult
 		//style here
-		
 
 //Section styles
 
@@ -68,6 +66,39 @@
 //Intro
 
 //About
+.about__container
+	height: 708px
+	max-width: 1920px
+	margin: 0 auto
+	box-sizing: border-box
+	background: $color-beige-bg
+	@include flex-center-center
+
+.about__title
+	@include h1
+	@include flex-column-center
+	color: $color-black
+
+.about__section
+	@include flex-column-center
+
+.about__content
+	@include flex-center-center
+
+.about__block-img
+	height: 400px
+
+.about__img
+	height: 300px
+
+.about__information
+	height: 400px
+	padding-left: 177px
+	background: $color-beige
+
+.about__information-text
+	@include h2
+	color: $color-black
 
 //Courses
 
@@ -80,3 +111,34 @@
 //Credentials
 
 //Footer
+.footer__container
+	height: 150px
+	max-width: 1920px
+	background: $color-beige-dark
+	margin: 0 auto
+	box-sizing: border-box
+	@include flex-center-space-around
+
+.footer__telnumber
+	@include h3
+
+.footer__telnumber-text
+	text-decoration: none
+	color: $color-red
+
+.footer__copy
+	@include h2
+	display: flex
+	align-items: flex-end
+	color: $color-black
+
+.footer__socialnetwork
+	@include flex-column-center
+
+.footer__socialnetwork-icons
+	@include flex-center-center
+	padding-top: 40px
+
+.footer__socialnetwork-attention-text
+	@include h4
+	color: $color-powdery
