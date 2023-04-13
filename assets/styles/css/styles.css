@@ -4,40 +4,39 @@
   margin-right: auto;
 }
 .feedback__card {
-  max-width: 710px;
+  max-width: 712.8px;
 }
-
-.feedback-item {
+.feedback__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   min-width: 0;
   padding: 1em;
 }
-.feedback-item__img-container {
-  max-width: 150px;
-  max-height: 150px;
+.feedback__img-container {
+  max-width: 145.2px;
+  max-height: 145.2px;
   border-radius: 50%;
   overflow: hidden;
   flex: 2 1 25%;
 }
-.feedback-item__img-container img {
+.feedback__img-container img {
   max-width: 100%;
   width: 100%;
   max-height: 100%;
   max-height: 100%;
 }
-.feedback-item__text-side {
+.feedback__text-side {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1 2 75%;
   padding: 0 10px;
 }
-.feedback-item__client-name {
+.feedback__client-name {
   margin: 1rem 0 0 0;
 }
-.feedback-item__client-opinion {
+.feedback__client-opinion {
   margin: 1rem 0 0 0;
   padding: 0;
 }
