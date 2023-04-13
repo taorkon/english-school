@@ -1,12 +1,18 @@
+*,
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
+
 .feedback__container {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
 }
-.feedback__card {
-  max-width: 712.8px;
+.feedback__card-wrap {
+  max-width: 45%;
 }
-.feedback__content {
+.feedback__card {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -14,10 +20,8 @@
   padding: 1em;
 }
 .feedback__img-container {
-  max-width: 145.2px;
-  max-height: 145.2px;
-  border-radius: 50%;
-  overflow: hidden;
+  max-width: 25%;
+  max-height: 100%;
   flex: 2 1 25%;
 }
 .feedback__img-container img {
@@ -25,6 +29,7 @@
   width: 100%;
   max-height: 100%;
   max-height: 100%;
+  border-radius: 50%;
 }
 .feedback__text-side {
   display: flex;
@@ -39,18 +44,4 @@
 .feedback__client-opinion {
   margin: 1rem 0 0 0;
   padding: 0;
-}
-
-.swiper {
-  max-width: 1320px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border: 2px solid black;
-}
-
-*,
-* ::before,
-* ::after {
-  box-sizing: inherit;
 }

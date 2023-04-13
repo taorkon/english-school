@@ -2,7 +2,7 @@
 @import "fonts"
 @import "colors"
 @import "breakpoints"
-@import "feedback"
+@import "mixin"
 
 //General settings
 
@@ -13,6 +13,49 @@
 
 
 // Re-usable BEM blocks
+
+// Feedback
+
+.feedback 
+	&__container 
+		max-width: 1320px
+
+		margin-left: auto
+		margin-right: auto
+  
+	&__card-wrap
+		max-width: 45%
+  
+	&__card
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		min-width: 0
+
+		padding: 1em
+
+	&__img-container
+		max-width: 25%
+		max-height: 100%
+
+		flex: 2 1 25% 
+
+		img
+			@include img-fit
+			border-radius: 50%
+
+
+	&__text-side
+		@include flex-column-space-evenly
+		flex: 1 2 75% 
+		padding: 0 10px
+
+	&__client-name
+		margin: 1rem 0 0 0
+
+	&__client-opinion
+		margin: 1rem 0 0 0
+		padding: 0
 
 .button-consult
 		//style here
