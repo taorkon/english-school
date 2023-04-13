@@ -1,10 +1,16 @@
+*,
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
+
 .feedback__container {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
 }
 .feedback__card {
-  max-width: 710px;
+  max-width: 45%;
 }
 
 .feedback-item {
@@ -15,8 +21,8 @@
   padding: 1em;
 }
 .feedback-item__img-container {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 25%;
+  max-height: 100%;
   border-radius: 50%;
   overflow: hidden;
   flex: 2 1 25%;
@@ -48,10 +54,4 @@
   height: auto;
   margin: 0 auto;
   border: 2px solid black;
-}
-
-*,
-* ::before,
-* ::after {
-  box-sizing: inherit;
 }
