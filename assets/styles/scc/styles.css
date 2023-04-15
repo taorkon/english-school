@@ -37,7 +37,7 @@
   margin: 0 5rem;
   display: flex;
 }
-.courses__common-information {
+.courses__left-aside {
   display: flex;
   flex-direction: column;
 }
