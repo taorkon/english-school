@@ -67,7 +67,7 @@
 
 //About
 .about__container
-	height: 708px
+	height: 1200px
 	max-width: 1920px
 	margin: 0 auto
 	box-sizing: border-box
@@ -78,6 +78,7 @@
 	@include h1
 	@include flex-column-center
 	color: $color-black
+	margin-bottom: 137px
 
 .about__section
 	@include flex-column-center
@@ -86,19 +87,49 @@
 	@include flex-center-center
 
 .about__block-img
-	height: 400px
+	height: 507px
+	margin-left: 240px
+	margin-bottom: 360px
 
 .about__img
-	height: 300px
+	height: 507px
 
 .about__information
-	height: 400px
-	padding-left: 177px
-	background: $color-beige
+	width: 715px
+	margin-left: 177px
+	margin-right: 237px
+	margin-bottom: 60px
 
 .about__information-text
 	@include h2
 	color: $color-black
+	line-height: 40px
+
+.about__information-text-2
+	@include h5
+	color: $color-black
+	line-height: 40px
+
+.about__information-text-icon
+	padding-left: 0px
+	list-style-image: $icon-list
+
+.about__information-text-details-blu
+	@include h6
+	color: $color-blue
+
+.about__information-text-details-red
+	@include h6
+	color: $color-red
+
+.about__information-text-details-red-2
+	@include h7
+	color: $color-red
+
+.border-img1
+	position: absolute
+.border-img2
+	position: absolute
 
 //Courses
 
@@ -121,6 +152,7 @@
 
 .footer__telnumber
 	@include h3
+	padding-top: 34px
 
 .footer__telnumber-text
 	text-decoration: none
@@ -134,10 +166,18 @@
 
 .footer__socialnetwork
 	@include flex-column-center
+	width: 335px
+	height: 78px
 
 .footer__socialnetwork-icons
-	@include flex-center-center
-	padding-top: 40px
+	list-style-type: none
+	display: inline-flex
+	padding-left: 0px
+	margin-top: 0px
+	margin-bottom: 0px
+
+.footer__socialnetwork-attention
+	margin-bottom: 37px
 
 .footer__socialnetwork-attention-text
 	@include h4

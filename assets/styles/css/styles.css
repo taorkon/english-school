@@ -65,7 +65,7 @@
 }
 
 .about__container {
-  height: 708px;
+  height: 1200px;
   max-width: 1920px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -99,6 +99,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #000000;
+  margin-bottom: 137px;
 }
 
 .about__section {
@@ -127,17 +128,20 @@
 }
 
 .about__block-img {
-  height: 400px;
+  height: 507px;
+  margin-left: 240px;
+  margin-bottom: 360px;
 }
 
 .about__img {
-  height: 300px;
+  height: 507px;
 }
 
 .about__information {
-  height: 400px;
-  padding-left: 177px;
-  background: #FFFFEC;
+  width: 715px;
+  margin-left: 177px;
+  margin-right: 237px;
+  margin-bottom: 60px;
 }
 
 .about__information-text {
@@ -147,6 +151,57 @@
   line-height: 29px;
   font-size: 24px;
   color: #000000;
+  line-height: 40px;
+}
+
+.about__information-text-2 {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000000;
+  line-height: 40px;
+}
+
+.about__information-text-icon {
+  padding-left: 0px;
+  list-style-image: url(/assets/images/desktop/icon-about.png);
+}
+
+.about__information-text-details-blu {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 24px;
+  color: #87A6C6;
+}
+
+.about__information-text-details-red {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 24px;
+  color: #A54A47;
+}
+
+.about__information-text-details-red-2 {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 20px;
+  color: #A54A47;
+}
+
+.border-img1 {
+  position: absolute;
+}
+
+.border-img2 {
+  position: absolute;
 }
 
 .footer__container {
@@ -172,6 +227,7 @@
   font-weight: 500;
   line-height: 44px;
   font-size: 36px;
+  padding-top: 34px;
 }
 
 .footer__telnumber-text {
@@ -205,19 +261,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 335px;
+  height: 78px;
 }
 
 .footer__socialnetwork-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 40px;
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer__socialnetwork-attention {
+  margin-bottom: 37px;
 }
 
 .footer__socialnetwork-attention-text {
