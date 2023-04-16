@@ -3,7 +3,7 @@
 @import "colors"
 @import "breakpoints"
 @import "mixin"
-@import "variables"
+
 
 //General settings
 
@@ -71,13 +71,13 @@
 	max-width: 1920px
 	margin: 0 auto
 	box-sizing: border-box
-	background: $color-beige-bg
+	background: $beigeBg
 	@include flex-center-center
 
 .about__title
 	@include h1
 	@include flex-column-center
-	color: $color-black
+	color: $black
 	margin-bottom: 137px
 
 .about__section
@@ -102,29 +102,29 @@
 
 .about__information-text
 	@include h2
-	color: $color-black
+	color: $black
 	line-height: 40px
 
 .about__information-text-2
 	@include h5
-	color: $color-black
+	color: $black
 	line-height: 40px
 
 .about__information-text-icon
 	padding-left: 0px
-	list-style-image: $icon-list
+	list-style-image: url(/assets/images/desktop/icon-about.png)
 
 .about__information-text-details-blu
 	@include h6
-	color: $color-blue
+	color: $blue
 
 .about__information-text-details-red
 	@include h6
-	color: $color-red
+	color: $red
 
 .about__information-text-details-red-2
 	@include h7
-	color: $color-red
+	color: $red
 
 .border-img1
 	position: absolute
@@ -145,7 +145,7 @@
 .footer__container
 	height: 150px
 	max-width: 1920px
-	background: $color-beige-dark
+	background: $beigeDark
 	margin: 0 auto
 	box-sizing: border-box
 	@include flex-center-space-around
@@ -156,13 +156,13 @@
 
 .footer__telnumber-text
 	text-decoration: none
-	color: $color-red
+	color: $red
 
 .footer__copy
 	@include h2
 	display: flex
 	align-items: flex-end
-	color: $color-black
+	color: $black
 
 .footer__socialnetwork
 	@include flex-column-center
@@ -181,4 +181,4 @@
 
 .footer__socialnetwork-attention-text
 	@include h4
-	color: $color-powdery
+	color: $powdery
