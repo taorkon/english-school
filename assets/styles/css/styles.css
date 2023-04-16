@@ -1,8 +1,7 @@
 *,
 * ::before,
 * ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .feedback__container {
@@ -14,24 +13,16 @@
   max-width: 45%;
 }
 .feedback__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   min-width: 0;
   padding: 1em;
 }
 .feedback__img-container {
   max-width: 25%;
   max-height: 100%;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 25%;
-          flex: 2 1 25%;
+  flex: 2 1 25%;
 }
 .feedback__img-container img {
   max-width: 100%;
@@ -41,19 +32,10 @@
   border-radius: 50%;
 }
 .feedback__text-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 2 75%;
-          flex: 1 2 75%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1 2 75%;
   padding: 0 10px;
 }
 .feedback__client-name {
@@ -65,21 +47,13 @@
 }
 
 .about__container {
-  height: 1200px;
   max-width: 1920px;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #FFFBF8;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__title {
@@ -88,63 +62,37 @@
   font-weight: 500;
   line-height: 59px;
   font-size: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #000000;
-  margin-bottom: 137px;
-}
-
-.about__section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 14vh;
 }
 
 .about__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.about__block-img {
-  height: 507px;
-  margin-left: 240px;
-  margin-bottom: 360px;
+.about__image-holder {
+  width: 50%;
+  margin-left: 13vw;
+  padding-bottom: 37vh;
 }
 
-.about__img {
-  height: 507px;
+.about__image {
+  height: 47vh;
 }
 
-.about__information {
-  width: 715px;
-  margin-left: 177px;
-  margin-right: 237px;
-  margin-bottom: 60px;
+.about__text-holder {
+  width: 50%;
+  padding-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.about__information-text {
+.about__text {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +102,7 @@
   line-height: 40px;
 }
 
-.about__information-text-2 {
+.about__text-2 {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
@@ -164,36 +112,33 @@
   line-height: 40px;
 }
 
-.about__information-text-icon {
+.text-icon {
   padding-left: 0px;
   list-style-image: url(/assets/images/desktop/icon-about.png);
 }
 
-.about__information-text-details-blu {
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  font-size: 24px;
+.text-blue {
   color: #87A6C6;
 }
 
-.about__information-text-details-red {
+.text-red {
+  color: #A54A47;
+}
+
+.h6 {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
   font-size: 24px;
-  color: #A54A47;
 }
 
-.about__information-text-details-red-2 {
+.h7 {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
   font-size: 20px;
-  color: #A54A47;
 }
 
 .border-img1 {
@@ -209,16 +154,10 @@
   max-width: 1920px;
   background: #D9CCB9;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer__telnumber {
@@ -241,34 +180,21 @@
   font-weight: 400;
   line-height: 29px;
   font-size: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   color: #000000;
 }
 
 .footer__socialnetwork {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 335px;
   height: 78px;
 }
 
 .footer__socialnetwork-icons {
   list-style-type: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding-left: 0px;
   margin-top: 0px;
