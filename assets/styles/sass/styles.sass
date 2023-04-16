@@ -3,29 +3,29 @@
 @import "colors"
 @import "breakpoints"
 @import "mixin"
+@import "variables"
 
 //General settings
 
 *,
 * ::before,
-* ::after 
-	box-sizing: inherit 
-
+* ::after
+	box-sizing: inherit
 
 // Re-usable BEM blocks
 
 // Feedback
 
-.feedback 
-	&__container 
+.feedback
+	&__container
 		max-width: 1320px
 
 		margin-left: auto
 		margin-right: auto
-  
+
 	&__card-wrap
 		max-width: 45%
-  
+
 	&__card
 		display: flex
 		justify-content: space-between
@@ -38,16 +38,15 @@
 		max-width: 25%
 		max-height: 100%
 
-		flex: 2 1 25% 
+		flex: 2 1 25%
 
 		img
 			@include img-fit
 			border-radius: 50%
 
-
 	&__text-side
 		@include flex-column-space-evenly
-		flex: 1 2 75% 
+		flex: 1 2 75%
 		padding: 0 10px
 
 	&__client-name
@@ -59,12 +58,61 @@
 
 .button-consult
 		//style here
-		
 
 //Section styles
 
 //Header
+.header__container
+	display: flex
+	align-items: stretch
+	max-height: 80px
+	max-width: 1920px
+	background: $color-beige-dark
 
+.header__logo
+	display: flex
+	width: 200px
+	height: 39px
+	margin: 21px 104px 20px 150px
+
+.header__menu
+	@include flex-center-space-around
+	width: 696px
+	height: 29px
+	margin: 25px 80px 25px 0px
+	list-style: none
+
+.header__menu_item
+	@include h2
+	text-decoration: none
+	color: $color-black
+
+.header__menu_item:hover
+	text-decoration: underline #9747FF
+
+.header__socialnetwork
+	@include flex-center-space-around
+	width: 335px
+	height: 25px
+	margin: 25px 272px 0px 0px
+	list-style: none
+
+.header__socialnetwork-icons
+	width: 68px
+	hight: 68px
+
+.header__socialnetwork-icons:hover
+
+.header__socialnetwork-attention
+	@include flex-center-space-around
+	width: 344px
+	height: 10px
+	margin-top: 10px
+
+.header__socialnetwork-attention-text
+	@include h4
+	text-decoration: none
+	color: $color-powdery
 //Intro
 
 //About
