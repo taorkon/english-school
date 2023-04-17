@@ -18,7 +18,26 @@ body
 	min-width: inherit
 
 
+
 // Re-usable BEM blocks
+
+.button-consult
+		//style here
+
+.text-icon
+	padding-left: 0px
+	list-style-image: url(/assets/images/desktop/icon-about.png)
+
+.text-blue
+	color: $blue
+
+.text-red
+	color: $red
+
+.h6
+	@include h6
+.h7
+	@include h7
 
 // Feedback
 
@@ -62,6 +81,7 @@ body
 		margin: 1rem 0 0 0
 		padding: 0
 
+
 .button-consult
 		//style here
 
@@ -72,6 +92,61 @@ body
 //Intro
 
 //About
+
+.about
+	max-width: 1920px
+	@include flex-center-center
+
+	&__container
+		max-width: 1920px
+		margin: 0 auto
+		box-sizing: border-box
+		background: $beigeBg
+		@include flex-column-center
+
+	&__title-holder
+		@include flex-column-center
+
+	&__title
+		@include h1
+		color: $black
+		margin-bottom: 14vh
+
+	&__content
+		width: 100%
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+	&__image-holder
+		width: 50%
+		margin-left: 13vw
+		padding-bottom: 37vh
+
+	&__image
+		height: 47vh
+
+	&__text-holder
+		width: 50%
+		padding-right: 05vw
+
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		align-items: center
+
+	&__text
+		@include h2
+		color: $black
+		line-height: 40px
+
+	&__text-2
+		@include h5
+		color: $black
+		line-height: 40px
+
+	&__border
+		position: absolute
 
 //Courses
 
@@ -145,3 +220,52 @@ body
 //Credentials
 
 //Footer
+
+
+.footer
+	max-width: 1920px
+	background: $beigeDark
+
+	&__container
+		width: 100%
+		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
+		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
+		@include flex-center-space-around
+
+		//height: 150px
+		//max-width: 1920px
+		//background: $beigeDark
+
+	&__tel-holder
+		@include h3
+		padding-top: 3vh
+
+	&__tel
+		text-decoration: none
+		color: $red
+
+	&__copy
+		@include h2
+		display: flex
+		align-items: flex-end
+		color: $black
+
+	&__socials
+		@include flex-column-center
+		width: 18vw
+		//height: 78px  добавь марджины или паддинги к иконкам, чтоб суммировались в примерно нужную высоту (лучше относительные)
+
+	&__socials-icons
+		list-style-type: none
+		display: inline-flex
+		padding-left: 0px
+		margin-top: 0px
+		margin-bottom: 0px
+
+	&__disclaimer-holder
+		margin-bottom: 4vh
+
+	&__disclaimer
+		@include h4
+		color: $powdery
+
