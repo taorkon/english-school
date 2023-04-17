@@ -13,6 +13,24 @@
 
 // Re-usable BEM blocks
 
+.button-consult
+		//style here
+
+.text-icon 
+	padding-left: 0px
+	list-style-image: url(/assets/images/desktop/icon-about.png)
+
+.text-blue 
+	color: $blue
+
+.text-red 
+	color: $red
+
+.h6 
+	@include h6
+.h7 
+	@include h7
+
 // Feedback
 
 .feedback
@@ -55,8 +73,6 @@
 		margin: 1rem 0 0 0
 		padding: 0
 
-.button-consult
-		//style here
 
 //Section styles
 
@@ -66,72 +82,60 @@
 
 //About
 
-$height: 100vh
-$width: 100vw
-.about__container
+.about
 	max-width: 1920px
-	margin: 0 auto
-	box-sizing: border-box
-	background: $beigeBg
-	@include flex-column-center
+	@include flex-center-center
 
-.about__title
-	@include h1
-	color: $black
-	margin-bottom: $height * .14
+	&__container
+		max-width: 1920px
+		margin: 0 auto
+		box-sizing: border-box
+		background: $beigeBg
+		@include flex-column-center
 
-.about__content
-	width: 100%
-	display: flex
-	align-items: flex-start
-	justify-content: space-between
+	&__title-holder
+		@include flex-column-center
 
-.about__image-holder
-	width: 50%
-	margin-left: $width * .13
-	padding-bottom: $height * .37
+	&__title
+		@include h1
+		color: $black
+		margin-bottom: 14vh
 
-.about__image
-	height: $height * .47
+	&__content
+		width: 100%
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
 
-.about__text-holder
-	width: 50%
-	padding-right: $width * .05
+	&__image-holder
+		width: 50%
+		margin-left: 13vw
+		padding-bottom: 37vh
 
-	display: flex
-	flex-direction: column
-	justify-content: space-evenly
-	align-items: center
+	&__image
+		height: 47vh
 
-.about__text
-	@include h2
-	color: $black
-	line-height: 40px
+	&__text-holder
+		width: 50%
+		padding-right: 05vw
 
-.about__text-2
-	@include h5
-	color: $black
-	line-height: 40px
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		align-items: center
 
-.text-icon // TO CLASS
-	padding-left: 0px
-	list-style-image: url(/assets/images/desktop/icon-about.png)
+	&__text
+		@include h2
+		color: $black
+		line-height: 40px
 
-.text-blue //TO CLASS
-	color: $blue
+	&__text-2
+		@include h5
+		color: $black
+		line-height: 40px
 
-.text-red //TO CLASS
-	color: $red
-
-.h6 //TO CLASS
-	@include h6
-.h7 //TO CLASS
-	@include h7
-
-.border-img1 //TO CLASS??
-	position: absolute
-.border-img2 //COMBINE??
-	position: absolute
+	&__border
+		position: absolute
 
 //Courses
 
