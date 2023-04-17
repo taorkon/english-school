@@ -17,8 +17,6 @@ body
 	margin: 0
 	min-width: inherit
 
-
-
 // Re-usable BEM blocks
 
 .button-consult
@@ -26,7 +24,7 @@ body
 
 .text-icon
 	padding-left: 0px
-	list-style-image: url(/assets/images/desktop/icon-about.png)
+	list-style-image: url(/assets/images/desktop/icon-about2.svg)
 
 .text-blue
 	color: $blue
@@ -35,9 +33,9 @@ body
 	color: $red
 
 .h6
-	@include h6
+	@include montserrat-700-24
 .h7
-	@include h7
+	@include montserrat-700-20
 
 // Feedback
 
@@ -81,7 +79,6 @@ body
 		margin: 1rem 0 0 0
 		padding: 0
 
-
 .button-consult
 		//style here
 
@@ -108,15 +105,13 @@ body
 		@include flex-column-center
 
 	&__title
-		@include h1
-		color: $black
-		margin-bottom: 14vh
+	@include montserrat-500-48
+	color: $black
+	margin-bottom: 14vh
 
 	&__content
 		width: 100%
-		display: flex
-		align-items: flex-start
-		justify-content: space-between
+		@include flex-start-space-between
 
 	&__image-holder
 		width: 50%
@@ -129,19 +124,15 @@ body
 	&__text-holder
 		width: 50%
 		padding-right: 05vw
-
-		display: flex
-		flex-direction: column
-		justify-content: space-evenly
-		align-items: center
+		@include flex-column-center-space-evenly
 
 	&__text
-		@include h2
+		@include montserrat-400-24
 		color: $black
 		line-height: 40px
 
 	&__text-2
-		@include h5
+		@include montserrat-400-20
 		color: $black
 		line-height: 40px
 
@@ -221,23 +212,21 @@ body
 
 //Footer
 
-
 .footer
 	max-width: 1920px
 	background: $beigeDark
 
 	&__container
 		width: 100%
+		@include flex-center-space-around
 		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
 		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
-		@include flex-center-space-around
-
 		//height: 150px
 		//max-width: 1920px
 		//background: $beigeDark
 
 	&__tel-holder
-		@include h3
+		@include montserrat-500-36
 		padding-top: 3vh
 
 	&__tel
@@ -245,15 +234,14 @@ body
 		color: $red
 
 	&__copy
-		@include h2
-		display: flex
-		align-items: flex-end
+		@include montserrat-400-24
+		@include flex-flex-end
 		color: $black
 
 	&__socials
 		@include flex-column-center
 		width: 18vw
-		//height: 78px  добавь марджины или паддинги к иконкам, чтоб суммировались в примерно нужную высоту (лучше относительные)
+		margin-top: 2vw
 
 	&__socials-icons
 		list-style-type: none
@@ -266,6 +254,5 @@ body
 		margin-bottom: 4vh
 
 	&__disclaimer
-		@include h4
+		@include inter-400-8
 		color: $powdery
-
