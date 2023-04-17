@@ -6,10 +6,18 @@
 
 //General settings
 
+body
+	box-sizing: border-box
+	min-width: 0
+
 *,
 * ::before,
 * ::after
 	box-sizing: inherit
+	margin: 0
+	min-width: inherit
+
+
 
 // Re-usable BEM blocks
 
@@ -72,6 +80,10 @@
 	&__client-opinion
 		margin: 1rem 0 0 0
 		padding: 0
+
+
+.button-consult
+		//style here
 
 //Section styles
 
@@ -141,12 +153,74 @@
 //Feedback
 
 //Tutors
+.tutors__container
+	margin-left: 100px
+
+.tutors__title
+	@include inter-400-64
+	color: $black
+	padding-top: 112px
+	padding-bottom: 25px
+
+.tutors__items
+	display: flex
+	justify-content: space-between
+
+	margin-right: 100px
+
+.tutors__image
+	padding: 25px
+
+.tutors__item
+	border: 1px solid gray
+	border-radius: 10px
+
+.tutors__name
+	@include inter-700-32
+	color: $black
+
+	padding-left: 15px
+	padding-top: 10px
+	padding-bottom: 15px
+
+.tutors__description
+	@include inter-400-24
+	color: $black
+
+	max-width: 293px
+	padding-left: 15px
+	padding-bottom: 15px
+
+.tutors__experience
+	@include inter-400-32
+
+	color: $black
+	text-align: center
+	padding: 20px 10px 20px 10px
+
+.button-consult
+	@include inter-400-40
+	color: $black
+	background-color: $grey
+
+	border: 1px solid $black
+	border-radius: 26px
+
+	padding: 19px 191px 29px 191px
+
+.tutors__button
+	display: flex
+	justify-content: center
+
+	padding-top: 80px
+	padding-bottom: 82px
 
 //Cases
 
 //Credentials
 
 //Footer
+
 
 .footer
 	max-width: 1920px
@@ -194,3 +268,4 @@
 	&__disclaimer
 		@include h4
 		color: $powdery
+
