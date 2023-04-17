@@ -148,31 +148,30 @@
   position: absolute;
 }
 
-.footer__container {
-  height: 150px;
+.footer {
   max-width: 1920px;
   background: #D9CCB9;
+}
+.footer__container {
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-.footer__telnumber {
+.footer__tel-holder {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
   font-size: 36px;
-  padding-top: 34px;
+  padding-top: 3vh;
 }
-
-.footer__telnumber-text {
+.footer__tel {
   text-decoration: none;
   color: #A54A47;
 }
-
 .footer__copy {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -183,28 +182,23 @@
   align-items: flex-end;
   color: #000000;
 }
-
-.footer__socialnetwork {
+.footer__socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 335px;
-  height: 78px;
+  width: 18vw;
 }
-
-.footer__socialnetwork-icons {
+.footer__socials-icons {
   list-style-type: none;
   display: inline-flex;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
-.footer__socialnetwork-attention {
-  margin-bottom: 37px;
+.footer__disclaimer-holder {
+  margin-bottom: 4vh;
 }
-
-.footer__socialnetwork-attention-text {
+.footer__disclaimer {
   font-family: Inter;
   font-style: normal;
   font-weight: 400;

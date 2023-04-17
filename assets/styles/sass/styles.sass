@@ -16,19 +16,19 @@
 .button-consult
 		//style here
 
-.text-icon 
+.text-icon
 	padding-left: 0px
 	list-style-image: url(/assets/images/desktop/icon-about.png)
 
-.text-blue 
+.text-blue
 	color: $blue
 
-.text-red 
+.text-red
 	color: $red
 
-.h6 
+.h6
 	@include h6
-.h7 
+.h7
 	@include h7
 
 // Feedback
@@ -72,7 +72,6 @@
 	&__client-opinion
 		margin: 1rem 0 0 0
 		padding: 0
-
 
 //Section styles
 
@@ -148,43 +147,50 @@
 //Credentials
 
 //Footer
-.footer__container
-	height: 150px
+
+.footer
 	max-width: 1920px
 	background: $beigeDark
-	margin: 0 auto
-	box-sizing: border-box
-	@include flex-center-space-around
 
-.footer__telnumber
-	@include h3
-	padding-top: 34px
+	&__container
+		width: 100%
+		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
+		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
+		@include flex-center-space-around
 
-.footer__telnumber-text
-	text-decoration: none
-	color: $red
+		//height: 150px
+		//max-width: 1920px
+		//background: $beigeDark
 
-.footer__copy
-	@include h2
-	display: flex
-	align-items: flex-end
-	color: $black
+	&__tel-holder
+		@include h3
+		padding-top: 3vh
 
-.footer__socialnetwork
-	@include flex-column-center
-	width: 335px
-	height: 78px
+	&__tel
+		text-decoration: none
+		color: $red
 
-.footer__socialnetwork-icons
-	list-style-type: none
-	display: inline-flex
-	padding-left: 0px
-	margin-top: 0px
-	margin-bottom: 0px
+	&__copy
+		@include h2
+		display: flex
+		align-items: flex-end
+		color: $black
 
-.footer__socialnetwork-attention
-	margin-bottom: 37px
+	&__socials
+		@include flex-column-center
+		width: 18vw
+		//height: 78px  добавь марджины или паддинги к иконкам, чтоб суммировались в примерно нужную высоту (лучше относительные)
 
-.footer__socialnetwork-attention-text
-	@include h4
-	color: $powdery
+	&__socials-icons
+		list-style-type: none
+		display: inline-flex
+		padding-left: 0px
+		margin-top: 0px
+		margin-bottom: 0px
+
+	&__disclaimer-holder
+		margin-bottom: 4vh
+
+	&__disclaimer
+		@include h4
+		color: $powdery
