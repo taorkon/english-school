@@ -23,10 +23,26 @@ body {
   min-width: inherit;
 }
 
+.nice-underline {
+  display: inline-block;
+  position: relative;
+}
+.nice-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 7px;
+  transform: skew(-12deg);
+  background: #87A6C6;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 .border-animation {
   display: inline-block;
   padding: 1rem 2rem;
-  border: 1.43px solid #D9CCB9;
+  border: 2px solid #D9CCB9;
   border-radius: 30% 80% 60% 40%/40% 40% 70% 60%;
   animation: animatedHeader 10s infinite;
 }
@@ -80,28 +96,97 @@ body {
   font-size: 20px;
 }
 
+.courses {
+  margin: 7rem auto;
+}
 .courses__container {
   max-width: 1320px;
-  margin: 3rem auto;
-  display: flex;
+  margin: 8rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3rem;
+}
+.courses__container:first-of-type {
+  margin: 3rem auto 7rem auto;
+}
+.courses__title {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
 }
 .courses__left-aside {
   display: flex;
   flex-direction: column;
 }
+.courses__english-level {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 122px;
+  font-size: 100px;
+  text-align: end;
+  color: #87A6C6;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.05em #A54A47;
+  margin-top: -5.1rem;
+  z-index: 10;
+  position: relative;
+}
+.courses__article-for-whom {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000000;
+  line-height: 29px;
+}
+.courses__text-about {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000000;
+  line-height: 29px;
+}
 .courses__point {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
+  grid-gap: 1rem;
   justify-items: stretch;
   align-items: center;
+  line-height: 29px;
 }
 .courses__prices-wrap {
   display: flex;
   justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
 }
-.courses__price {
+.courses__price-wrap {
+  flex: 50% 1 1;
   text-align: center;
+  padding: 0.5rem;
+  min-width: fit-content;
+  border: 3px solid #A54A47;
+  border-radius: 30px;
+}
+.courses__price-wrap--standart {
+  background: rgba(217, 204, 185, 0.5);
+  margin-right: 0.5rem;
+}
+.courses__price-wrap--pro {
+  background: rgba(135, 166, 198, 0.5);
+  margin-left: 0.5rem;
 }
 .courses__img-wrap {
   position: relative;
@@ -110,6 +195,17 @@ body {
   max-width: 100%;
   width: 100%;
   z-index: 1;
+}
+.courses__img img {
+  max-width: 100%;
+  width: 100%;
+}
+.courses__announcement {
+  display: inline-block;
+  margin-top: 2rem;
+}
+.courses__list-header {
+  margin-top: 1.5rem;
 }
 
 .img-frame {
@@ -144,6 +240,8 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   min-width: 0;
+  max-height: 35vh;
+  text-overflow: ellipsis;
   padding: 1em;
 }
 .feedback__img-container {
@@ -189,50 +287,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
   flex: 1 2 75%;
   padding: 0 10px;
-}
-.feedback__client-name {
-  margin: 1rem 0 0 0;
-}
-.feedback__client-opinion {
-  margin: 1rem 0 0 0;
-  padding: 0;
-}
-
-.feedback__container {
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.feedback__card-wrap {
-  max-width: 45%;
-}
-.feedback__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  min-width: 0;
-  padding: 1em;
-}
-.feedback__img-container {
-  max-width: 25%;
-  max-height: 100%;
-  flex: 2 1 25%;
-}
-.feedback__img-container img {
-  max-width: 100%;
-  width: 100%;
-  max-height: 100%;
-  max-height: 100%;
-  border-radius: 50%;
-}
-.feedback__text-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  color: #000000;
+  line-height: 18px;
   flex: 1 2 75%;
   padding: 0 10px;
+  max-height: 20vh;
+  text-overflow: ellipsis;
 }
 .feedback__client-name {
   margin: 1rem 0 0 0;

@@ -7,6 +7,10 @@ new Swiper(".swiper", {
   speed: 500,
   spaceBetween: 10,
 
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
   autoplay: {
     delay: 20000,
     stopOnLastSlide: true,
