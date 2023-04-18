@@ -26,7 +26,7 @@ body {
 .border-animation {
   display: inline-block;
   padding: 1rem 2rem;
-  border: 1.43px solid #D9CCB9;
+  border: 2px solid #D9CCB9;
   border-radius: 30% 80% 60% 40%/40% 40% 70% 60%;
   animation: animatedHeader 10s infinite;
 }
@@ -83,7 +83,9 @@ body {
 .courses__container {
   max-width: 1320px;
   margin: 3rem auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
 }
 .courses__left-aside {
   display: flex;
@@ -110,6 +112,10 @@ body {
   max-width: 100%;
   width: 100%;
   z-index: 1;
+}
+.courses__img img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .img-frame {
