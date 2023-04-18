@@ -23,6 +23,22 @@ body {
   min-width: inherit;
 }
 
+.nice-underline {
+  display: inline-block;
+  position: relative;
+}
+.nice-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  height: 7px;
+  transform: skew(-12deg);
+  background: #87A6C6;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 .border-animation {
   display: inline-block;
   padding: 1rem 2rem;
@@ -85,7 +101,8 @@ body {
 }
 .courses__container {
   max-width: 1320px;
-  margin: 7rem auto;
+  margin: 8rem auto;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
@@ -114,11 +131,13 @@ body {
   font-weight: 800;
   line-height: 122px;
   font-size: 100px;
+  text-align: end;
   color: #87A6C6;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.05em #A54A47;
   margin-top: -5.1rem;
   z-index: 10;
   position: relative;
-  text-align: end;
 }
 .courses__article-for-whom {
   font-family: Montserrat Alternates;
@@ -148,10 +167,24 @@ body {
 .courses__prices-wrap {
   display: flex;
   justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
 }
 .courses__price-wrap {
+  flex: 50% 1 1;
   text-align: center;
-  border: 2px solid #A54A47;
+  padding: 0.5rem;
+  min-width: fit-content;
+  border: 3px solid #A54A47;
+  border-radius: 30px;
+}
+.courses__price-wrap--standart {
+  background: rgba(217, 204, 185, 0.5);
+  margin-right: 0.5rem;
+}
+.courses__price-wrap--pro {
+  background: rgba(135, 166, 198, 0.5);
+  margin-left: 0.5rem;
 }
 .courses__img-wrap {
   position: relative;
@@ -164,6 +197,10 @@ body {
 .courses__img img {
   max-width: 100%;
   width: 100%;
+}
+.courses__announcement {
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 .img-frame {
