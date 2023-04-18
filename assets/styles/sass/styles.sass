@@ -17,6 +17,23 @@ body
 	margin: 0
 	min-width: inherit
 
+
+// custom scrollbar
+
+::-webkit-scrollbar 
+	width: 4px
+
+::-webkit-scrollbar-track 
+	background: #f1f1f1
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb 
+	background: $blue
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb:hover 	
+	background: $red
+
 // inderline
 .nice-underline
 	display: inline-block
@@ -33,6 +50,20 @@ body
 		opacity: .5
 		z-index: -1
 
+.nice-underline--red
+	display: inline-block
+	position: relative
+
+	&::before 
+		content: ""
+		position: absolute
+		bottom: 1px
+		width: 100%
+		height: 10px
+		transform: skew(-12deg)
+		background: $red
+		opacity: .4
+		z-index: -1
 
 
 //border-animation
@@ -58,9 +89,6 @@ body
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
 
 
-
-
-
 // Re-usable BEM blocks
 
 .button-consult
@@ -77,9 +105,9 @@ body
 	color: $red
 
 .h6
-	@include h6
+	@include montserrat-500-36
 .h7
-	@include h7
+	@include montserrat-400-24
 
 
 //Courses
@@ -101,13 +129,17 @@ body
 			margin: 3rem auto 7rem auto
 
 	&__title
-		@include h1
+		@include montserrat-500-48
 		@include margin-auto
 		max-width: fit-content
 
 	&__left-aside
 		display: flex
 		flex-direction: column
+		@include montserrat-400-20
+		
+	&__course-duration, &__classes-duration
+		white-space: nowrap
 
 	&__english-level
 		@include fontEngLvl
@@ -121,12 +153,12 @@ body
 		position: relative
 
 	&__article-for-whom
-		@include h5
+		@include montserrat-400-24
 		color: $black
 		line-height: 29px
 
 	&__text-about
-		@include h5
+		@include montserrat-400-24
 		color: $black
 		line-height: 29px
 
@@ -139,6 +171,7 @@ body
 		justify-items: stretch
 		align-items: center
 		line-height: 29px
+		margin-top: 1rem
 
 	&__prices-wrap
 		display: flex
@@ -207,10 +240,13 @@ body
 		margin-right: auto
 
 	&__header 
+		@include montserrat-500-48
+		max-width: fit-content
 		display: inline-block
 		padding: 2rem
-		
-  
+
+		margin-left: 30vw
+
 	&__card-wrap
 		max-width: 45%
   
@@ -257,20 +293,24 @@ body
 
 	&__text-side
 		@include flex-column-space-evenly
-		@include h5
+		@include montserrat-400-20
 
 		flex: 1 2 75%
 		padding: 0 10px
 		color: $black
 		line-height: 18px
 		flex: 1 2 75% 
-		padding: 0 10px
+		padding: 2rem 1rem
 
 		max-height: 20vh
 		text-overflow: ellipsis
+		overflow-y: scroll
 
 	&__client-name
-		margin: 1rem 0 0 0
+		@include montserrat-400-24
+		
+		margin-top: 1rem
+		padding-top: 3rem
 
 	&__client-opinion
 		margin: 1rem 0 0 0
@@ -299,7 +339,7 @@ body
 		@include flex-column-center
 
 	&__title
-		@include h1
+		@include montserrat-500-48
 		color: $black
 		margin-bottom: 14vh
 
@@ -327,12 +367,12 @@ body
 		align-items: center
 
 	&__text
-		@include h2
+		@include montserrat-500-36
 		color: $black
 		line-height: 40px
 
 	&__text-2
-		@include h5
+		@include montserrat-400-24
 		color: $black
 		line-height: 40px
 
@@ -428,7 +468,7 @@ body
 		//background: $beigeDark
 
 	&__tel-holder
-		@include h3
+		@include montserrat-400-20
 		padding-top: 3vh
 
 	&__tel
@@ -436,7 +476,7 @@ body
 		color: $red
 
 	&__copy
-		@include h2
+		@include montserrat-400-24
 		display: flex
 		align-items: flex-end
 		color: $black
@@ -457,6 +497,6 @@ body
 		margin-bottom: 4vh
 
 	&__disclaimer
-		@include h4
+		@include montserrat-500-36
 		color: $powdery
 

@@ -23,6 +23,24 @@ body {
   min-width: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #87A6C6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A54A47;
+}
+
 .nice-underline {
   display: inline-block;
   position: relative;
@@ -36,6 +54,22 @@ body {
   transform: skew(-12deg);
   background: #87A6C6;
   opacity: 0.5;
+  z-index: -1;
+}
+
+.nice-underline--red {
+  display: inline-block;
+  position: relative;
+}
+.nice-underline--red::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  height: 10px;
+  transform: skew(-12deg);
+  background: #A54A47;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -83,17 +117,17 @@ body {
 .h6 {
   font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  font-size: 24px;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
 }
 
 .h7 {
   font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
 }
 
 .courses {
@@ -124,6 +158,14 @@ body {
 .courses__left-aside {
   display: flex;
   flex-direction: column;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
+}
+.courses__course-duration, .courses__classes-duration {
+  white-space: nowrap;
 }
 .courses__english-level {
   font-family: Montserrat Alternates;
@@ -143,8 +185,8 @@ body {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 29px;
+  font-size: 24px;
   color: #000000;
   line-height: 29px;
 }
@@ -152,8 +194,8 @@ body {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 29px;
+  font-size: 24px;
   color: #000000;
   line-height: 29px;
 }
@@ -165,6 +207,7 @@ body {
   justify-items: stretch;
   align-items: center;
   line-height: 29px;
+  margin-top: 1rem;
 }
 .courses__prices-wrap {
   display: flex;
@@ -229,8 +272,15 @@ body {
   margin-right: auto;
 }
 .feedback__header {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  max-width: fit-content;
   display: inline-block;
   padding: 2rem;
+  margin-left: 30vw;
 }
 .feedback__card-wrap {
   max-width: 45%;
@@ -297,12 +347,19 @@ body {
   color: #000000;
   line-height: 18px;
   flex: 1 2 75%;
-  padding: 0 10px;
+  padding: 2rem 1rem;
   max-height: 20vh;
   text-overflow: ellipsis;
+  overflow-y: scroll;
 }
 .feedback__client-name {
-  margin: 1rem 0 0 0;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  margin-top: 1rem;
+  padding-top: 3rem;
 }
 .feedback__client-opinion {
   margin: 1rem 0 0 0;
@@ -363,9 +420,9 @@ body {
 .about__text {
   font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 400;
-  line-height: 29px;
-  font-size: 24px;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
   color: #000000;
   line-height: 40px;
 }
@@ -373,8 +430,8 @@ body {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 29px;
+  font-size: 24px;
   color: #000000;
   line-height: 40px;
 }
@@ -482,9 +539,9 @@ body {
 .footer__tel-holder {
   font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 500;
-  line-height: 44px;
-  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
   padding-top: 3vh;
 }
 .footer__tel {
@@ -518,10 +575,10 @@ body {
   margin-bottom: 4vh;
 }
 .footer__disclaimer {
-  font-family: Inter;
+  font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 400;
-  line-height: 10px;
-  font-size: 8px;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
   color: #CA8D66;
 }

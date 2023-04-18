@@ -11,6 +11,10 @@ new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
   autoplay: {
     delay: 20000,
     stopOnLastSlide: true,
