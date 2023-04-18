@@ -68,21 +68,51 @@ body
 //Courses
 
 .courses
+	margin: 7rem auto
+
 	&__container
 		max-width: 1320px
-		margin: 3rem auto 
+		margin: 7rem auto 
+
 		display: grid
 		grid-template-columns: 1fr 3fr
 		grid-template-rows: 1fr
+		grid-gap: 3rem
+
+		&:first-of-type
+			margin: 3rem auto 7rem auto
+
+	&__title
+		@include h1
+		@include margin-auto
+		max-width: fit-content
 
 	&__left-aside
 		display: flex
 		flex-direction: column
 
+	&__english-level
+		@include fontEngLvl
+		color: $blue
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+		text-align: end
+
+	&__article-for-whom
+		@include h5
+		color: $black
+
+	&__text-about
+		@include h5
+		color: $black
+		line-height: 40px
+
 	&__point
 		display: grid
 		grid-template-columns: 1fr 3fr
 		grid-template-rows: 1fr
+		grid-gap: 1rem
 
 		justify-items: stretch
 		align-items: center
@@ -91,8 +121,10 @@ body
 		display: flex
 		justify-content: space-around
 		
-	&__price 
+
+	&__price-wrap
 		text-align: center
+		border: 2px solid $red
 
 	&__img-wrap 
 		position: relative
