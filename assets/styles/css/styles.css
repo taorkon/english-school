@@ -145,7 +145,7 @@ body {
 .courses__container:first-of-type {
   margin: 3rem auto 7rem auto;
 }
-@media (min-width: 420px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .courses__container {
     max-width: 97vw;
     display: flex;
@@ -180,7 +180,7 @@ body {
 .courses__course-duration, .courses__classes-duration {
   white-space: nowrap;
 }
-@media (min-width: 420px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .courses__common-information {
     display: flex;
     flex-direction: column;
@@ -207,6 +207,15 @@ body {
     justify-content: space-evenly;
   }
 }
+@media (min-width: 420px) and (max-width: 1200px) and (max-width: 420px) {
+  .courses__brief-information {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+  }
+}
 .courses__article-for-whom, .courses__text {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -226,6 +235,21 @@ body {
     line-height: 24px;
   }
 }
+@media (max-width: 420px) {
+  .courses__article-for-whom, .courses__text {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 420px) {
+  .courses__article-point {
+    margin-bottom: 0.5rem;
+  }
+}
 .courses__article-point:last-of-type {
   margin-bottom: 1rem;
 }
@@ -237,6 +261,16 @@ body {
   font-size: 24px;
   color: #000000;
   line-height: 29px;
+}
+@media (max-width: 420px) {
+  .courses__content {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 .courses__point {
   display: grid;
@@ -254,6 +288,11 @@ body {
   flex-wrap: nowrap;
   margin-top: 2rem;
 }
+@media (max-width: 420px) {
+  .courses__prices-wrap {
+    flex-direction: column;
+  }
+}
 .courses__price-wrap {
   flex: 50% 1 1;
   text-align: center;
@@ -261,6 +300,11 @@ body {
   min-width: fit-content;
   border: 3px solid #A54A47;
   border-radius: 30px;
+}
+@media (max-width: 420px) {
+  .courses__price-wrap {
+    margin-bottom: 1rem;
+  }
 }
 .courses__price-wrap--standart {
   background: rgba(217, 204, 185, 0.5);

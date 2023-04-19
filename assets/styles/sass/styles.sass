@@ -128,7 +128,7 @@ body
 		&:first-of-type
 			margin: 3rem auto 7rem auto
 
-		@media (min-width: $mobile) and (max-width: $desktop)
+		@media (max-width: $desktop)
 			max-width: 97vw
 			display: flex
 			flex-direction: column
@@ -151,7 +151,7 @@ body
 		white-space: nowrap
 
 	&__common-information
-		@media (min-width: $mobile) and (max-width: $desktop)
+		@media (max-width: $desktop)
 			display: flex
 			flex-direction: column
 
@@ -166,12 +166,15 @@ body
 		z-index: 10
 		position: relative
 
+
 	&__brief-information
 		@media (min-width: $mobile) and (max-width: $desktop)
 			display: flex
 			flex-direction: column
 			justify-content: space-evenly
 
+			@media (max-width: $mobile)
+				@include montserrat-400-15
 
 	&__description
 		@media (min-width: $mobile) and (max-width: $desktop)
@@ -186,6 +189,14 @@ body
 		@media (min-width: $mobile) and (max-width: $desktop)
 			@include montserrat-400-20
 			line-height: 24px
+		@media (max-width: $mobile)
+			@include montserrat-400-20
+			line-height: 22px
+
+	&__article-point
+		@media (max-width: $mobile)
+			margin-bottom: .5rem
+
 	&__article-point:last-of-type
 		margin-bottom: 1rem
 
@@ -193,6 +204,11 @@ body
 		@include montserrat-400-24
 		color: $black
 		line-height: 29px
+	
+	&__content
+		@media (max-width: $mobile)
+			@include montserrat-400-20
+			line-height: 22px
 
 
 
@@ -213,6 +229,12 @@ body
 		flex-wrap: nowrap
 		margin-top: 2rem
 
+		
+		@media (max-width: $mobile)
+			flex-direction: column
+
+
+
 	&__price-wrap
 		flex: 50% 1 1
 		text-align: center
@@ -221,6 +243,9 @@ body
 
 		border: 3px solid $red
 		border-radius: 30px
+
+		@media (max-width: $mobile)
+			margin-bottom: 1rem
 
 		&--standart
 			background: rgba(217, 204, 185, 0.5)
