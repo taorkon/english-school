@@ -145,6 +145,13 @@ body {
 .courses__container:first-of-type {
   margin: 3rem auto 7rem auto;
 }
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__container {
+    max-width: 97vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .courses__title {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -164,8 +171,20 @@ body {
   line-height: 40px;
   font-size: 20px;
 }
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__left-aside {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .courses__course-duration, .courses__classes-duration {
   white-space: nowrap;
+}
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__common-information {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .courses__english-level {
   font-family: Montserrat Alternates;
@@ -181,7 +200,14 @@ body {
   z-index: 10;
   position: relative;
 }
-.courses__article-for-whom {
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__brief-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.courses__article-for-whom, .courses__text {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
@@ -189,6 +215,19 @@ body {
   font-size: 24px;
   color: #000000;
   line-height: 29px;
+}
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__article-for-whom, .courses__text {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.courses__article-point:last-of-type {
+  margin-bottom: 1rem;
 }
 .courses__text-about {
   font-family: Montserrat Alternates;
@@ -280,7 +319,7 @@ body {
   max-width: fit-content;
   display: inline-block;
   padding: 2rem;
-  margin-left: 30vw;
+  margin-left: 30%;
 }
 .feedback__card-wrap {
   max-width: 45%;

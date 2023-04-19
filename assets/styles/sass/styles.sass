@@ -116,7 +116,7 @@ body
 	margin: 7rem auto
 
 	&__container
-		max-width: 1320px
+		max-width: $max-desktop
 		margin: 8rem auto 
 		padding: 1rem
 
@@ -128,6 +128,11 @@ body
 		&:first-of-type
 			margin: 3rem auto 7rem auto
 
+		@media (min-width: $mobile) and (max-width: $desktop)
+			max-width: 97vw
+			display: flex
+			flex-direction: column
+
 	&__title
 		@include montserrat-500-48
 		@include margin-auto
@@ -137,9 +142,18 @@ body
 		display: flex
 		flex-direction: column
 		@include montserrat-400-20
+
+		@media (min-width: $mobile) and (max-width: $desktop)
+			flex-direction: row
+			justify-content: space-evenly
 		
 	&__course-duration, &__classes-duration
 		white-space: nowrap
+
+	&__common-information
+		@media (min-width: $mobile) and (max-width: $desktop)
+			display: flex
+			flex-direction: column
 
 	&__english-level
 		@include fontEngLvl
@@ -152,15 +166,35 @@ body
 		z-index: 10
 		position: relative
 
-	&__article-for-whom
+	&__brief-information
+		@media (min-width: $mobile) and (max-width: $desktop)
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+
+
+	&__description
+		@media (min-width: $mobile) and (max-width: $desktop)
+
+
+
+	&__article-for-whom, &__text
 		@include montserrat-400-24
 		color: $black
 		line-height: 29px
+
+		@media (min-width: $mobile) and (max-width: $desktop)
+			@include montserrat-400-20
+			line-height: 24px
+	&__article-point:last-of-type
+		margin-bottom: 1rem
 
 	&__text-about
 		@include montserrat-400-24
 		color: $black
 		line-height: 29px
+
+
 
 	&__point
 		display: grid
@@ -233,7 +267,7 @@ body
 
 .feedback 
 	&__container 
-		max-width: 1320px
+		max-width: $max-desktop
 		width: 100%
 
 		margin-left: auto
@@ -245,7 +279,7 @@ body
 		display: inline-block
 		padding: 2rem
 
-		margin-left: 30vw
+		margin-left: 30%
 
 	&__card-wrap
 		max-width: 45%
