@@ -3,7 +3,6 @@
 @import "colors"
 @import "breakpoints"
 @import "mixin"
-@import "variables"
 
 //General settings
 
@@ -62,57 +61,53 @@
 //Section styles
 
 //Header
-.header__container
-	display: flex
-	align-items: stretch
-	max-height: 80px
+.header
 	max-width: 1920px
-	background: $color-beige-dark
+	max-height: 80px
+	background: $beigeDark
 
-.header__logo
-	display: flex
-	width: 200px
-	height: 39px
-	margin: 21px 104px 20px 150px
+	&__container
+		display: flex
+		align-items: stretch
+		height: 100%
+		width: 100%
 
-.header__menu
-	@include flex-center-space-around
-	width: 696px
-	height: 29px
-	margin: 25px 80px 25px 0px
-	list-style: none
+	&__logo
+		display: flex
+		width: 10%
+		height: 50%
+		margin: 25px 104px 20px 150px
 
-.header__menu_item
-	@include h2
-	text-decoration: none
-	color: $color-black
+	&__menu
+		@include flex-center-space-around
+		width: 696px
+		height: 29px
+		margin: 25px 80px 25px 0px
+		list-style: none
 
-.header__menu_item:hover
-	text-decoration: underline #9747FF
+	&__menu_item
+		font-family: Montserrat Alternates
+		font-style: normal
+		font-weight: 400
+		line-height: 29px
+		font-size: 24px
+		text-decoration: none
+		color: $black
 
-.header__socialnetwork
-	@include flex-center-space-around
-	width: 335px
-	height: 25px
-	margin: 25px 272px 0px 0px
-	list-style: none
+	&__menu_item:hover
+		text-decoration: underline #9747FF
 
-.header__socialnetwork-icons
-	width: 68px
-	hight: 68px
+	&__socials
+		@include flex-center-space-around
+		width: 335px
+		height: 25px
+		margin: 30px 272px 0px 0px
+		list-style: none
 
-.header__socialnetwork-icons:hover
+	&__socials-icons
+		width: 87%
+		hight: 87%
 
-.header__socialnetwork-attention
-	@include flex-center-space-around
-	width: 344px
-	height: 10px
-	margin-top: 10px
-
-.header__socialnetwork-attention-text
-	@include h4
-	text-decoration: none
-	color: $color-powdery
 //Intro
 
 //About
