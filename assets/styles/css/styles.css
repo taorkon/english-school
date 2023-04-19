@@ -4,26 +4,21 @@
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../fonts/Inter-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
-
-
 body {
   box-sizing: border-box;
   min-width: 0;
-  margin: 0;
 }
 
 *,
 * ::before,
 * ::after {
   box-sizing: inherit;
-  min-width: inherit;
   margin: 0;
   min-width: inherit;
 }
@@ -32,7 +27,6 @@ body {
   display: inline-block;
   position: relative;
 }
-
 .nice-underline::before {
   content: "";
   position: absolute;
@@ -57,28 +51,22 @@ body {
   0% {
     border-radius: 30% 80% 60% 40%/40% 40% 70% 60%;
   }
-
   10% {
     border-radius: 35% 75% 65% 40%/40% 45% 65% 60%;
   }
-
   25% {
     border-radius: 40% 78% 68% 30%/60% 49% 60% 45%;
   }
-
   40% {
     border-radius: 42% 80% 72% 25%/65% 55% 55% 30%;
   }
-
   55% {
     border-radius: 40% 78% 68% 30%/60% 49% 60% 45%;
   }
-
   75% {
     border-radius: 35% 75% 65% 40%/40% 45% 65% 60%;
   }
 }
-
 .text-icon {
   padding-left: 0px;
   list-style-image: url(/assets/images/desktop/icon-about.png);
@@ -111,7 +99,6 @@ body {
 .courses {
   margin: 7rem auto;
 }
-
 .courses__container {
   max-width: 1320px;
   margin: 8rem auto;
@@ -121,11 +108,9 @@ body {
   grid-template-rows: 1fr;
   grid-gap: 3rem;
 }
-
 .courses__container:first-of-type {
   margin: 3rem auto 7rem auto;
 }
-
 .courses__title {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -136,12 +121,10 @@ body {
   margin-right: auto;
   max-width: fit-content;
 }
-
 .courses__left-aside {
   display: flex;
   flex-direction: column;
 }
-
 .courses__english-level {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -156,7 +139,6 @@ body {
   z-index: 10;
   position: relative;
 }
-
 .courses__article-for-whom {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -166,7 +148,6 @@ body {
   color: #000000;
   line-height: 29px;
 }
-
 .courses__text-about {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -176,7 +157,6 @@ body {
   color: #000000;
   line-height: 29px;
 }
-
 .courses__point {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -186,14 +166,12 @@ body {
   align-items: center;
   line-height: 29px;
 }
-
 .courses__prices-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
   margin-top: 2rem;
 }
-
 .courses__price-wrap {
   flex: 50% 1 1;
   text-align: center;
@@ -202,37 +180,30 @@ body {
   border: 3px solid #A54A47;
   border-radius: 30px;
 }
-
 .courses__price-wrap--standart {
   background: rgba(217, 204, 185, 0.5);
   margin-right: 0.5rem;
 }
-
 .courses__price-wrap--pro {
   background: rgba(135, 166, 198, 0.5);
   margin-left: 0.5rem;
 }
-
 .courses__img-wrap {
   position: relative;
 }
-
 .courses__img {
   max-width: 100%;
   width: 100%;
   z-index: 1;
 }
-
 .courses__img img {
   max-width: 100%;
   width: 100%;
 }
-
 .courses__announcement {
   display: inline-block;
   margin-top: 2rem;
 }
-
 .courses__list-header {
   margin-top: 1.5rem;
 }
@@ -257,16 +228,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .feedback__header {
   display: inline-block;
   padding: 2rem;
 }
-
 .feedback__card-wrap {
   max-width: 45%;
 }
-
 .feedback__card {
   display: flex;
   justify-content: space-between;
@@ -276,7 +244,6 @@ body {
   text-overflow: ellipsis;
   padding: 1em;
 }
-
 .feedback__img-container {
   position: relative;
   max-width: 25%;
@@ -284,7 +251,6 @@ body {
   margin: auto;
   flex: 2 1 25%;
 }
-
 .feedback__img-container img {
   max-width: 100%;
   width: 100%;
@@ -295,7 +261,6 @@ body {
   z-index: 1;
   animation: animatedBorder 10s infinite;
 }
-
 .feedback__img-container img::before {
   max-width: 100%;
   width: 100%;
@@ -304,25 +269,20 @@ body {
   position: absolute;
   z-index: 2;
 }
-
 @keyframes animatedBorder {
   0% {
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   }
-
   25% {
     border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
   }
-
   50% {
     border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
   }
-
   75% {
     border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
   }
 }
-
 .feedback__text-side {
   display: flex;
   flex-direction: column;
@@ -341,11 +301,9 @@ body {
   max-height: 20vh;
   text-overflow: ellipsis;
 }
-
 .feedback__client-name {
   margin: 1rem 0 0 0;
 }
-
 .feedback__client-opinion {
   margin: 1rem 0 0 0;
   padding: 0;
@@ -357,7 +315,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .about__container {
   max-width: 1920px;
   margin: 0 auto;
@@ -367,13 +324,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .about__title-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .about__title {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -383,24 +338,20 @@ body {
   color: #000000;
   margin-bottom: 14vh;
 }
-
 .about__content {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-
 .about__image-holder {
   width: 50%;
   margin-left: 13vw;
   padding-bottom: 37vh;
 }
-
 .about__image {
   height: 47vh;
 }
-
 .about__text-holder {
   width: 50%;
   padding-right: 5vw;
@@ -409,7 +360,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .about__text {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -419,7 +369,6 @@ body {
   color: #000000;
   line-height: 40px;
 }
-
 .about__text-2 {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -429,103 +378,88 @@ body {
   color: #000000;
   line-height: 40px;
 }
-
 .about__border {
   position: absolute;
 }
 
 .tutors__container {
-  margin-left: 100px;
+  margin: 8rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1320px;
 }
-
 .tutors__title {
-  font-family: "Inter", sans-serif;
+  font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 77px;
-  color: #000000;
-  padding-top: 112px;
-  padding-bottom: 25px;
-}
-
-.tutors__items {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 100px;
-}
-
-.tutors__image {
-  padding: 25px;
-}
-
-.tutors__item {
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.tutors__name {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  color: #000000;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-.tutors__description {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  max-width: 293px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-
-.tutors__experience {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 39px;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
   color: #000000;
   text-align: center;
-  padding: 20px 10px 20px 10px;
+  padding-top: 1rem;
+  padding-bottom: 6.5rem;
 }
-
-.button-consult {
-  font-family: "Inter", sans-serif;
+.tutors__items {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.tutors__item {
+  width: 40%;
+}
+.tutors__img-container {
+  position: relative;
+  max-width: 55%;
+  max-height: 100%;
+  margin: auto;
+}
+.tutors__image {
+  border: 1.43px solid #D9CCB9;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  z-index: 1;
+  animation: animatedBorder 10s infinite;
+}
+.tutors__name {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
+  color: #A54A47;
+  padding-left: 1rem;
+  padding-top: 0.62rem;
+  padding-bottom: 1rem;
+  margin-top: -3.5rem;
+  margin-left: 3rem;
+  z-index: 2;
+  position: relative;
+}
+.tutors__description {
+  font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 40px;
   color: #000000;
-  background-color: #8C8383;
-  border: 1px solid #000000;
-  border-radius: 26px;
-  padding: 19px 191px 29px 191px;
+  padding-left: 15px;
+  padding-bottom: 15px;
 }
-
-.tutors__button {
-  display: flex;
-  justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 82px;
-
-  min-width: inherit;
+.tutors__experience {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #87A6C6;
+  padding: 1.25rem 0.625rem 1.25rem 0.625rem;
 }
 
 .footer {
   max-width: 1920px;
   background: #D9CCB9;
 }
-
 .footer__container {
   width: 100%;
   margin: 0 auto;
@@ -534,7 +468,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 .footer__tel-holder {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -543,12 +476,10 @@ body {
   font-size: 36px;
   padding-top: 3vh;
 }
-
 .footer__tel {
   text-decoration: none;
   color: #A54A47;
 }
-
 .footer__copy {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -559,14 +490,12 @@ body {
   align-items: flex-end;
   color: #000000;
 }
-
 .footer__socials {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 18vw;
 }
-
 .footer__socials-icons {
   list-style-type: none;
   display: inline-flex;
@@ -574,21 +503,14 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
-.feedback__client-opinion {
-  margin: 1rem 0 0 0;
-  padding: 0;
-
-
-  .footer__disclaimer-holder {
-    margin-bottom: 4vh;
-  }
-
-  .footer__disclaimer {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 10px;
-    font-size: 8px;
-    color: #CA8D66;
-  }
+.footer__disclaimer-holder {
+  margin-bottom: 4vh;
+}
+.footer__disclaimer {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  font-size: 8px;
+  color: #CA8D66;
+}

@@ -337,67 +337,64 @@ body
 //Feedback
 
 //Tutors
-.tutors__container
-	margin-left: 100px
+.tutors
+	&__container
+		margin: 8rem auto
+		padding: 1rem
+		width: 100%
+		max-width: 1320px
 
-.tutors__title
-	@include inter-400-64
-	color: $black
-	padding-top: 112px
-	padding-bottom: 25px
+	&__title
+		@include h1
 
-.tutors__items
-	display: flex
-	justify-content: space-between
+		color: $black
+		text-align: center
+		padding-top: 1rem
+		padding-bottom: 6.5rem
 
-	margin-right: 100px
+	&__items
+		display: flex
+		justify-content: start
+		flex-wrap: wrap
+		gap: 4rem
 
-.tutors__image
-	padding: 25px
+	&__item
+		width: 40%
 
-.tutors__item
-	border: 1px solid gray
-	border-radius: 10px
+	&__img-container
+		position: relative
+		max-width: 55%
+		max-height: 100%
+		margin: auto
 
-.tutors__name
-	@include inter-700-32
-	color: $black
+	&__image
+		border: 1.43px solid #D9CCB9
+		border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+		z-index: 1
+		animation: animatedBorder 10s infinite
 
-	padding-left: 15px
-	padding-top: 10px
-	padding-bottom: 15px
+	&__name
+		@include h3
+		color: $red
+		padding-left: 1rem
+		padding-top: 0.62rem
+		padding-bottom: 1rem
+		margin-top: -3.5rem
+		margin-left: 3rem
+		z-index: 2
+		position: relative
 
-.tutors__description
-	@include inter-400-24
-	color: $black
+	&__description
+		@include tutDesc
+		color: $black
+		padding-left: 15px
+		padding-bottom: 15px
 
-	max-width: 293px
-	padding-left: 15px
-	padding-bottom: 15px
-
-.tutors__experience
-	@include inter-400-32
-
-	color: $black
-	text-align: center
-	padding: 20px 10px 20px 10px
-
-.button-consult
-	@include inter-400-40
-	color: $black
-	background-color: $grey
-
-	border: 1px solid $black
-	border-radius: 26px
-
-	padding: 19px 191px 29px 191px
-
-.tutors__button
-	display: flex
-	justify-content: center
-
-	padding-top: 80px
-	padding-bottom: 82px
+	&__experience
+		@include h6
+		line-height: 29px
+		color: $blue
+		padding: 1.25rem 0.625rem 1.25rem 0.625rem
 
 //Cases
 
