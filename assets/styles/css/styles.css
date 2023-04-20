@@ -21,10 +21,25 @@ body {
   box-sizing: inherit;
   margin: 0;
   min-width: inherit;
+  font-optical-sizing: auto;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #A54A47;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
+  height: 70%;
 }
 
 ::-webkit-scrollbar-track {
@@ -128,6 +143,68 @@ body {
   font-weight: 400;
   line-height: 29px;
   font-size: 24px;
+}
+
+.levels {
+  margin: 7rem auto;
+}
+.levels__container {
+  max-width: 1320px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+.levels__title {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+.levels__steps {
+  display: flex;
+  justify-content: space-evenly;
+  place-items: end normal;
+  margin-bottom: -2rem;
+}
+.levels__step {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 122px;
+  font-size: 100px;
+  font-size: 70px;
+  color: #87A6C6;
+  white-space: nowrap;
+}
+.levels__prices-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+}
+.levels__price-wrap {
+  flex: 50% 1 1;
+  text-align: center;
+  padding: 0.5rem;
+  min-width: fit-content;
+  border: 3px solid #A54A47;
+  border-radius: 30px;
+}
+@media (max-width: 420px) {
+  .levels__price-wrap {
+    margin-bottom: 1rem;
+  }
+}
+.levels__price-wrap--standart {
+  background: rgba(217, 204, 185, 0.5);
+  margin-right: 0.5rem;
+}
+.levels__price-wrap--pro {
+  background: rgba(135, 166, 198, 0.5);
+  margin-left: 0.5rem;
 }
 
 .courses {
@@ -365,8 +442,15 @@ body {
   padding: 2rem;
   margin-left: 30%;
 }
-.feedback__card-wrap {
-  max-width: 45%;
+@media (min-width: 420px) and (max-width: 768px) {
+  .feedback__header {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 420px) {
+  .feedback__header {
+    margin-left: 5%;
+  }
 }
 .feedback__card {
   display: flex;
@@ -374,8 +458,13 @@ body {
   align-items: flex-start;
   min-width: 0;
   max-height: 35vh;
-  text-overflow: ellipsis;
-  padding: 1em;
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .feedback__card {
+    flex-direction: column;
+    max-height: 50vh;
+  }
 }
 .feedback__img-container {
   position: relative;
@@ -383,6 +472,12 @@ body {
   max-height: 100%;
   margin: auto;
   flex: 2 1 25%;
+}
+@media (max-width: 768px) {
+  .feedback__img-container {
+    flex: 2 1 35%;
+    flex: 2 1 45%;
+  }
 }
 .feedback__img-container img {
   max-width: 100%;
@@ -430,10 +525,18 @@ body {
   color: #000000;
   line-height: 18px;
   flex: 1 2 75%;
-  padding: 2rem 1rem;
-  max-height: 20vh;
+  padding: 0 1rem;
   text-overflow: ellipsis;
-  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .feedback__text-side {
+    flex: 2 1 65%;
+  }
+}
+@media (max-width: 420px) {
+  .feedback__text-side {
+    flex: 2 1 55%;
+  }
 }
 .feedback__client-name {
   font-family: Montserrat Alternates;
@@ -442,7 +545,6 @@ body {
   line-height: 29px;
   font-size: 24px;
   margin-top: 1rem;
-  padding-top: 3rem;
 }
 .feedback__client-opinion {
   margin: 1rem 0 0 0;

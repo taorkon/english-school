@@ -1,18 +1,12 @@
 new Swiper(".swiper", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
-  loop: true,
   speed: 500,
-  spaceBetween: 10,
+  spaceBetween: 15,
 
   pagination: {
     el: ".swiper-pagination",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 
   autoplay: {
@@ -27,15 +21,8 @@ new Swiper(".swiper", {
     pageUpDown: true,
   },
 
-  mousewheel: {
-    sensitivity: 1,
-    eventsTarget: ".guest_reviews",
-  },
-
   simulateTouch: true,
   grabCursor: true,
-
-  watchOverflow: true,
 
   breakpoints: {
     420: {
@@ -44,7 +31,7 @@ new Swiper(".swiper", {
     768: {
       slidesPerView: 2,
     },
-    1124: {
+    768: {
       slidesPerView: 2.5,
     },
   },

@@ -16,12 +16,25 @@ body
 	box-sizing: inherit
 	margin: 0
 	min-width: inherit
+	font-optical-sizing: auto
+
+abbr 
+	text-decoration: none
+
+///swiper styles
+.swiper-pagination
+	position: static
+	margin-top: 2rem
+
+.swiper-pagination-bullet
+	background-color: #A54A47
 
 
 // custom scrollbar
 
 ::-webkit-scrollbar 
-	width: 4px
+	width: 6px
+	height: 70%
 
 ::-webkit-scrollbar-track 
 	background: #f1f1f1
@@ -89,7 +102,7 @@ body
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
 
 
-// Re-usable BEM blocks
+// Re-usable BEM blocks	
 
 .button-consult
 	//style here
@@ -110,7 +123,64 @@ body
 	@include montserrat-400-24
 
 
-//Courses
+// Levels
+.levels
+	margin: 7rem auto
+
+	&__container
+		max-width: $max-desktop
+		margin: 3rem auto 
+		padding: 1rem
+
+	&__title
+		@include montserrat-500-48
+		@include margin-auto
+		max-width: fit-content
+	
+	&__steps
+		display: flex
+		justify-content: space-evenly
+		place-items: end normal
+		margin-bottom: -2rem
+	
+	&__step
+		@include fontEngLvl
+		font-size: 70px
+		color: $blue
+		white-space: nowrap
+
+	&__prices-wrap
+		display: flex
+		justify-content: space-around
+		flex-wrap: nowrap
+		margin-top: 2rem
+
+	&__price-wrap
+		flex: 50% 1 1
+		text-align: center
+		padding: 0.5rem
+		min-width: fit-content
+
+		border: 3px solid $red
+		border-radius: 30px
+
+		@media (max-width: $mobile)
+			margin-bottom: 1rem
+
+		&--standart
+			background: rgba(217, 204, 185, 0.5)
+			margin-right: 0.5rem
+
+		&--pro
+			background: rgba(135, 166, 198, 0.5)
+			margin-left: 0.5rem
+
+
+
+
+
+
+// Courses
 
 .courses
 	margin: 7rem auto
@@ -166,7 +236,6 @@ body
 		z-index: 10
 		position: relative
 
-
 	&__brief-information
 		@media (min-width: $mobile) and (max-width: $desktop)
 			display: flex
@@ -178,8 +247,6 @@ body
 
 	&__description
 		@media (min-width: $mobile) and (max-width: $desktop)
-
-
 
 	&__article-for-whom, &__text
 		@include montserrat-400-24
@@ -210,8 +277,6 @@ body
 			@include montserrat-400-20
 			line-height: 22px
 
-
-
 	&__point
 		display: grid
 		grid-template-columns: 1fr 3fr
@@ -228,12 +293,9 @@ body
 		justify-content: space-around
 		flex-wrap: nowrap
 		margin-top: 2rem
-
 		
 		@media (max-width: $mobile)
 			flex-direction: column
-
-
 
 	&__price-wrap
 		flex: 50% 1 1
@@ -306,8 +368,10 @@ body
 
 		margin-left: 30%
 
-	&__card-wrap
-		max-width: 45%
+		@media (min-width: $mobile) and (max-width: $tablet)
+			margin-left: 20%
+		@media (max-width: $mobile)
+			margin-left: 5%
   
 	&__card
 		display: flex
@@ -315,9 +379,11 @@ body
 		align-items: flex-start
 		min-width: 0
 		max-height: 35vh
-		text-overflow: ellipsis
+		overflow-y: scroll
 
-		padding: 1em
+		@media (max-width: $tablet)
+			flex-direction: column
+			max-height: 50vh
 
 	&__img-container
 		position: relative
@@ -326,6 +392,10 @@ body
 		margin: auto
 
 		flex: 2 1 25% 
+		@media (max-width: $tablet)
+			flex: 2 1 35% 
+			@media (max-width: $mobile)
+			flex: 2 1 45%
 
 		img
 			@include img-fit
@@ -359,17 +429,19 @@ body
 		color: $black
 		line-height: 18px
 		flex: 1 2 75% 
-		padding: 2rem 1rem
-
-		max-height: 20vh
+		padding: 0 1rem
 		text-overflow: ellipsis
-		overflow-y: scroll
+
+		@media (max-width: $tablet)
+			flex: 2 1 65% 
+		@media (max-width: $mobile)
+			flex: 2 1 55% 
+
 
 	&__client-name
 		@include montserrat-400-24
 		
 		margin-top: 1rem
-		padding-top: 3rem
 
 	&__client-opinion
 		margin: 1rem 0 0 0
