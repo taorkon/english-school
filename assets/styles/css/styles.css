@@ -416,6 +416,9 @@ body {
           align-items: flex-end;
   color: #000000;
 }
+.footer__logo {
+  margin-top: 4vw;
+}
 .footer__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,6 +444,8 @@ body {
 }
 .footer__disclaimer-holder {
   margin-bottom: 4vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .footer__disclaimer {
   font-family: Inter;
