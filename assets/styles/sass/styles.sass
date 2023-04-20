@@ -18,9 +18,6 @@ body
 	min-width: inherit
 	font-optical-sizing: auto
 
-abbr 
-	text-decoration: none
-
 ///swiper styles
 .swiper-pagination
 	position: static
@@ -77,6 +74,40 @@ abbr
 		background: $red
 		opacity: .4
 		z-index: -1
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before 
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before 
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
 
 
 //border-animation
@@ -217,6 +248,7 @@ abbr
 			flex-direction: row
 			justify-content: space-evenly
 		
+
 	&__course-duration, &__classes-duration
 		white-space: nowrap
 
@@ -276,6 +308,48 @@ abbr
 		@media (max-width: $mobile)
 			@include montserrat-400-20
 			line-height: 22px
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		//@include h5
+		color: $black
+		line-height: 29px
 
 	&__point
 		display: grid
