@@ -399,6 +399,9 @@ body {
   text-decoration: none;
   color: #A54A47;
 }
+.footer__tel:hover {
+  text-decoration: underline;
+}
 .footer__copy {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -446,4 +449,16 @@ body {
   line-height: 10px;
   font-size: 8px;
   color: #CA8D66;
+}
+.footer .logo-instagram:hover {
+  background: url(/assets/images/desktop/logo-instagram-shadow.png);
+}
+.footer .logo-telegram:hover {
+  background: url(/assets/images/desktop/logo-telegram-shadow.png);
+}
+.footer .logo-wapp:hover {
+  background: url(/assets/images/desktop/logo-whatsapp-shadow.png);
+}
+.footer .logo_handset:hover {
+  background: url(/assets/images/desktop/logo-handset-shadow.png);
 }
