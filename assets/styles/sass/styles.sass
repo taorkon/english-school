@@ -268,11 +268,18 @@ body
 		z-index: 10
 		position: relative
 
+		@media (min-width: $mobile) and (max-width: $tablet)
+			font-size: 55px !important
+
 	&__brief-information
 		@media (min-width: $mobile) and (max-width: $desktop)
 			display: flex
 			flex-direction: column
 			justify-content: space-evenly
+
+			@media (min-width: $mobile) and (max-width: $tablet)
+				font-size: 23px
+				white-space: normal
 
 			@media (max-width: $mobile)
 				@include montserrat-400-15
@@ -368,8 +375,9 @@ body
 		flex-wrap: nowrap
 		margin-top: 2rem
 		
-		@media (max-width: $mobile)
+		@media (max-width: $tablet)
 			flex-direction: column
+			align-items: center
 
 	&__price-wrap
 		flex: 50% 1 1
@@ -380,16 +388,25 @@ body
 		border: 3px solid $red
 		border-radius: 30px
 
+		@media (min-width: $mobile) and (max-width: $tablet)
+			width: 80%
+			margin-top: 1rem
 		@media (max-width: $mobile)
-			margin-bottom: 1rem
+			width: 95%
+			margin-top: 1rem
+			font-size: 28px !important
 
 		&--standart
 			background: rgba(217, 204, 185, 0.5)
 			margin-right: 0.5rem
+			@media (max-width: $tablet)
+				margin-right: 0
 
 		&--pro
 			background: rgba(135, 166, 198, 0.5)
 			margin-left: 0.5rem
+			@media (max-width: $tablet)
+				margin-left: 0
 
 	&__img-wrap 
 		position: relative
@@ -523,12 +540,6 @@ body
 
 //Section styles
 
-//Header
-
-//Intro
-
-//About
-
 .about
 	max-width: 1920px
 	@include flex-center-center
@@ -583,10 +594,6 @@ body
 
 	&__border
 		position: absolute
-
-//Courses
-
-//Feedback
 
 //Tutors
 .tutors__container
@@ -667,10 +674,6 @@ body
 		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
 		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
 		@include flex-center-space-around
-
-		//height: 150px
-		//max-width: 1920px
-		//background: $beigeDark
 
 	&__tel-holder
 		@include montserrat-400-20

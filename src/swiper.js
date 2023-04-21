@@ -1,7 +1,7 @@
 new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   speed: 500,
   spaceBetween: 15,
 
