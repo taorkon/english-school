@@ -32,40 +32,51 @@
 
 	&__logo
 		display: flex
-		width: 10%
+		width: 7%
 		height: 50%
-		margin: 25px 104px 20px 150px
+		margin-top: 2.5vh
+		margin-left: 7vw
 
 	&__menu
 		@include flex-center-space-around
-		width: 696px
-		height: 29px
-		margin: 25px 80px 25px 0px
+		width: 95%
+		height: 60%
+		margin-top: 1.5vh
+		margin-left: 7vw
+		margin-right: 3vw
 		list-style: none
 
 	&__menu_item
-		font-family: Montserrat Alternates
-		font-style: normal
-		font-weight: 400
-		line-height: 29px
-		font-size: 24px
+		@include montserrat-400-24
 		text-decoration: none
 		color: $black
 
 	&__menu_item:hover
-		text-decoration: underline #9747FF
+		text-decoration: underline $blue
+		opacity: 0.75
 
 	&__socials
 		@include flex-center-space-around
-		width: 335px
-		height: 25px
-		margin: 30px 272px 0px 0px
+		width: 45%
+		height: 50%
+		margin-left: 17vw
 		list-style: none
 
 	&__socials-icons
 		width: 87%
 		hight: 87%
 
+	&__socials-icons_instagram:hover
+		filter: drop-shadow(5px 5px 10px #d11d98)
+
+	&__socials-icons_telegram:hover
+		filter: drop-shadow(5px 5px 10px #2ca6df)
+
+	&__socials-icons_whatsapp:hover
+		filter: drop-shadow(5px 5px 10px #1bb541)
+
+	&__socials-icons-handset:hover
+		filter: drop-shadow(5px 5px 10px #1e1b1e)
 //Intro
 
 //About

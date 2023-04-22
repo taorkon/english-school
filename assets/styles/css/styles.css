@@ -1,7 +1,82 @@
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 * ::before,
 * ::after {
   box-sizing: inherit;
+}
+
+.header {
+  max-width: 1920px;
+  max-height: 80px;
+  background: #D9CCB9;
+}
+.header__container {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+.header__logo {
+  display: flex;
+  width: 7%;
+  height: 50%;
+  margin-top: 2.5vh;
+  margin-left: 7vw;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  height: 60%;
+  margin-top: 1.5vh;
+  margin-left: 7vw;
+  margin-right: 3vw;
+  list-style: none;
+}
+.header__menu_item {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+.header__menu_item:hover {
+  text-decoration: underline #87A6C6;
+  opacity: 0.75;
+}
+.header__socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+  height: 50%;
+  margin-left: 17vw;
+  list-style: none;
+}
+.header__socials-icons {
+  width: 87%;
+  hight: 87%;
+}
+.header__socials-icons_instagram:hover {
+  filter: drop-shadow(5px 5px 10px #d11d98);
+}
+.header__socials-icons_telegram:hover {
+  filter: drop-shadow(5px 5px 10px #2ca6df);
+}
+.header__socials-icons_whatsapp:hover {
+  filter: drop-shadow(5px 5px 10px #1bb541);
+}
+.header__socials-icons-handset:hover {
+  filter: drop-shadow(5px 5px 10px #1e1b1e);
 }
 
 .feedback__container {
@@ -44,56 +119,4 @@
 .feedback__client-opinion {
   margin: 1rem 0 0 0;
   padding: 0;
-}
-
-.header {
-  max-width: 1920px;
-  max-height: 80px;
-  background: #D9CCB9;
-}
-.header__container {
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-  width: 100%;
-}
-.header__logo {
-  display: flex;
-  width: 10%;
-  height: 50%;
-  margin: 25px 104px 20px 150px;
-}
-.header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 696px;
-  height: 29px;
-  margin: 25px 80px 25px 0px;
-  list-style: none;
-}
-.header__menu_item {
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 29px;
-  font-size: 24px;
-  text-decoration: none;
-  color: #000000;
-}
-.header__menu_item:hover {
-  text-decoration: underline #9747FF;
-}
-.header__socials {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 335px;
-  height: 25px;
-  margin: 30px 272px 0px 0px;
-  list-style: none;
-}
-.header__socials-icons {
-  width: 87%;
-  hight: 87%;
 }
