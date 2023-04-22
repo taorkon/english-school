@@ -482,7 +482,6 @@ body {
   font-size: 48px;
   margin-left: auto;
   margin-right: auto;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-bottom: 5%;
 }
@@ -493,17 +492,15 @@ body {
   align-items: center;
 }
 .credentials__elements__list {
-  -moz-column-count: 2;
   column-count: 2;
--moz-column-width: 35vw;
   column-width: 35vw;
-padding-left: 2rem;
-list-style-type: none;
-font-family: Montserrat Alternates;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-font-size: 20px;
+  padding-left: 2rem;
+  list-style-type: none;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
 }
 .credentials__elements__list--li {
   font-size: 25px;
@@ -760,7 +757,6 @@ font-size: 20px;
     opacity: 1;
   }
 }
-
 .footer {
   max-width: 1920px;
   background: #D9CCB9;
