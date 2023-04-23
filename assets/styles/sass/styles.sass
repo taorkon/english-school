@@ -17,6 +17,44 @@ body
 	margin: 0
 	min-width: inherit
 
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
+//border-animation
+.border-animation
+	display: inline-block
+	padding: 1rem 2rem
+	border: 2px solid #D9CCB9
+	border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
+	animation: animatedHeader 10s infinite
+
+@keyframes animatedHeader
+	0%
+		border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
+	10%
+		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
+	25%
+		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
+	40%
+		border-radius: 42% 80% 72% 25%/65% 55% 55% 30%
+	55%
+		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
+	75%
+		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
+
 // Re-usable BEM blocks
 
 .button-consult
@@ -37,14 +75,132 @@ body
 .h7
 	@include montserrat-700-20
 
+//Courses
+
+.courses
+	margin: 7rem auto
+
+	&__container
+		max-width: 1320px
+		margin: 8rem auto
+		padding: 1rem
+
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-rows: 1fr
+		grid-gap: 3rem
+
+		&:first-of-type
+			margin: 3rem auto 7rem auto
+
+	&__title
+		@include montserrat-500-48
+		@include margin-auto
+		max-width: fit-content
+
+	&__left-aside
+		display: flex
+		flex-direction: column
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		@include montserrat-400-20
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		@include montserrat-400-20
+		color: $black
+		line-height: 29px
+
+	&__point
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-rows: 1fr
+		grid-gap: 1rem
+
+		justify-items: stretch
+		align-items: center
+		line-height: 29px
+
+	&__prices-wrap
+		display: flex
+		justify-content: space-around
+		flex-wrap: nowrap
+		margin-top: 2rem
+
+	&__price-wrap
+		flex: 50% 1 1
+		text-align: center
+		padding: 0.5rem
+		min-width: fit-content
+
+		border: 3px solid $red
+		border-radius: 30px
+
+		&--standart
+			background: rgba(217, 204, 185, 0.5)
+			margin-right: 0.5rem
+
+		&--pro
+			background: rgba(135, 166, 198, 0.5)
+			margin-left: 0.5rem
+
+	&__img-wrap
+		position: relative
+
+	&__img
+		max-width: 100%
+		width: 100%
+		z-index: 1
+
+		img
+			max-width: 100%
+			width: 100%
+
+	&__announcement
+		display: inline-block
+		margin-top: 2rem
+
+	&__list-header
+		margin-top: 1.5rem
+
+.img-frame
+	position: absolute
+	z-index: 3
+	background-color: transparent
+	max-width: 100%
+	width: 100%
+	min-height: 100%
+	height: 100%
+	border: 2px solid #D9CCB9
+	border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+	animation: animatedBorder 10s infinite
+	top: 0.1px
+
 // Feedback
 
 .feedback
 	&__container
 		max-width: 1320px
+		width: 100%
 
 		margin-left: auto
 		margin-right: auto
+
+	&__header
+		display: inline-block
+		padding: 2rem
 
 	&__card-wrap
 		max-width: 45%
@@ -54,23 +210,54 @@ body
 		justify-content: space-between
 		align-items: flex-start
 		min-width: 0
+		max-height: 35vh
+		text-overflow: ellipsis
 
 		padding: 1em
 
 	&__img-container
+		position: relative
 		max-width: 25%
 		max-height: 100%
+		margin: auto
 
 		flex: 2 1 25%
 
 		img
 			@include img-fit
-			border-radius: 50%
+			border: 1.43px solid #D9CCB9
+			border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+			z-index: 1
+			animation: animatedBorder 10s infinite
+
+		img::before
+			@include img-fit
+			position: absolute
+			z-index: 2
+
+		@keyframes animatedBorder
+			0%
+				border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+			25%
+				border-radius: 58% 42% 75% 25%/76% 46% 54% 24%
+			50%
+				border-radius: 50% 50% 33% 67%/55% 27% 73% 45%
+			75%
+				border-radius: 33% 67% 58% 42%/63% 68% 32% 37%
 
 	&__text-side
 		@include flex-column-space-evenly
+		@include montserrat-400-20
+
 		flex: 1 2 75%
 		padding: 0 10px
+		color: $black
+		line-height: 18px
+		flex: 1 2 75%
+		padding: 0 10px
+
+		max-height: 20vh
+		text-overflow: ellipsis
 
 	&__client-name
 		margin: 1rem 0 0 0
@@ -78,9 +265,6 @@ body
 	&__client-opinion
 		margin: 1rem 0 0 0
 		padding: 0
-
-.button-consult
-		//style here
 
 //Section styles
 
@@ -105,9 +289,9 @@ body
 		@include flex-column-center
 
 	&__title
-	@include montserrat-500-48
-	color: $black
-	margin-bottom: 14vh
+		@include montserrat-500-48
+		color: $black
+		margin-bottom: 14vh
 
 	&__content
 		width: 100%
@@ -120,6 +304,7 @@ body
 
 	&__image
 		height: 47vh
+		transform: scale(-1, 1)
 
 	&__text-holder
 		width: 50%
@@ -134,10 +319,97 @@ body
 	&__text-2
 		@include montserrat-400-20
 		color: $black
-		line-height: 40px
 
 	&__border
 		position: absolute
+
+@media (min-width:1081px) and (max-width: 1280px)
+	.about
+		&__image-holder
+			width: 30%
+			margin-left: 10vw
+
+		&__image
+			height: 40vh
+
+@media (min-width:767px) and (max-width: 1080px)
+	.about
+		&__image-holder
+			width: 30%
+			margin-left: 5vw
+
+		&__image
+			height: 35vh
+
+@media (min-width:321px) and (max-width: 767px)
+	.about
+		&__title-holder
+			height: 25vh
+
+		&__content
+			@include flex-column-center
+			margin-bottom: 1vh
+
+		&__image-holder
+			width: 100%
+			padding-bottom: 1vh
+			margin-left: 0vw
+
+		&__image
+			width: 100%
+
+		&__text-holder
+			width: 100%
+			padding-left: 08vw
+			padding-right: 05vw
+
+		&__text
+			@include montserrat-400-20
+			text-align: center
+
+		&__text-2
+			@include montserrat-400-15
+
+	.text-icon
+		width: 90%
+		text-align: justify
+
+@media (min-width:250px) and (max-width: 320px)
+	.about
+		&__title-holder
+			height: 25vh
+
+		&__title
+		@include montserrat-500-26
+		margin-bottom: 5vh
+		text-align: center
+
+		&__content
+			@include flex-column-center
+			margin-bottom: 1vh
+
+		&__image-holder
+			width: 100%
+			padding-bottom: 1vh
+			margin-left: 0vw
+
+		&__image
+			width: 100%
+
+		&__text-holder
+			width: 100%
+			padding-left: 08vw
+
+		&__text
+			@include montserrat-400-20
+			text-align: center
+
+		&__text-2
+			@include montserrat-400-15
+
+	.text-icon
+		width: 80%
+		text-align: justify
 
 //Courses
 
@@ -217,8 +489,8 @@ body
 	background: $beigeDark
 
 	&__container
-		width: 100%
 		@include flex-center-space-around
+		width: 100%
 		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
 		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
 		//height: 150px
@@ -227,7 +499,7 @@ body
 
 	&__tel-holder
 		@include montserrat-500-36
-		padding-top: 3vh
+		padding-top: 2vh
 
 	&__tel
 		text-decoration: none
@@ -240,12 +512,15 @@ body
 		@include flex-flex-end
 		color: $black
 
-	&__logo
+	&__logo-holder
 		margin-top: 4vw
+
+	&__logo
+		max-width: 400px
 
 	&__socials
 		@include flex-column-center
-		width: 18vw
+		width: 100%
 		margin-top: 2vw
 
 	&__socials-icons
@@ -257,7 +532,8 @@ body
 
 	&__disclaimer-holder
 		margin-bottom: 4vh
-		align-content: center
+		align-content: flex-start
+		width: 100%
 
 	&__disclaimer
 		@include inter-400-8
@@ -278,3 +554,99 @@ body
 	.logo_handset
 		&:hover
 			background: url(/assets/images/desktop/logo-handset-shadow.png)
+
+@media (min-width:1081px) and (max-width: 1280px)
+	.footer
+
+		&__tel-holder
+			@include montserrat-700-24
+			padding-top: 1vh
+
+		&__logo
+			max-width: 250px
+
+@media (min-width:767px) and (max-width: 1080px)
+	.footer
+		&__container
+			@include flex-column-reverse-center
+
+		&__tel-holder
+			@include flex-center-center
+			@include montserrat-500-36
+			padding-top: 1vh
+
+		&__logo
+			max-width: 300px
+
+		&__disclaimer-holder
+			margin-bottom: 2vh
+			align-content: center
+
+@media (min-width:321px) and (max-width: 767px)
+	.footer
+		&__container
+			@include flex-column-reverse-center
+
+		&__tel-holder
+			@include flex-center-center
+			@include montserrat-500-26
+			padding-top: 1vh
+
+		&__copy
+			@include montserrat-400-15
+
+		&__logo
+			max-width: 250px
+
+		&__disclaimer-holder
+			margin-bottom: 2vh
+			align-content: center
+
+@media (min-width:250px) and (max-width: 320px)
+	.footer
+		&__container
+			@include flex-column-reverse-center
+
+		&__tel-holder
+			@include flex-center-center
+			@include montserrat-500-20
+			padding-top: 1vh
+
+		&__copy
+			@include montserrat-400-10
+
+		&__logo
+			max-width: 200px
+
+		&__disclaimer-holder
+			margin-bottom: 2vh
+			align-content: center
+
+		&__disclaimer
+			@include inter-400-6
+			padding-left: 1vh
+
+		.logo-instagram
+			width: 95%
+
+			&:hover
+				background: url(/assets/images/desktop/logo-instagram-shadow.png)
+				background-size: 98%
+
+		.logo-telegram
+			width: 90%
+			&:hover
+				background: url(/assets/images/desktop/logo-telegram-shadow.png)
+				background-size: 98%
+
+		.logo-wapp
+			width: 95%
+			&:hover
+				background: url(/assets/images/desktop/logo-whatsapp-shadow.png)
+				background-size: 98%
+
+		.logo_handset
+			width: 95%
+			&:hover
+				background: url(/assets/images/desktop/logo-handset-shadow.png)
+				background-size: 98%
