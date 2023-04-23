@@ -572,7 +572,7 @@ body {
   position: absolute;
 }
 
-@media (min-width: 1081px) and (max-width: 1280px) {
+@media (min-width: 1080px) and (max-width: 1280px) {
   .about__image-holder {
     width: 30%;
     margin-left: 10vw;
@@ -589,8 +589,19 @@ body {
   .about__image {
     height: 35vh;
   }
+  .about__text {
+    line-height: 25px;
+  }
+  .about__text-2 {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
-@media (min-width: 321px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .about__title-holder {
     height: 25vh;
   }
@@ -627,6 +638,7 @@ body {
     line-height: 40px;
     font-size: 20px;
     text-align: center;
+    line-height: 15px;
   }
   .about__text-2 {
     font-family: Montserrat Alternates;
@@ -634,6 +646,7 @@ body {
     font-weight: 400;
     line-height: 40px;
     font-size: 15px;
+    line-height: 15px;
   }
   .text-icon {
     width: 90%;
@@ -685,6 +698,7 @@ body {
     line-height: 40px;
     font-size: 20px;
     text-align: center;
+    line-height: 15px;
   }
   .about__text-2 {
     font-family: Montserrat Alternates;
@@ -692,6 +706,7 @@ body {
     font-weight: 400;
     line-height: 40px;
     font-size: 15px;
+    line-height: 15px;
   }
   .text-icon {
     width: 80%;
@@ -882,19 +897,19 @@ body {
   color: #CA8D66;
 }
 .footer .logo-instagram:hover {
-  background: url(/assets/images/desktop/logo-instagram-shadow.png);
+  background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg);
 }
 .footer .logo-telegram:hover {
-  background: url(/assets/images/desktop/logo-telegram-shadow.png);
+  background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg);
 }
 .footer .logo-wapp:hover {
-  background: url(/assets/images/desktop/logo-whatsapp-shadow.png);
+  background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg);
 }
 .footer .logo_handset:hover {
-  background: url(/assets/images/desktop/logo-handset-shadow.png);
+  background: url(/assets/images/desktop/logo-handset-shadow-svg.svg);
 }
 
-@media (min-width: 1081px) and (max-width: 1280px) {
+@media (min-width: 1080px) and (max-width: 1280px) {
   .footer__tel-holder {
     font-family: Montserrat Alternates;
     font-style: normal;
@@ -946,7 +961,7 @@ body {
         align-content: center;
   }
 }
-@media (min-width: 321px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1049,28 +1064,28 @@ body {
     width: 95%;
   }
   .footer .logo-instagram:hover {
-    background: url(/assets/images/desktop/logo-instagram-shadow.png);
+    background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg);
     background-size: 98%;
   }
   .footer .logo-telegram {
     width: 90%;
   }
   .footer .logo-telegram:hover {
-    background: url(/assets/images/desktop/logo-telegram-shadow.png);
+    background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg);
     background-size: 98%;
   }
   .footer .logo-wapp {
     width: 95%;
   }
   .footer .logo-wapp:hover {
-    background: url(/assets/images/desktop/logo-whatsapp-shadow.png);
+    background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg);
     background-size: 98%;
   }
   .footer .logo_handset {
     width: 95%;
   }
   .footer .logo_handset:hover {
-    background: url(/assets/images/desktop/logo-handset-shadow.png);
+    background: url(/assets/images/desktop/logo-handset-shadow-svg.svg);
     background-size: 98%;
   }
 }

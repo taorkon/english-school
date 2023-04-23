@@ -323,7 +323,7 @@ body
 	&__border
 		position: absolute
 
-@media (min-width:1081px) and (max-width: 1280px)
+@media (min-width:1080px) and (max-width: 1280px)
 	.about
 		&__image-holder
 			width: 30%
@@ -341,7 +341,14 @@ body
 		&__image
 			height: 35vh
 
-@media (min-width:321px) and (max-width: 767px)
+		&__text
+			line-height: 25px
+
+		&__text-2
+			@include montserrat-400-20
+			line-height: 25px
+
+@media (min-width:320px) and (max-width: 767px)
 	.about
 		&__title-holder
 			height: 25vh
@@ -366,9 +373,11 @@ body
 		&__text
 			@include montserrat-400-20
 			text-align: center
+			line-height: 15px
 
 		&__text-2
 			@include montserrat-400-15
+			line-height: 15px
 
 	.text-icon
 		width: 90%
@@ -403,9 +412,11 @@ body
 		&__text
 			@include montserrat-400-20
 			text-align: center
+			line-height: 15px
 
 		&__text-2
 			@include montserrat-400-15
+			line-height: 15px
 
 	.text-icon
 		width: 80%
@@ -541,21 +552,21 @@ body
 
 	.logo-instagram
 		&:hover
-			background: url(/assets/images/desktop/logo-instagram-shadow.png)
+			background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg)
 
 	.logo-telegram
 		&:hover
-			background: url(/assets/images/desktop/logo-telegram-shadow.png)
+			background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg)
 
 	.logo-wapp
 		&:hover
-			background: url(/assets/images/desktop/logo-whatsapp-shadow.png)
+			background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg)
 
 	.logo_handset
 		&:hover
-			background: url(/assets/images/desktop/logo-handset-shadow.png)
+			background: url(/assets/images/desktop/logo-handset-shadow-svg.svg)
 
-@media (min-width:1081px) and (max-width: 1280px)
+@media (min-width:1080px) and (max-width: 1280px)
 	.footer
 
 		&__tel-holder
@@ -582,7 +593,7 @@ body
 			margin-bottom: 2vh
 			align-content: center
 
-@media (min-width:321px) and (max-width: 767px)
+@media (min-width:320px) and (max-width: 767px)
 	.footer
 		&__container
 			@include flex-column-reverse-center
@@ -630,23 +641,23 @@ body
 			width: 95%
 
 			&:hover
-				background: url(/assets/images/desktop/logo-instagram-shadow.png)
+				background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg)
 				background-size: 98%
 
 		.logo-telegram
 			width: 90%
 			&:hover
-				background: url(/assets/images/desktop/logo-telegram-shadow.png)
+				background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg)
 				background-size: 98%
 
 		.logo-wapp
 			width: 95%
 			&:hover
-				background: url(/assets/images/desktop/logo-whatsapp-shadow.png)
+				background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg)
 				background-size: 98%
 
 		.logo_handset
 			width: 95%
 			&:hover
-				background: url(/assets/images/desktop/logo-handset-shadow.png)
+				background: url(/assets/images/desktop/logo-handset-shadow-svg.svg)
 				background-size: 98%
