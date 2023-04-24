@@ -43,6 +43,7 @@ body
 	border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
 	animation: animatedHeader 10s infinite
 
+
 @keyframes animatedHeader  
 	0% 
 		border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
@@ -59,12 +60,26 @@ body
 
 
 
-
-
 // Re-usable BEM blocks
 
 .button-consult
 	//style here
+	display: inline-block
+	background: $red
+	color: $beigeBg
+	@include h3
+	border-radius: 20px 
+	border: $red
+	cursor: pointer 
+	user-select: none
+	padding: 22px 86px
+	margin-bottom: 5%
+	margin-top: 5%
+
+.button-consult:hover
+	color: $blue
+	opacity: 1
+	transition: 2s
 
 .text-icon
 	padding-left: 0px
@@ -413,6 +428,8 @@ body
 .credentials
 	max-width: 1920px
 	margin: 0 auto
+	box-sizing: border-box
+	background: $beigeBg
 
 	&__header
 		@include flex-center-center
@@ -429,18 +446,17 @@ body
 
 		&__list
 			column-count: 2
-			column-width: 35vw
+			column-width: 37vw
 			padding-left: 2rem
 			list-style-type: none
 			@include h5
             
 			&--li
-				font-size: 25px
+				font-size: 1.5rem
 				padding-left: 4rem
-				margin-bottom: 2rem
+				margin-bottom: 1rem
 				background-image: url('../../images/desktop/diploma-img.svg')
 				background-position: 0 center
-				background-size: 1.8 rem 1.8 rem
 				background-repeat: no-repeat
 				padding-bottom: 1rem
 
@@ -456,6 +472,9 @@ body
 			&--a:active
 				text-decoration: underline
 
+	&__button
+		@include flex-center-center
+	
 .modal
 	display: none
 	position: fixed
@@ -467,7 +486,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -475,7 +494,7 @@ body
 		width: 30%
 		height: 30%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
@@ -498,7 +517,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -506,18 +525,11 @@ body
 		width: 30%
 		height: 30%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
     
-@keyframes animatetop
-	from 
-		opacity: 0
-        
-	to
-		opacity: 1
-
 .modal2
 	display: none
 	position: fixed
@@ -529,7 +541,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -537,17 +549,11 @@ body
 		width: 40%
 		height: 40%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
     
-@keyframes animatetop
-	from 
-		opacity: 0
-        
-	to
-		opacity: 1
 
 .modal3
 	display: none
@@ -560,7 +566,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -568,18 +574,10 @@ body
 		width: 40%
 		height: 40%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
-    
-@keyframes animatetop
-	from 
-		opacity: 0
-        
-	to
-		opacity: 1
-
 
 .modal4
 	display: none
@@ -592,7 +590,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -600,17 +598,10 @@ body
 		width: 30%
 		height: 30%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
-    
-@keyframes animatetop
-	from 
-		opacity: 0
-        
-	to
-		opacity: 1
 
 .modal5
 	display: none
@@ -623,7 +614,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -631,18 +622,10 @@ body
 		width: 30%
 		height: 30%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
-    
-@keyframes animatetop
-	from 
-		opacity: 0
-        
-	to
-		opacity: 1
-
 
 .modal6
 	display: none
@@ -655,7 +638,7 @@ body
 	width: 100%
 	height: 100%
 	overflow: auto
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.2)
 
 	&__content
 		position: relative
@@ -663,17 +646,10 @@ body
 		width: 30%
 		height: 30%
 		animation-name: animatetop
-		animation-duration: 1.2s
+		animation-duration: 1s
     
 	&__body
 		padding: 4px
-    
-@keyframes animatetop
-	from 
-		opacity: 0
-        
-	to
-		opacity: 1
 
 //Footer
 
