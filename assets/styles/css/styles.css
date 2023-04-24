@@ -403,10 +403,13 @@ body {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 4rem;
 }
 .tutors__item {
-  width: 40%;
+  flex-basis: 50%;
+  padding: 1.5rem;
+}
+.tutors__item:nth-child(even) {
+  margin-top: 20rem;
 }
 .tutors__img-container {
   position: relative;
