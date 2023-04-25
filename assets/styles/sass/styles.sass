@@ -328,9 +328,9 @@ body
 		position: absolute
 
 .about-double
-		display: none
+	display: none
 
-@media (min-width:1240px) and (max-width: 1280px)
+@media (min-width:1240px) and (max-width: 1330px)
 	.about
 		&__image-holder
 			width: 30%
@@ -357,48 +357,49 @@ body
 			background: $beigeBg
 
 		&__title-holder-double
-			@include montserrat-500-36
-			color: $black
-			margin-bottom: 8vh
 			@include flex-column-center
 
-		&__title-double
-			@include montserrat-500-36
+		&__title
+			@include montserrat-500-48
 			color: $black
-			margin-bottom: 14vh
+			margin-bottom: 8vh
 
 		&__content-double
 			width: 100%
 			display: flex
 			flex-wrap: wrap
-
+			
 		&__image-holder-double
-			width: 30%
-
-			padding-bottom: 1vh
+			width: 40%
+			margin-bottom: 1vh
 
 		&__image-double
-			height: 30vh
+			width: 40vh
+			margin-left: 9vh
+			margin-top: 7vh
 			transform: scale(-1, 1)
-
+			
 		&__text-holder-double
-			width: 50%
-			padding-left: 10vw
-			display: flex
-			flex-direction: column
-
+			@include flex-column-space-evenly
+			width: 60%
+			padding-left: 15vh
+			padding-top: 10vh
+			padding-right: 5vh
+			
 		&__text
 			@include montserrat-400-24
 			color: $black
 			line-height: 30px
+			width: 100%
 
 		&__text-2
 			@include montserrat-400-20
 			color: $black
 
 		&__icon-double
-			width: 80%
+			width: 100%
 			margin-left: 10vh
+			margin-right: 5vh
 
 @media (min-width:767px) and (max-width: 920px)
 	.about

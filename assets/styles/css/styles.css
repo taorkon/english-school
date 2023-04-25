@@ -581,7 +581,7 @@ body {
   display: none;
 }
 
-@media (min-width: 1240px) and (max-width: 1280px) {
+@media (min-width: 1240px) and (max-width: 1330px) {
   .about__image-holder {
     width: 30%;
     margin-left: 10vw;
@@ -617,13 +617,6 @@ body {
     background: #FFFBF8;
   }
   .about-double__title-holder-double {
-    font-family: Montserrat Alternates;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 44px;
-    font-size: 36px;
-    color: #000000;
-    margin-bottom: 8vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -635,14 +628,14 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about-double__title-double {
+  .about-double__title {
     font-family: Montserrat Alternates;
     font-style: normal;
     font-weight: 500;
-    line-height: 44px;
-    font-size: 36px;
+    line-height: 59px;
+    font-size: 48px;
     color: #000000;
-    margin-bottom: 14vh;
+    margin-bottom: 8vh;
   }
   .about-double__content-double {
     width: 100%;
@@ -653,17 +646,17 @@ body {
         flex-wrap: wrap;
   }
   .about-double__image-holder-double {
-    width: 30%;
-    padding-bottom: 1vh;
+    width: 40%;
+    margin-bottom: 1vh;
   }
   .about-double__image-double {
-    height: 30vh;
+    width: 40vh;
+    margin-left: 9vh;
+    margin-top: 7vh;
     -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1);
   }
   .about-double__text-holder-double {
-    width: 50%;
-    padding-left: 10vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -671,6 +664,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 60%;
+    padding-left: 15vh;
+    padding-top: 10vh;
+    padding-right: 5vh;
   }
   .about-double__text {
     font-family: Montserrat Alternates;
@@ -680,6 +680,7 @@ body {
     font-size: 24px;
     color: #000000;
     line-height: 30px;
+    width: 100%;
   }
   .about-double__text-2 {
     font-family: Montserrat Alternates;
@@ -690,8 +691,9 @@ body {
     color: #000000;
   }
   .about-double__icon-double {
-    width: 80%;
+    width: 100%;
     margin-left: 10vh;
+    margin-right: 5vh;
   }
 }
 @media (min-width: 767px) and (max-width: 920px) {
