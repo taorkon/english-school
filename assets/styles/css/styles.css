@@ -531,17 +531,18 @@ body {
 }
 .about__image-holder {
   width: 50%;
-  margin-left: 13vw;
+  margin-left: 10vw;
   padding-bottom: 37vh;
 }
 .about__image {
-  height: 47vh;
+  height: 44vh;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 .about__text-holder {
   width: 50%;
   padding-right: 5vw;
+  padding-left: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,7 +588,7 @@ body {
     margin-left: 10vw;
   }
   .about__image {
-    height: 40vh;
+    height: 35vh;
   }
   .about-double {
     display: none;
@@ -651,7 +652,7 @@ body {
   }
   .about-double__image-double {
     width: 40vh;
-    margin-left: 9vh;
+    margin-left: 6vh;
     margin-top: 7vh;
     -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1);
@@ -668,7 +669,7 @@ body {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 60%;
-    padding-left: 15vh;
+    padding-left: 16vh;
     padding-top: 10vh;
     padding-right: 5vh;
   }
