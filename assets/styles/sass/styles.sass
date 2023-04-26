@@ -142,7 +142,6 @@ body
 	display: inline-block
 	background: $red
 	color: $beigeBg
-	@include h3
 	border-radius: 20px 
 	border: $red
 	cursor: pointer 
@@ -688,7 +687,6 @@ body
 
 	&__header
 		@include flex-center-center
-		@include h1
 		@include margin-auto
 		max-width: fit-content
 		margin-bottom: 5%
@@ -704,7 +702,6 @@ body
 			column-width: 37vw
 			padding-left: 2rem
 			list-style-type: none
-			@include h5
             
 			&--li
 				font-size: 1.5rem
@@ -729,6 +726,12 @@ body
 
 	&__button
 		@include flex-center-center
+
+@media screen and (max-width: 1260px) 
+	.credentials
+		&__elements__list
+			column-count: 1
+	
 	
 .modal
 	display: none
