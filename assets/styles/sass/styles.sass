@@ -16,6 +16,81 @@ body
 	box-sizing: inherit
 	margin: 0
 	min-width: inherit
+	font-optical-sizing: auto
+
+///swiper styles
+.swiper-pagination
+	position: static
+	margin-top: 2rem
+
+.swiper-pagination-bullet
+	background-color: #A54A47
+
+
+// custom scrollbar
+
+::-webkit-scrollbar 
+	width: 6px
+	height: 70%
+
+::-webkit-scrollbar-track 
+	background: #f1f1f1
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb 
+	background: $blue
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb:hover 	
+	background: $red
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before 
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
+.nice-underline--red
+	display: inline-block
+	position: relative
+
+	&::before 
+		content: ""
+		position: absolute
+		bottom: 1px
+		width: 100%
+		height: 10px
+		transform: skew(-12deg)
+		background: $red
+		opacity: .4
+		z-index: -1
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before 
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
 
 // underline
 .nice-underline
@@ -92,68 +167,36 @@ body
 	color: $red
 
 .h6
-	@include h6
+	@include montserrat-500-36
 .h7
-	@include h7
+	@include montserrat-400-24
 
 
-//Courses
-
-.courses
+// Levels
+.levels
 	margin: 7rem auto
 
 	&__container
-		max-width: 1320px
-		margin: 8rem auto 
+		max-width: $max-desktop
+		margin: 3rem auto 
 		padding: 1rem
 
-		display: grid
-		grid-template-columns: 1fr 3fr
-		grid-template-rows: 1fr
-		grid-gap: 3rem
-
-		&:first-of-type
-			margin: 3rem auto 7rem auto
-
 	&__title
-		@include h1
+		@include montserrat-500-48
 		@include margin-auto
 		max-width: fit-content
-
-	&__left-aside
+	
+	&__steps
 		display: flex
-		flex-direction: column
-
-	&__english-level
+		justify-content: space-evenly
+		place-items: end normal
+		margin-bottom: -2rem
+	
+	&__step
 		@include fontEngLvl
-		text-align: end
+		font-size: 70px
 		color: $blue
 		white-space: nowrap
-		-webkit-text-stroke: .05em $red
-
-		margin-top: -5.1rem
-		z-index: 10
-		position: relative
-
-	&__article-for-whom
-		@include h5
-		color: $black
-		line-height: 29px
-
-	&__text-about
-		@include h5
-		color: $black
-		line-height: 29px
-
-	&__point
-		display: grid
-		grid-template-columns: 1fr 3fr
-		grid-template-rows: 1fr
-		grid-gap: 1rem
-
-		justify-items: stretch
-		align-items: center
-		line-height: 29px
 
 	&__prices-wrap
 		display: flex
@@ -170,6 +213,9 @@ body
 		border: 3px solid $red
 		border-radius: 30px
 
+		@media (max-width: $mobile)
+			margin-bottom: 1rem
+
 		&--standart
 			background: rgba(217, 204, 185, 0.5)
 			margin-right: 0.5rem
@@ -177,6 +223,208 @@ body
 		&--pro
 			background: rgba(135, 166, 198, 0.5)
 			margin-left: 0.5rem
+
+
+
+
+
+
+// Courses
+
+.courses
+	margin: 7rem auto
+
+	&__container
+		max-width: $max-desktop
+		margin: 8rem auto 
+		padding: 1rem
+
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-rows: 1fr
+		grid-gap: 3rem
+
+		&:first-of-type
+			margin: 3rem auto 7rem auto
+
+		@media (max-width: $desktop)
+			max-width: 97vw
+			display: flex
+			flex-direction: column
+
+	&__title
+		@include montserrat-500-48
+		@include margin-auto
+		max-width: fit-content
+
+	&__left-aside
+		display: flex
+		flex-direction: column
+		@include montserrat-400-20
+
+		@media (min-width: $mobile) and (max-width: $desktop)
+			flex-direction: row
+			justify-content: space-evenly
+		
+
+	&__course-duration, &__classes-duration
+		white-space: nowrap
+
+	&__common-information
+		@media (max-width: $desktop)
+			display: flex
+			flex-direction: column
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			font-size: 55px !important
+
+	&__brief-information
+		@media (min-width: $mobile) and (max-width: $desktop)
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+
+			@media (min-width: $mobile) and (max-width: $tablet)
+				font-size: 23px
+				white-space: normal
+
+			@media (max-width: $mobile)
+				@include montserrat-400-15
+
+	&__description
+		@media (min-width: $mobile) and (max-width: $desktop)
+
+	&__article-for-whom, &__text
+		@include montserrat-400-24
+		color: $black
+		line-height: 29px
+
+		@media (min-width: $mobile) and (max-width: $desktop)
+			@include montserrat-400-20
+			line-height: 24px
+		@media (max-width: $mobile)
+			@include montserrat-400-20
+			line-height: 22px
+
+	&__article-point
+		@media (max-width: $mobile)
+			margin-bottom: .5rem
+
+	&__article-point:last-of-type
+		margin-bottom: 1rem
+
+	&__text-about
+		@include montserrat-400-24
+		color: $black
+		line-height: 29px
+	
+	&__content
+		@media (max-width: $mobile)
+			@include montserrat-400-20
+			line-height: 22px
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__point
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-rows: 1fr
+		grid-gap: 1rem
+
+		justify-items: stretch
+		align-items: center
+		line-height: 29px
+		margin-top: 1rem
+
+	&__prices-wrap
+		display: flex
+		justify-content: space-around
+		flex-wrap: nowrap
+		margin-top: 2rem
+		
+		@media (max-width: $tablet)
+			flex-direction: column
+			align-items: center
+
+	&__price-wrap
+		flex: 50% 1 1
+		text-align: center
+		padding: 0.5rem
+		min-width: fit-content
+
+		border: 3px solid $red
+		border-radius: 30px
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			width: 80%
+			margin-top: 1rem
+		@media (max-width: $mobile)
+			width: 95%
+			margin-top: 1rem
+			font-size: 28px !important
+
+		&--standart
+			background: rgba(217, 204, 185, 0.5)
+			margin-right: 0.5rem
+			@media (max-width: $tablet)
+				margin-right: 0
+
+		&--pro
+			background: rgba(135, 166, 198, 0.5)
+			margin-left: 0.5rem
+			@media (max-width: $tablet)
+				margin-left: 0
 
 	&__img-wrap 
 		position: relative
@@ -215,19 +463,24 @@ body
 
 .feedback 
 	&__container 
-		max-width: 1320px
+		max-width: $max-desktop
 		width: 100%
 
 		margin-left: auto
 		margin-right: auto
 
 	&__header 
+		@include montserrat-500-48
+		max-width: fit-content
 		display: inline-block
 		padding: 2rem
-		
-  
-	&__card-wrap
-		max-width: 45%
+
+		margin-left: 30%
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			margin-left: 20%
+		@media (max-width: $mobile)
+			margin-left: 5%
   
 	&__card
 		display: flex
@@ -235,9 +488,11 @@ body
 		align-items: flex-start
 		min-width: 0
 		max-height: 35vh
-		text-overflow: ellipsis
+		overflow-y: scroll
 
-		padding: 1em
+		@media (max-width: $tablet)
+			flex-direction: column
+			max-height: 50vh
 
 	&__img-container
 		position: relative
@@ -246,6 +501,10 @@ body
 		margin: auto
 
 		flex: 2 1 25% 
+		@media (max-width: $tablet)
+			flex: 2 1 35% 
+			@media (max-width: $mobile)
+			flex: 2 1 45%
 
 		img
 			@include img-fit
@@ -272,32 +531,32 @@ body
 
 	&__text-side
 		@include flex-column-space-evenly
-		@include h5
+		@include montserrat-400-20
 
 		flex: 1 2 75%
 		padding: 0 10px
 		color: $black
 		line-height: 18px
 		flex: 1 2 75% 
-		padding: 0 10px
-
-		max-height: 20vh
+		padding: 0 1rem
 		text-overflow: ellipsis
 
+		@media (max-width: $tablet)
+			flex: 2 1 65% 
+		@media (max-width: $mobile)
+			flex: 2 1 55% 
+
+
 	&__client-name
-		margin: 1rem 0 0 0
+		@include montserrat-400-24
+		
+		margin-top: 1rem
 
 	&__client-opinion
 		margin: 1rem 0 0 0
 		padding: 0
 
 //Section styles
-
-//Header
-
-//Intro
-
-//About
 
 .about
 	max-width: 1920px
@@ -314,7 +573,7 @@ body
 		@include flex-column-center
 
 	&__title
-		@include h1
+		@include montserrat-500-48
 		color: $black
 		margin-bottom: 14vh
 
@@ -342,21 +601,17 @@ body
 		align-items: center
 
 	&__text
-		@include h2
+		@include montserrat-500-36
 		color: $black
 		line-height: 40px
 
 	&__text-2
-		@include h5
+		@include montserrat-400-24
 		color: $black
 		line-height: 40px
 
 	&__border
 		position: absolute
-
-//Courses
-
-//Feedback
 
 //Tutors
 .tutors__container
@@ -664,12 +919,8 @@ body
 		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
 		@include flex-center-space-around
 
-		//height: 150px
-		//max-width: 1920px
-		//background: $beigeDark
-
 	&__tel-holder
-		@include h3
+		@include montserrat-400-20
 		padding-top: 3vh
 
 	&__tel
@@ -677,7 +928,7 @@ body
 		color: $red
 
 	&__copy
-		@include h2
+		@include montserrat-400-24
 		display: flex
 		align-items: flex-end
 		color: $black
@@ -698,6 +949,6 @@ body
 		margin-bottom: 4vh
 
 	&__disclaimer
-		@include h4
+		@include montserrat-500-36
 		color: $powdery
 
