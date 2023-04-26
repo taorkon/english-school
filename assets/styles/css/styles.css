@@ -167,7 +167,7 @@ body {
 }
 
 .h6 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
@@ -175,7 +175,7 @@ body {
 }
 
 .h7 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
@@ -209,7 +209,7 @@ body {
   margin: 3rem auto 7rem auto;
 }
 .courses__title {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
@@ -230,7 +230,7 @@ body {
           flex-direction: column;
 }
 .courses__english-level {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 800;
   line-height: 122px;
@@ -244,7 +244,7 @@ body {
   position: relative;
 }
 .courses__article-for-whom {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -253,7 +253,7 @@ body {
   line-height: 29px;
 }
 .courses__text-about {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -443,7 +443,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -509,7 +509,7 @@ body {
           align-items: center;
 }
 .about__title {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
@@ -557,7 +557,7 @@ body {
           align-items: center;
 }
 .about__text {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -566,7 +566,7 @@ body {
   line-height: 40px;
 }
 .about__text-2 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -629,7 +629,7 @@ body {
             align-items: center;
   }
   .about-double__title {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 59px;
@@ -673,7 +673,7 @@ body {
     padding-right: 5vh;
   }
   .about-double__text {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
@@ -683,7 +683,7 @@ body {
     width: 100%;
   }
   .about-double__text-2 {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -771,7 +771,7 @@ body {
     padding-right: 5vw;
   }
   .about__text {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -780,7 +780,7 @@ body {
     line-height: 15px;
   }
   .about__text-2 {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -797,7 +797,7 @@ body {
 }
 @media (min-width: 250px) and (max-width: 320px) {
   .about {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -834,7 +834,7 @@ body {
     padding-left: 8vw;
   }
   .about__text {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -843,7 +843,7 @@ body {
     line-height: 15px;
   }
   .about__text-2 {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -970,7 +970,7 @@ body {
           box-sizing: border-box;
 }
 .footer__tel-holder {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
@@ -985,7 +985,7 @@ body {
   text-decoration: underline;
 }
 .footer__copy {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -1034,7 +1034,7 @@ body {
   width: 100%;
 }
 .footer__disclaimer {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 10px;
@@ -1056,7 +1056,7 @@ body {
 
 @media (min-width: 1080px) and (max-width: 1280px) {
   .footer__tel-holder {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
@@ -1090,7 +1090,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -1129,7 +1129,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -1137,7 +1137,7 @@ body {
     padding-top: 1vh;
   }
   .footer__copy {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -1175,7 +1175,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -1183,7 +1183,7 @@ body {
     padding-top: 1vh;
   }
   .footer__copy {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -1198,7 +1198,7 @@ body {
         align-content: center;
   }
   .footer__disclaimer {
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 10px;
