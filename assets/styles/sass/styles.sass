@@ -26,22 +26,21 @@ body
 .swiper-pagination-bullet
 	background-color: #A54A47
 
-
 // custom scrollbar
 
-::-webkit-scrollbar 
+::-webkit-scrollbar
 	width: 10px
 	height: 70%
 
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track
 	background: #f1f1f1
 	border-radius: 5px
 
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb
 	background: $blue
 	border-radius: 5px
 
-::-webkit-scrollbar-thumb:hover 	
+::-webkit-scrollbar-thumb:hover
 	background: $red
 
 // underline
@@ -49,7 +48,7 @@ body
 	display: inline-block
 	position: relative
 
-	&::before 
+	&::before
 		content: ""
 		position: absolute
 		bottom: 5px
@@ -64,7 +63,7 @@ body
 	display: inline-block
 	position: relative
 
-	&::before 
+	&::before
 		content: ""
 		position: absolute
 		bottom: 1px
@@ -80,7 +79,7 @@ body
 	display: inline-block
 	position: relative
 
-	&::before 
+	&::before
 		content: ""
 		position: absolute
 		bottom: 5px
@@ -90,14 +89,13 @@ body
 		background: $blue
 		opacity: .5
 		z-index: -1
-
 
 // underline
 .nice-underline
 	display: inline-block
 	position: relative
 
-	&::before 
+	&::before
 		content: ""
 		position: absolute
 		bottom: 5px
@@ -107,8 +105,6 @@ body
 		background: $blue
 		opacity: .5
 		z-index: -1
-
-
 
 //border-animation
 .border-animation
@@ -118,20 +114,19 @@ body
 	border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
 	animation: animatedHeader 10s infinite
 
-@keyframes animatedHeader  
-	0% 
+@keyframes animatedHeader
+	0%
 		border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
 	10%
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
-	25% 
+	25%
 		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
 	40%
 		border-radius: 42% 80% 72% 25%/65% 55% 55% 30%
-	55% 
+	55%
 		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
-	75% 
+	75%
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
-
 
 // Re-usable BEM blocks	
 
@@ -153,10 +148,9 @@ body
 .h7
 	@include montserrat-400-24
 
-
 // Levels
 
-.levelsMobile
+.levels-mobile
 	display: none
 	@media (max-width: $tablet)
 		display: block
@@ -168,7 +162,7 @@ body
 
 	@media (max-width: $tablet)
 		display: none
-			
+
 	&__top
 		max-width: 70%
 		margin-right: auto
@@ -176,17 +170,17 @@ body
 	&__down
 		max-width: 70%
 		margin-left: auto
-		
+
 	&__container
 		max-width: $max-desktop
-		margin: 3rem auto 
+		margin: 3rem auto
 		padding: 1rem
 
 	&__title
 		@include montserrat-500-48
 		@include margin-auto
 		max-width: fit-content
-	
+
 	&__steps
 		display: flex
 		justify-content: space-evenly
@@ -206,7 +200,7 @@ body
 
 		&--up
 			@media (max-width: $tablet)
-			display: none
+				display: none
 
 		@media (min-width: $tablet) and (max-width: $desktop)
 			font-size: 63px
@@ -244,11 +238,6 @@ body
 			background: rgba(135, 166, 198, 0.5)
 			margin-left: 0.5rem
 
-
-
-
-
-
 // Courses
 
 .courses
@@ -256,7 +245,7 @@ body
 
 	&__container
 		max-width: $max-desktop
-		margin: 8rem auto 
+		margin: 8rem auto
 		padding: 1rem
 
 		display: grid
@@ -285,7 +274,6 @@ body
 		@media (min-width: $mobile) and (max-width: $desktop)
 			flex-direction: row
 			justify-content: space-evenly
-		
 
 	&__course-duration, &__classes-duration
 		white-space: nowrap
@@ -348,7 +336,7 @@ body
 		@include montserrat-400-24
 		color: $black
 		line-height: 29px
-	
+
 	&__content
 		@media (max-width: $mobile)
 			@include montserrat-400-20
@@ -412,7 +400,7 @@ body
 		justify-content: space-around
 		flex-wrap: nowrap
 		margin-top: 2rem
-		
+
 		@media (max-width: $tablet)
 			flex-direction: column
 			align-items: center
@@ -446,7 +434,7 @@ body
 			@media (max-width: $tablet)
 				margin-left: 0
 
-	&__img-wrap 
+	&__img-wrap
 		position: relative
 
 	&__img
@@ -463,9 +451,9 @@ body
 		margin-top: 2rem
 
 	&__list-header
-		margin-top: 1.5rem 
+		margin-top: 1.5rem
 
-.img-frame 
+.img-frame
 	position: absolute
 	z-index: 3
 	background-color: transparent
@@ -478,18 +466,17 @@ body
 	animation: animatedBorder 10s infinite
 	top: 0.1px
 
-
 // Feedback
 
-.feedback 
-	&__container 
+.feedback
+	&__container
 		max-width: $max-desktop
 		width: 100%
 
 		margin-left: auto
 		margin-right: auto
 
-	&__title 
+	&__title
 		@include montserrat-500-48
 		max-width: fit-content
 		display: inline-block
@@ -504,7 +491,7 @@ body
 		@media (max-width: $tablet)
 			margin-left: 20%
 			font-size: 40px
-  
+
 	&__card
 		display: flex
 		justify-content: space-between
@@ -522,11 +509,11 @@ body
 		max-height: 100%
 		margin-left: 2em
 
-		flex: 2 1 25% 
+		flex: 2 1 25%
 		@media (max-width: $tablet)
-			flex: 2 1 35% 
+			flex: 2 1 35%
 			@media (max-width: $mobile)
-			flex: 2 1 45%
+				flex: 2 1 45%
 
 		img
 			@include img-fit
@@ -534,21 +521,20 @@ body
 			border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
 			z-index: 1
 			animation: animatedBorder 10s infinite
-		
+
 		img::before
 			@include img-fit
 			position: absolute
 			z-index: 2
-			
 
-		@keyframes animatedBorder 
-			0% 
+		@keyframes animatedBorder
+			0%
 				border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
-			25% 
+			25%
 				border-radius: 58% 42% 75% 25%/76% 46% 54% 24%
-			50% 
+			50%
 				border-radius: 50% 50% 33% 67%/55% 27% 73% 45%
-			75% 
+			75%
 				border-radius: 33% 67% 58% 42%/63% 68% 32% 37%
 
 	&__text-side
@@ -559,15 +545,14 @@ body
 		padding: 0 10px
 		color: $black
 		line-height: 18px
-		flex: 1 2 75% 
+		flex: 1 2 75%
 		padding: 0 1rem
 		text-overflow: ellipsis
 
 		@media (max-width: $tablet)
-			flex: 2 1 65% 
+			flex: 2 1 65%
 		@media (max-width: $mobile)
-			flex: 2 1 55% 
-
+			flex: 2 1 55%
 
 	&__client-name
 		display: flex
@@ -576,19 +561,18 @@ body
 		@include montserrat-400-24
 		margin-top: 1rem
 
-		span 
+		span
 			margin-left: 10%
 			@media (min-width: $mobile) and (max-width: $tablet)
 				font-size: 23px
 			@media (max-width: $mobile)
 				font-size: 20px
 
-
 	&__client-opinion
 		margin: 1rem 0 0 0
 		padding: 0
 
-		br 
+		br
 			margin-bottom: 0.7em
 
 	&__text-part
@@ -720,7 +704,6 @@ body
 
 //Footer
 
-
 .footer
 	max-width: 1920px
 	background: $beigeDark
@@ -763,4 +746,3 @@ body
 	&__disclaimer
 		@include montserrat-500-36
 		color: $powdery
-

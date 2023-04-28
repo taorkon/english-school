@@ -178,11 +178,11 @@ body {
   font-size: 24px;
 }
 
-.levelsMobile {
+.levels-mobile {
   display: none;
 }
 @media (max-width: 768px) {
-  .levelsMobile {
+  .levels-mobile {
     display: block;
     margin: 7rem auto;
   }
@@ -246,8 +246,10 @@ body {
   color: #87A6C6;
   white-space: nowrap;
 }
-.levels__step--up {
-  display: none;
+@media (max-width: 768px) {
+  .levels__step--up {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .levels__step {
@@ -640,6 +642,10 @@ body {
 @media (max-width: 768px) {
   .feedback__img-container {
     flex: 2 1 35%;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  .feedback__img-container {
     flex: 2 1 45%;
   }
 }
