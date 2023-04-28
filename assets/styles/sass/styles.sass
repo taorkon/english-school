@@ -16,13 +16,39 @@ body
 	box-sizing: inherit
 	margin: 0
 	min-width: inherit
+	font-optical-sizing: auto
+
+///swiper styles
+.swiper-pagination
+	position: static
+	margin-top: 2rem
+
+.swiper-pagination-bullet
+	background-color: #A54A47
+
+// custom scrollbar
+
+::-webkit-scrollbar
+	width: 10px
+	height: 70%
+
+::-webkit-scrollbar-track
+	background: #f1f1f1
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb
+	background: $blue
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb:hover
+	background: $red
 
 // underline
 .nice-underline
 	display: inline-block
 	position: relative
 
-	&::before 
+	&::before
 		content: ""
 		position: absolute
 		bottom: 5px
@@ -33,7 +59,52 @@ body
 		opacity: .5
 		z-index: -1
 
+.nice-underline--red
+	display: inline-block
+	position: relative
 
+	&::before
+		content: ""
+		position: absolute
+		bottom: 1px
+		width: 100%
+		height: 10px
+		transform: skew(-12deg)
+		background: $red
+		opacity: .4
+		z-index: -1
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
 
 //border-animation
 .border-animation
@@ -43,25 +114,21 @@ body
 	border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
 	animation: animatedHeader 10s infinite
 
-@keyframes animatedHeader  
-	0% 
+@keyframes animatedHeader
+	0%
 		border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
 	10%
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
-	25% 
+	25%
 		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
 	40%
 		border-radius: 42% 80% 72% 25%/65% 55% 55% 30%
-	55% 
+	55%
 		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
-	75% 
+	75%
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
 
-
-
-
-
-// Re-usable BEM blocks
+// Re-usable BEM blocks	
 
 .button-consult
 	//style here
@@ -77,68 +144,73 @@ body
 	color: $red
 
 .h6
-	@include h6
+	@include montserrat-500-36
 .h7
-	@include h7
+	@include montserrat-400-24
 
+// Levels
 
-//Courses
+.levels-mobile
+	display: none
+	@media (max-width: $tablet)
+		display: block
+		margin: 7rem auto
 
-.courses
+.levels
 	margin: 7rem auto
+	display: block
+
+	@media (max-width: $tablet)
+		display: none
+
+	&__top
+		max-width: 70%
+		margin-right: auto
+
+	&__down
+		max-width: 70%
+		margin-left: auto
 
 	&__container
-		max-width: 1320px
-		margin: 8rem auto 
+		max-width: $max-desktop
+		margin: 3rem auto
 		padding: 1rem
 
-		display: grid
-		grid-template-columns: 1fr 3fr
-		grid-template-rows: 1fr
-		grid-gap: 3rem
-
-		&:first-of-type
-			margin: 3rem auto 7rem auto
-
 	&__title
-		@include h1
+		@include montserrat-500-48
 		@include margin-auto
 		max-width: fit-content
 
-	&__left-aside
+	&__steps
 		display: flex
-		flex-direction: column
+		justify-content: space-evenly
+		place-items: end normal
+		margin-bottom: -2rem
 
-	&__english-level
+		@media (min-width: $mobile) and (max-width: $tablet)
+			margin-bottom: -3rem
+		@media (max-width: $mobile)
+			margin-bottom: -3.3rem
+
+	&__step
 		@include fontEngLvl
-		text-align: end
+		font-size: 70px
 		color: $blue
 		white-space: nowrap
-		-webkit-text-stroke: .05em $red
 
-		margin-top: -5.1rem
-		z-index: 10
-		position: relative
+		&--up
+			@media (max-width: $tablet)
+				display: none
 
-	&__article-for-whom
-		@include h5
-		color: $black
-		line-height: 29px
+		@media (min-width: $tablet) and (max-width: $desktop)
+			font-size: 63px
+		@media (min-width: $mobile) and (max-width: $tablet)
+			font-size: 53.5px
+		@media (max-width: $mobile)
+			font-size: 38px
 
-	&__text-about
-		@include h5
-		color: $black
-		line-height: 29px
-
-	&__point
-		display: grid
-		grid-template-columns: 1fr 3fr
-		grid-template-rows: 1fr
-		grid-gap: 1rem
-
-		justify-items: stretch
-		align-items: center
-		line-height: 29px
+	&__arrow
+		max-width: 100%
 
 	&__prices-wrap
 		display: flex
@@ -155,6 +227,9 @@ body
 		border: 3px solid $red
 		border-radius: 30px
 
+		@media (max-width: $mobile)
+			margin-bottom: 1rem
+
 		&--standart
 			background: rgba(217, 204, 185, 0.5)
 			margin-right: 0.5rem
@@ -163,7 +238,203 @@ body
 			background: rgba(135, 166, 198, 0.5)
 			margin-left: 0.5rem
 
-	&__img-wrap 
+// Courses
+
+.courses
+	margin: 7rem auto
+
+	&__container
+		max-width: $max-desktop
+		margin: 8rem auto
+		padding: 1rem
+
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-rows: 1fr
+		grid-gap: 3rem
+
+		&:first-of-type
+			margin: 3rem auto 7rem auto
+
+		@media (max-width: $desktop)
+			max-width: 97vw
+			display: flex
+			flex-direction: column
+
+	&__title
+		@include montserrat-500-48
+		@include margin-auto
+		max-width: fit-content
+
+	&__left-aside
+		display: flex
+		flex-direction: column
+		@include montserrat-400-20
+
+		@media (min-width: $mobile) and (max-width: $desktop)
+			flex-direction: row
+			justify-content: space-evenly
+
+	&__course-duration, &__classes-duration
+		white-space: nowrap
+
+	&__common-information
+		@media (max-width: $desktop)
+			display: flex
+			flex-direction: column
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			font-size: 55px !important
+
+	&__brief-information
+		@media (min-width: $mobile) and (max-width: $desktop)
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+
+			@media (min-width: $mobile) and (max-width: $tablet)
+				font-size: 23px
+				white-space: normal
+
+			@media (max-width: $mobile)
+				@include montserrat-400-15
+
+	&__description
+		@media (min-width: $mobile) and (max-width: $desktop)
+
+	&__article-for-whom, &__text
+		@include montserrat-400-24
+		color: $black
+		line-height: 29px
+
+		@media (min-width: $mobile) and (max-width: $desktop)
+			@include montserrat-400-20
+			line-height: 24px
+		@media (max-width: $mobile)
+			@include montserrat-400-20
+			line-height: 22px
+
+	&__article-point
+		@media (max-width: $mobile)
+			margin-bottom: .5rem
+
+	&__article-point:last-of-type
+		margin-bottom: 1rem
+
+	&__text-about
+		@include montserrat-400-24
+		color: $black
+		line-height: 29px
+
+	&__content
+		@media (max-width: $mobile)
+			@include montserrat-400-20
+			line-height: 22px
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__english-level
+		@include fontEngLvl
+		text-align: end
+		color: $blue
+		white-space: nowrap
+		-webkit-text-stroke: .05em $red
+
+		margin-top: -5.1rem
+		z-index: 10
+		position: relative
+
+	&__article-for-whom
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__text-about
+		//@include h5
+		color: $black
+		line-height: 29px
+
+	&__point
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-rows: 1fr
+		grid-gap: 1rem
+
+		justify-items: stretch
+		align-items: center
+		line-height: 29px
+		margin-top: 1rem
+
+	&__prices-wrap
+		display: flex
+		justify-content: space-around
+		flex-wrap: nowrap
+		margin-top: 2rem
+
+		@media (max-width: $tablet)
+			flex-direction: column
+			align-items: center
+
+	&__price-wrap
+		flex: 50% 1 1
+		text-align: center
+		padding: 0.5rem
+		min-width: fit-content
+
+		border: 3px solid $red
+		border-radius: 30px
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			width: 80%
+			margin-top: 1rem
+		@media (max-width: $mobile)
+			width: 95%
+			margin-top: 1rem
+			font-size: 28px !important
+
+		&--standart
+			background: rgba(217, 204, 185, 0.5)
+			margin-right: 0.5rem
+			@media (max-width: $tablet)
+				margin-right: 0
+
+		&--pro
+			background: rgba(135, 166, 198, 0.5)
+			margin-left: 0.5rem
+			@media (max-width: $tablet)
+				margin-left: 0
+
+	&__img-wrap
 		position: relative
 
 	&__img
@@ -180,9 +451,9 @@ body
 		margin-top: 2rem
 
 	&__list-header
-		margin-top: 1.5rem 
+		margin-top: 1.5rem
 
-.img-frame 
+.img-frame
 	position: absolute
 	z-index: 3
 	background-color: transparent
@@ -195,42 +466,54 @@ body
 	animation: animatedBorder 10s infinite
 	top: 0.1px
 
-
 // Feedback
 
-.feedback 
-	&__container 
-		max-width: 1320px
+.feedback
+	&__container
+		max-width: $max-desktop
 		width: 100%
 
 		margin-left: auto
 		margin-right: auto
 
-	&__header 
+	&__title
+		@include montserrat-500-48
+		max-width: fit-content
 		display: inline-block
 		padding: 2rem
-		
-  
-	&__card-wrap
-		max-width: 45%
-  
+
+		margin-left: 38%
+		margin-bottom: 1.4em
+
+		@media (min-width: $tablet) and (max-width: $desktop)
+			margin-left: 30%
+			font-size: 45px
+		@media (max-width: $tablet)
+			margin-left: 20%
+			font-size: 40px
+
 	&__card
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
 		min-width: 0
-		max-height: 35vh
-		text-overflow: ellipsis
+		max-height: fit-content
+		overflow: hidden
 
-		padding: 1em
+		@media (max-width: $tablet)
+			flex-direction: column
 
 	&__img-container
 		position: relative
 		max-width: 25%
 		max-height: 100%
-		margin: auto
+		margin-left: 2em
 
-		flex: 2 1 25% 
+		flex: 2 1 25%
+		@media (max-width: $tablet)
+			flex: 2 1 35%
+			@media (max-width: $mobile)
+				flex: 2 1 45%
 
 		img
 			@include img-fit
@@ -238,51 +521,64 @@ body
 			border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
 			z-index: 1
 			animation: animatedBorder 10s infinite
-		
+
 		img::before
 			@include img-fit
 			position: absolute
 			z-index: 2
-			
 
-		@keyframes animatedBorder 
-			0% 
+		@keyframes animatedBorder
+			0%
 				border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
-			25% 
+			25%
 				border-radius: 58% 42% 75% 25%/76% 46% 54% 24%
-			50% 
+			50%
 				border-radius: 50% 50% 33% 67%/55% 27% 73% 45%
-			75% 
+			75%
 				border-radius: 33% 67% 58% 42%/63% 68% 32% 37%
 
 	&__text-side
 		@include flex-column-space-evenly
-		@include h5
+		@include montserrat-400-20
 
 		flex: 1 2 75%
 		padding: 0 10px
 		color: $black
 		line-height: 18px
-		flex: 1 2 75% 
-		padding: 0 10px
-
-		max-height: 20vh
+		flex: 1 2 75%
+		padding: 0 1rem
 		text-overflow: ellipsis
 
+		@media (max-width: $tablet)
+			flex: 2 1 65%
+		@media (max-width: $mobile)
+			flex: 2 1 55%
+
 	&__client-name
-		margin: 1rem 0 0 0
+		display: flex
+		align-items: center
+
+		@include montserrat-400-24
+		margin-top: 1rem
+
+		span
+			margin-left: 10%
+			@media (min-width: $mobile) and (max-width: $tablet)
+				font-size: 23px
+			@media (max-width: $mobile)
+				font-size: 20px
 
 	&__client-opinion
 		margin: 1rem 0 0 0
 		padding: 0
 
+		br
+			margin-bottom: 0.7em
+
+	&__text-part
+		margin-bottom: .4em
+
 //Section styles
-
-//Header
-
-//Intro
-
-//About
 
 .about
 	max-width: 1920px
@@ -299,7 +595,7 @@ body
 		@include flex-column-center
 
 	&__title
-		@include h1
+		@include montserrat-500-48
 		color: $black
 		margin-bottom: 14vh
 
@@ -327,21 +623,17 @@ body
 		align-items: center
 
 	&__text
-		@include h2
+		@include montserrat-500-36
 		color: $black
 		line-height: 40px
 
 	&__text-2
-		@include h5
+		@include montserrat-400-24
 		color: $black
 		line-height: 40px
 
 	&__border
 		position: absolute
-
-//Courses
-
-//Feedback
 
 //Tutors
 .tutors__container
@@ -412,7 +704,6 @@ body
 
 //Footer
 
-
 .footer
 	max-width: 1920px
 	background: $beigeDark
@@ -423,12 +714,8 @@ body
 		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
 		@include flex-center-space-around
 
-		//height: 150px
-		//max-width: 1920px
-		//background: $beigeDark
-
 	&__tel-holder
-		@include h3
+		@include montserrat-400-20
 		padding-top: 3vh
 
 	&__tel
@@ -436,7 +723,7 @@ body
 		color: $red
 
 	&__copy
-		@include h2
+		@include montserrat-400-24
 		display: flex
 		align-items: flex-end
 		color: $black
@@ -457,6 +744,5 @@ body
 		margin-bottom: 4vh
 
 	&__disclaimer
-		@include h4
+		@include montserrat-500-36
 		color: $powdery
-
