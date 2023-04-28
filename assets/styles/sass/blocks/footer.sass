@@ -6,44 +6,165 @@
 @import "../mixin"
 
 .footer
-	max-width: 1920px
-	background: $beigeDark
+    max-width: 1920px
+    background: $beigeDark
 
-	&__container
-		width: 100%
-		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
-		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
-		@include flex-center-space-around
+    &__container
+        @include flex-center-space-around
+        width: 100%
+        margin: 0 auto
+        box-sizing: border-box
 
-	&__tel-holder
-		@include montserrat-400-20
-		padding-top: 3vh
+    &__tel-holder
+        @include montserrat-500-36
+        padding-top: 2vh
 
-	&__tel
-		text-decoration: none
-		color: $red
+    &__tel
+        text-decoration: none
+        color: $red
+        &:hover
+            text-decoration: underline
 
-	&__copy
-		@include montserrat-400-24
-		display: flex
-		align-items: flex-end
-		color: $black
+    &__copy
+        @include montserrat-400-24
+        @include flex-flex-end
+        color: $black
 
-	&__socials
-		@include flex-column-center
-		width: 18vw
-		//height: 78px  добавь марджины или паддинги к иконкам, чтоб суммировались в примерно нужную высоту (лучше относительные)
+    &__logo-holder
+        margin-top: 4vw
 
-	&__socials-icons
-		list-style-type: none
-		display: inline-flex
-		padding-left: 0px
-		margin-top: 0px
-		margin-bottom: 0px
+    &__logo
+        max-width: 400px
 
-	&__disclaimer-holder
-		margin-bottom: 4vh
+    &__socials
+        @include flex-column-center
+        width: 100%
+        margin-top: 2vw
 
-	&__disclaimer
-		@include montserrat-500-36
-		color: $powdery
+    &__socials-icons
+        list-style-type: none
+        display: inline-flex
+        padding-left: 0px
+        margin-top: 0px
+        margin-bottom: 0px
+
+    &__disclaimer-holder
+        margin-bottom: 4vh
+        align-content: flex-start
+        width: 100%
+
+    &__disclaimer
+        @include inter-400-8
+        color: $powdery
+
+    .logo-instagram
+        &:hover
+            background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg)
+
+    .logo-telegram
+        &:hover
+            background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg)
+
+    .logo-wapp
+        &:hover
+            background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg)
+
+    .logo_handset
+        &:hover
+            background: url(/assets/images/desktop/logo-handset-shadow-svg.svg)
+
+@media (min-width:1080px) and (max-width: 1280px)
+    .footer
+
+        &__tel-holder
+            @include montserrat-700-24
+            padding-top: 1vh
+
+        &__logo
+            max-width: 250px
+
+@media (min-width:767px) and (max-width: 1080px)
+    .footer
+        &__container
+            @include flex-column-reverse-center
+
+        &__tel-holder
+            @include flex-center-center
+            @include montserrat-500-36
+            padding-top: 1vh
+
+        &__logo
+            max-width: 300px
+
+        &__disclaimer-holder
+            margin-bottom: 2vh
+            align-content: center
+
+@media (min-width:320px) and (max-width: 767px)
+    .footer
+        &__container
+            @include flex-column-reverse-center
+
+        &__tel-holder
+            @include flex-center-center
+            @include montserrat-500-26
+            padding-top: 1vh
+
+        &__copy
+            @include montserrat-400-15
+
+        &__logo
+            max-width: 250px
+
+        &__disclaimer-holder
+            margin-bottom: 2vh
+            align-content: center
+
+@media (min-width:250px) and (max-width: 320px)
+    .footer
+        &__container
+            @include flex-column-reverse-center
+
+        &__tel-holder
+            @include flex-center-center
+            @include montserrat-500-20
+            padding-top: 1vh
+
+        &__copy
+            @include montserrat-400-10
+
+        &__logo
+            max-width: 200px
+
+        &__disclaimer-holder
+            margin-bottom: 2vh
+            align-content: center
+
+        &__disclaimer
+            @include inter-400-6
+            padding-left: 1vh
+
+        .logo-instagram
+            width: 95%
+
+            &:hover
+                background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg)
+                background-size: 98%
+
+        .logo-telegram
+            width: 95%
+            &:hover
+                background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg)
+                background-size: 98%
+
+        .logo-wapp
+            width: 95%
+            &:hover
+                background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg)
+                background-size: 98%
+
+        .logo_handset
+            width: 95%
+            &:hover
+                background: url(/assets/images/desktop/logo-handset-shadow-svg.svg)
+                background-size: 98%
