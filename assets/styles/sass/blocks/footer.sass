@@ -1,0 +1,49 @@
+//footer styles
+
+@import "../breakpoints"
+@import "../colors"
+@import "../fonts"
+@import "../mixin"
+
+.footer
+	max-width: 1920px
+	background: $beigeDark
+
+	&__container
+		width: 100%
+		margin: 0 auto // есть в общих стилях для всей стр, удалить после мерджа
+		box-sizing: border-box // есть в общих стилях для всей стр, удалить после мерджа
+		@include flex-center-space-around
+
+	&__tel-holder
+		@include montserrat-400-20
+		padding-top: 3vh
+
+	&__tel
+		text-decoration: none
+		color: $red
+
+	&__copy
+		@include montserrat-400-24
+		display: flex
+		align-items: flex-end
+		color: $black
+
+	&__socials
+		@include flex-column-center
+		width: 18vw
+		//height: 78px  добавь марджины или паддинги к иконкам, чтоб суммировались в примерно нужную высоту (лучше относительные)
+
+	&__socials-icons
+		list-style-type: none
+		display: inline-flex
+		padding-left: 0px
+		margin-top: 0px
+		margin-bottom: 0px
+
+	&__disclaimer-holder
+		margin-bottom: 4vh
+
+	&__disclaimer
+		@include montserrat-500-36
+		color: $powdery
