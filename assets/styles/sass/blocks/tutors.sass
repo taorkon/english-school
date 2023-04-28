@@ -5,64 +5,105 @@
 @import "../fonts"
 @import "../mixin"
 
-.tutors__container
-	margin-left: 100px
+.tutors
+	&__container
+		margin: 8rem auto
+		padding: 1rem
+		width: 100%
+		max-width: 1320px
 
-.tutors__title
-	@include inter-400-64
-	color: $black
-	padding-top: 112px
-	padding-bottom: 25px
+	&__title
+		@include montserrat-500-48
 
-.tutors__items
-	display: flex
-	justify-content: space-between
+		color: $black
+		text-align: center
+		padding-top: 1rem
+		padding-bottom: 4rem
 
-	margin-right: 100px
+	&__columns
+		display: flex
+		flex-direction: row
 
-.tutors__image
-	padding: 25px
+	&__first-column
+		display: flex
+		flex-direction: column
+		flex-basis: 50%
 
-.tutors__item
-	border: 1px solid gray
-	border-radius: 10px
+	&__second-column
+		display: flex
+		flex-direction: column
+		flex-basis: 50%
+		margin-top: 18rem
 
-.tutors__name
-	@include inter-700-32
-	color: $black
+	&__item
+		padding: 1.5rem
 
-	padding-left: 15px
-	padding-top: 10px
-	padding-bottom: 15px
+	&__img-container
+		position: relative
+		max-width: 55%
+		max-height: 100%
+		margin: auto
 
-.tutors__description
-	@include inter-400-24
-	color: $black
+	&__image
+		border: 1.43px solid #D9CCB9
+		border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+		z-index: 1
+		animation: animatedBorder 10s infinite
 
-	max-width: 293px
-	padding-left: 15px
-	padding-bottom: 15px
+	&__name
+		@include montserrat-500-36
+		color: $red
+		padding-left: 1rem
+		padding-top: 0.62rem
+		padding-bottom: 1rem
+		margin-top: -3.5rem
+		margin-left: 3rem
+		z-index: 2
+		position: relative
 
-.tutors__experience
-	@include inter-400-32
+	&__description
+		@include montserrat-400-15
+		font-size: 16px
+		color: $black
+		padding-left: 1rem
+		padding-bottom: 1rem
 
-	color: $black
-	text-align: center
-	padding: 20px 10px 20px 10px
+	&__experience
+		@include montserrat-700-24
+		line-height: 29px
+		color: $blue
+		padding: 1.25rem 0.625rem 1.25rem 0.625rem
 
-.button-consult
-	@include inter-400-40
-	color: $black
-	background-color: $grey
+	@media screen and (max-width:1320px)
+		.tutors
+			&__columns
+				flex-direction: column
 
-	border: 1px solid $black
-	border-radius: 26px
+			&__container
+				max-width: 800px
+				margin: 6rem auto
 
-	padding: 19px 191px 29px 191px
+			&__second-column
+				margin-top: 0
 
-.tutors__button
-	display: flex
-	justify-content: center
+	@media screen and (max-width:560px)
+		.tutors
+			&__title
+				font-size: 30px
+				padding-bottom: 2rem
 
-	padding-top: 80px
-	padding-bottom: 82px
+			&__name
+				margin-left: 0
+				font-size: 30px
+
+			&__image
+				width: 220px
+
+			&__img-container
+				max-width: 100%
+
+			&__description
+				line-height: 30px
+
+			&__experience
+				font-size: 18px
