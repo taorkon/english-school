@@ -1,5 +1,61 @@
 //Our fonts here
 @font-face
+    font-family: Montserrat Alternates
+    src: url('../../fonts/MontserratAlternates-Bold.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Montserrat Alternates
+    src: url('../../fonts/MontserratAlternates-Light.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Montserrat Alternates
+    src: url('../../fonts/MontserratAlternates-Medium.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Montserrat Alternates
+    src: url('../../fonts/MontserratAlternates-Regular.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Inter
+    src: url('../../fonts/Inter-Bold.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Inter
+    src: url('../../fonts/Inter-LightBETA.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Inter
+    src: url('../../fonts/Inter-Medium.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Inter
+    src: url('../../fonts/Inter-Regular.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
     font-family: 'Inter'
     src: url('../../fonts/Inter-Bold.ttf') format('ttf')
     font-weight: 700
@@ -12,6 +68,98 @@
     font-style: normal
 
 //mixins
+//Montserrat  
+@mixin montserrat-400-10
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 400
+    line-height: 40px
+    font-size: 10px
+
+@mixin montserrat-400-15
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 400
+    line-height: 40px
+    font-size: 15px
+
+@mixin montserrat-400-20
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 400
+    line-height: 40px
+    font-size: 20px
+
+@mixin montserrat-400-24
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 400
+    line-height: 29px
+    font-size: 24px
+
+@mixin montserrat-500-20
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 500
+    line-height: 44px
+    font-size: 20px
+
+@mixin montserrat-500-26
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 500
+    line-height: 44px
+    font-size: 26px
+
+@mixin montserrat-500-36
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 500
+    line-height: 44px
+    font-size: 36px
+
+@mixin montserrat-500-48
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 500
+    line-height: 59px
+    font-size: 48px
+
+@mixin montserrat-700-20
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 700
+    line-height: 40px
+    font-size: 20px
+
+@mixin montserrat-700-24
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 700
+    line-height: 40px
+    font-size: 24px
+
+@mixin fontEngLvl
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 800
+    line-height: 122px
+    font-size: 100px
+
+//Inter
+@mixin inter-400-6
+    font-family: Inter
+    font-style: normal
+    font-weight: 400
+    line-height: 10px
+    font-size: 6px
+
+@mixin inter-400-8
+    font-family: Inter
+    font-style: normal
+    font-weight: 400
+    line-height: 10px
+    font-size: 8px
 
 @mixin inter-400-24
     font-family: 'Inter', sans-serif
@@ -41,13 +189,6 @@
     font-size: 64px
     line-height: 77px
 
-@mixin inter-400-8
-    font-family: Inter
-    font-style: normal
-    font-weight: 400
-    line-height: 10px
-    font-size: 8px
-
 @mixin inter-700-32
     font-family: 'Inter', sans-serif
     font-style: normal
@@ -55,64 +196,6 @@
     font-size: 32px
     line-height: 39px
 
-@mixin montserrat-500-48
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 500
-    line-height: 59px
-    font-size: 48px
-
-@mixin montserrat-400-24
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 400
-    line-height: 29px
-    font-size: 24px
-
-@mixin montserrat-500-36
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 500
-    line-height: 44px
-    font-size: 36px
-    @media (max-width: 768px)
-        font-size: 30px
-
-
-@mixin montserrat-400-20
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 400
-    line-height: 40px
-    font-size: 20px
-
-@mixin montserrat-400-15
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 400
-    line-height: 40px
-    font-size: 15px
-
-@mixin montserrat-700-24
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 700
-    line-height: 40px
-    font-size: 24px
-
-@mixin montserrat-700-20
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 700
-    line-height: 40px
-    font-size: 20px
-
-@mixin montserrat-800-122
-    font-family: Montserrat Alternates
-    font-style: normal
-    font-weight: 800
-    line-height: 122px
-    font-size: 100px
 
 @mixin fontEngLvl
     font-family: Montserrat Alternates

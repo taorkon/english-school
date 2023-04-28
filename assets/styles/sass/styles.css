@@ -1,4 +1,60 @@
 @font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Inter";
   src: url("../../fonts/Inter-Bold.ttf") format("ttf");
   font-weight: 700;
@@ -146,6 +202,11 @@ body {
 }
 .button-consult {
   display: inline-block;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
   background: #A54A47;
   color: #FFFBF8;
   border-radius: 20px;
@@ -184,11 +245,6 @@ body {
   font-weight: 500;
   line-height: 44px;
   font-size: 36px;
-}
-@media (max-width: 768px) {
-  .h6 {
-    font-size: 30px;
-  }
 }
 
 .h7 {
@@ -744,11 +800,6 @@ body {
   color: #000000;
   line-height: 40px;
 }
-@media (max-width: 768px) {
-  .about__text {
-    font-size: 30px;
-  }
-}
 .about__text-2 {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -859,6 +910,11 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin-bottom: 5%;
@@ -876,6 +932,11 @@ body {
        column-width: 37vw;
   padding-left: 2rem;
   list-style-type: none;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
 }
 .credentials__elements__list--li {
   font-size: 1.5rem;
@@ -909,6 +970,14 @@ body {
   .credentials__elements__list {
     -moz-column-count: 1;
          column-count: 1;
+  }
+  .credentials__header {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 602px) {
+  .credentials__header {
+    font-size: 1rem;
   }
 }
 .modal {
@@ -1151,9 +1220,4 @@ body {
   line-height: 44px;
   font-size: 36px;
   color: #CA8D66;
-}
-@media (max-width: 768px) {
-  .footer__disclaimer {
-    font-size: 30px;
-  }
 }/*# sourceMappingURL=styles.css.map */
