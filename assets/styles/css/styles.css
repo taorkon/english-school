@@ -21,6 +21,35 @@ body {
   box-sizing: inherit;
   margin: 0;
   min-width: inherit;
+  font-optical-sizing: auto;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #A54A47;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 70%;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #87A6C6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A54A47;
 }
 
 .nice-underline {
@@ -81,21 +110,45 @@ body {
 }
 
 .h6 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  font-size: 24px;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
 }
 
 .h7 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .intro__container {
   margin: 8rem auto;
   padding: 1rem;
@@ -236,6 +289,234 @@ body {
   }
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.about {
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #FFFBF8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 14vh;
+}
+.about__content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about__image-holder {
+  width: 50%;
+  margin-left: 13vw;
+  padding-bottom: 37vh;
+}
+.about__image {
+  height: 47vh;
+}
+.about__text-holder {
+  width: 50%;
+  padding-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
+  color: #000000;
+  line-height: 40px;
+}
+.about__text-2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  color: #000000;
+  line-height: 40px;
+}
+.about__border {
+  position: absolute;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.levels-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .levels-mobile {
+    display: block;
+    margin: 7rem auto;
+  }
+}
+
+.levels {
+  margin: 7rem auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .levels {
+    display: none;
+  }
+}
+.levels__top {
+  max-width: 70%;
+  margin-right: auto;
+}
+.levels__down {
+  max-width: 70%;
+  margin-left: auto;
+}
+.levels__container {
+  max-width: 1320px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+.levels__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+.levels__steps {
+  display: flex;
+  justify-content: space-evenly;
+  place-items: end normal;
+  margin-bottom: -2rem;
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .levels__steps {
+    margin-bottom: -3rem;
+  }
+}
+@media (max-width: 420px) {
+  .levels__steps {
+    margin-bottom: -3.3rem;
+  }
+}
+.levels__step {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 122px;
+  font-size: 100px;
+  font-size: 70px;
+  color: #87A6C6;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .levels__step--up {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .levels__step {
+    font-size: 63px;
+  }
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .levels__step {
+    font-size: 53.5px;
+  }
+}
+@media (max-width: 420px) {
+  .levels__step {
+    font-size: 38px;
+  }
+}
+.levels__arrow {
+  max-width: 100%;
+}
+.levels__prices-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+}
+.levels__price-wrap {
+  flex: 50% 1 1;
+  text-align: center;
+  padding: 0.5rem;
+  min-width: fit-content;
+  border: 3px solid #A54A47;
+  border-radius: 30px;
+}
+@media (max-width: 420px) {
+  .levels__price-wrap {
+    margin-bottom: 1rem;
+  }
+}
+.levels__price-wrap--standart {
+  background: rgba(217, 204, 185, 0.5);
+  margin-right: 0.5rem;
+}
+.levels__price-wrap--pro {
+  background: rgba(135, 166, 198, 0.5);
+  margin-left: 0.5rem;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .courses {
   margin: 7rem auto;
 }
@@ -251,8 +532,15 @@ body {
 .courses__container:first-of-type {
   margin: 3rem auto 7rem auto;
 }
+@media (max-width: 1200px) {
+  .courses__container {
+    max-width: 97vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .courses__title {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
@@ -264,6 +552,123 @@ body {
 .courses__left-aside {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
+}
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__left-aside {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.courses__course-duration, .courses__classes-duration {
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  .courses__common-information {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.courses__english-level {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 122px;
+  font-size: 100px;
+  text-align: end;
+  color: #87A6C6;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.05em #A54A47;
+  margin-top: -5.1rem;
+  z-index: 10;
+  position: relative;
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .courses__english-level {
+    font-size: 55px !important;
+  }
+}
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__brief-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 420px) and (max-width: 1200px) and (min-width: 420px) and (max-width: 768px) {
+  .courses__brief-information {
+    font-size: 23px;
+    white-space: normal;
+  }
+}
+@media (min-width: 420px) and (max-width: 1200px) and (max-width: 420px) {
+  .courses__brief-information {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+  }
+}
+.courses__article-for-whom, .courses__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  color: #000000;
+  line-height: 29px;
+}
+@media (min-width: 420px) and (max-width: 1200px) {
+  .courses__article-for-whom, .courses__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 420px) {
+  .courses__article-for-whom, .courses__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 420px) {
+  .courses__article-point {
+    margin-bottom: 0.5rem;
+  }
+}
+.courses__article-point:last-of-type {
+  margin-bottom: 1rem;
+}
+.courses__text-about {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  color: #000000;
+  line-height: 29px;
+}
+@media (max-width: 420px) {
+  .courses__content {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 .courses__english-level {
   font-family: Montserrat Alternates;
@@ -280,20 +685,32 @@ body {
   position: relative;
 }
 .courses__article-for-whom {
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
   color: #000000;
   line-height: 29px;
 }
 .courses__text-about {
+  color: #000000;
+  line-height: 29px;
+}
+.courses__english-level {
   font-family: Montserrat Alternates;
   font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
+  font-weight: 800;
+  line-height: 122px;
+  font-size: 100px;
+  text-align: end;
+  color: #87A6C6;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.05em #A54A47;
+  margin-top: -5.1rem;
+  z-index: 10;
+  position: relative;
+}
+.courses__article-for-whom {
+  color: #000000;
+  line-height: 29px;
+}
+.courses__text-about {
   color: #000000;
   line-height: 29px;
 }
@@ -305,12 +722,19 @@ body {
   justify-items: stretch;
   align-items: center;
   line-height: 29px;
+  margin-top: 1rem;
 }
 .courses__prices-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
   margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .courses__prices-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .courses__price-wrap {
   flex: 50% 1 1;
@@ -320,13 +744,36 @@ body {
   border: 3px solid #A54A47;
   border-radius: 30px;
 }
+@media (min-width: 420px) and (max-width: 768px) {
+  .courses__price-wrap {
+    width: 80%;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .courses__price-wrap {
+    width: 95%;
+    margin-top: 1rem;
+    font-size: 28px !important;
+  }
+}
 .courses__price-wrap--standart {
   background: rgba(217, 204, 185, 0.5);
   margin-right: 0.5rem;
 }
+@media (max-width: 768px) {
+  .courses__price-wrap--standart {
+    margin-right: 0;
+  }
+}
 .courses__price-wrap--pro {
   background: rgba(135, 166, 198, 0.5);
   margin-left: 0.5rem;
+}
+@media (max-width: 768px) {
+  .courses__price-wrap--pro {
+    margin-left: 0;
+  }
 }
 .courses__img-wrap {
   position: relative;
@@ -362,34 +809,77 @@ body {
   top: 0.1px;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .feedback__container {
   max-width: 1320px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.feedback__header {
+.feedback__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  max-width: fit-content;
   display: inline-block;
   padding: 2rem;
+  margin-left: 38%;
+  margin-bottom: 1.4em;
 }
-.feedback__card-wrap {
-  max-width: 45%;
+@media (min-width: 768px) and (max-width: 1200px) {
+  .feedback__title {
+    margin-left: 30%;
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .feedback__title {
+    margin-left: 20%;
+    font-size: 40px;
+  }
 }
 .feedback__card {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   min-width: 0;
-  max-height: 35vh;
-  text-overflow: ellipsis;
-  padding: 1em;
+  max-height: fit-content;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .feedback__card {
+    flex-direction: column;
+  }
 }
 .feedback__img-container {
   position: relative;
   max-width: 25%;
   max-height: 100%;
-  margin: auto;
+  margin-left: 2em;
   flex: 2 1 25%;
+}
+@media (max-width: 768px) {
+  .feedback__img-container {
+    flex: 2 1 35%;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  .feedback__img-container {
+    flex: 2 1 45%;
+  }
 }
 .feedback__img-container img {
   max-width: 100%;
@@ -427,7 +917,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -437,91 +927,65 @@ body {
   color: #000000;
   line-height: 18px;
   flex: 1 2 75%;
-  padding: 0 10px;
-  max-height: 20vh;
+  padding: 0 1rem;
   text-overflow: ellipsis;
 }
+@media (max-width: 768px) {
+  .feedback__text-side {
+    flex: 2 1 65%;
+  }
+}
+@media (max-width: 420px) {
+  .feedback__text-side {
+    flex: 2 1 55%;
+  }
+}
 .feedback__client-name {
-  margin: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+.feedback__client-name span {
+  margin-left: 10%;
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .feedback__client-name span {
+    font-size: 23px;
+  }
+}
+@media (max-width: 420px) {
+  .feedback__client-name span {
+    font-size: 20px;
+  }
 }
 .feedback__client-opinion {
   margin: 1rem 0 0 0;
   padding: 0;
 }
-
-.about {
-  max-width: 1920px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feedback__client-opinion br {
+  margin-bottom: 0.7em;
 }
-.about__container {
-  max-width: 1920px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background: #FFFBF8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about__title-holder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about__title {
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 59px;
-  font-size: 48px;
-  color: #000000;
-  margin-bottom: 14vh;
-}
-.about__content {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.about__image-holder {
-  width: 50%;
-  margin-left: 13vw;
-  padding-bottom: 37vh;
-}
-.about__image {
-  height: 47vh;
-}
-.about__text-holder {
-  width: 50%;
-  padding-right: 5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.about__text {
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 29px;
-  font-size: 24px;
-  color: #000000;
-  line-height: 40px;
-}
-.about__text-2 {
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
-  color: #000000;
-  line-height: 40px;
-}
-.about__border {
-  position: absolute;
+.feedback__text-part {
+  margin-bottom: 0.4em;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .tutors__container {
   margin: 8rem auto;
   padding: 1rem;
@@ -640,6 +1104,30 @@ body {
   }
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .footer {
   max-width: 1920px;
   background: #D9CCB9;
@@ -653,11 +1141,11 @@ body {
   justify-content: space-around;
 }
 .footer__tel-holder {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  line-height: 44px;
-  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
   padding-top: 3vh;
 }
 .footer__tel {
@@ -665,7 +1153,7 @@ body {
   color: #A54A47;
 }
 .footer__copy {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -691,10 +1179,10 @@ body {
   margin-bottom: 4vh;
 }
 .footer__disclaimer {
-  font-family: Inter;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  line-height: 10px;
-  font-size: 8px;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
   color: #CA8D66;
 }
