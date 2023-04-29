@@ -11,36 +11,35 @@
   box-sizing: inherit;
 }
 
-.header {
+.header__container {
+  display: flex;
   max-width: 1920px;
   max-height: 80px;
   background: #D9CCB9;
 }
-.header__container {
+.header__logo-holder {
   display: flex;
-  align-items: stretch;
-  height: 100%;
-  width: 100%;
-}
-.header__logo {
-  display: flex;
-  width: 7%;
-  height: 50%;
+  width: 5vw;
+  height: 5vh;
   margin-top: 2.5vh;
-  margin-left: 7vw;
+  margin-left: 6vw;
+}
+.header__menu-holder {
+  display: flex;
+  width: 65vw;
+  height: 5vh;
+  margin-top: 1.5vh;
+  margin-left: 5vh;
 }
 .header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 95%;
-  height: 60%;
-  margin-top: 1.5vh;
-  margin-left: 7vw;
-  margin-right: 3vw;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 0.7vh;
+  margin: 0;
   list-style: none;
 }
-.header__menu_item {
+.header__menu-item {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 400;
@@ -48,37 +47,149 @@
   font-size: 24px;
   text-decoration: none;
   color: #000000;
+  margin-left: 3vw;
 }
-.header__menu_item:hover {
+.header__menu-item:hover {
   text-decoration: underline #87A6C6;
   opacity: 0.75;
 }
 .header__socials {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 45%;
-  height: 50%;
-  margin-left: 17vw;
+  width: 10vw;
+  height: 5vh;
+  padding: 0;
+  margin-left: 2vw;
+  margin-top: 2vh;
   list-style: none;
 }
 .header__socials-icons {
-  width: 87%;
-  hight: 87%;
+  display: inline-flex;
+  width: 100 .header__socials-icons;
+  height: 100%;
+  margin: 0;
 }
-.header__socials-icons_instagram:hover {
+.header__icons-instagram:hover {
   filter: drop-shadow(5px 5px 10px #d11d98);
 }
-.header__socials-icons_telegram:hover {
+.header__icons-telegram:hover {
   filter: drop-shadow(5px 5px 10px #2ca6df);
 }
-.header__socials-icons_whatsapp:hover {
+.header__icons-whatsapp:hover {
   filter: drop-shadow(5px 5px 10px #1bb541);
 }
-.header__socials-icons-handset:hover {
+.header__icons-handset:hover {
   filter: drop-shadow(5px 5px 10px #1e1b1e);
 }
 
+@media (min-width: 1080px) and (max-width: 1380px) {
+  .header__menu-item {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1080px) {
+  .header__logo-holder {
+    display: flex;
+    width: 3vw;
+    height: 3vh;
+    margin-top: 3.5vh;
+    margin-left: 3vw;
+  }
+  .header__menu-holder {
+    display: flex;
+    width: 60vw;
+    margin-left: 3vw;
+  }
+  .header__menu-item {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .header__socials-icons {
+    display: inline-flex;
+    width: 60%;
+    height: 70%;
+    margin-top: 1vh;
+    margin-left: 2vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__logo-holder {
+    display: flex;
+    width: 5vw;
+    height: 4vh;
+    margin-top: 4vh;
+    margin-left: 7vw;
+  }
+  .header__menu-holder {
+    display: flex;
+    width: 80vw;
+    margin-left: 1vw;
+  }
+  .header__menu {
+    box-sizing: border-box;
+  }
+  .header__menu-item {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 10px;
+    margin-left: 1.5vw;
+  }
+  .header__socials {
+    margin-left: -2vw;
+  }
+  .header__socials-icons {
+    display: inline-flex;
+    width: 10%;
+    height: 20%;
+    margin-top: 1.7vh;
+    margin-left: 0;
+  }
+}
+@media (min-width: 250px) and (max-width: 320px) {
+  .header__logo-holder {
+    display: flex;
+    width: 2vw;
+    height: 1vh;
+    margin-top: 4vh;
+    margin-left: 2vw;
+  }
+  .header__menu-holder {
+    display: flex;
+    width: 70vw;
+    margin-top: 1vh;
+    margin-left: 6vw;
+  }
+  .header__menu {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .header__menu-item {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 7px;
+    margin-left: 1.5vw;
+  }
+  .header__socials {
+    margin-left: 1vw;
+  }
+  .header__socials-icons {
+    display: inline-flex;
+    width: 10%;
+    height: 20%;
+    margin-top: 1.7vh;
+    margin-left: 0;
+  }
+}
 .feedback__container {
   max-width: 1320px;
   margin-left: auto;
