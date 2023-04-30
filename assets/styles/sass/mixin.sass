@@ -6,8 +6,7 @@
 
 @mixin margin-auto
 	margin-left: auto
-	margin-right: auto
-
+	margin-right: auto		
 
 @mixin margin-auto
 	margin-left: auto
@@ -39,6 +38,25 @@
 	flex-direction: column
 	align-items: center
 
+@mixin flex-start-space-between
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+
+@mixin flex-column-center-space-evenly
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+	align-items: center
+
+@mixin flex-flex-end
+	display: flex
+	align-items: flex-end
+
+@mixin flex-column-reverse-center
+	display: flex
+	flex-direction: column-reverse
+	align-items: center
 
 
 @mixin fontEngLvl
@@ -47,3 +65,18 @@
 	font-weight: 800
 	line-height: 122px
 	font-size: 100px
+
+// можно удалить то, что ниже, перепишу на fonts
+@mixin tutDesc
+	font-family: Montserrat Alternates
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 40px
+
+@mixin introh
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	font-weight: 600
+	font-size: 48px
+	line-height: 59px

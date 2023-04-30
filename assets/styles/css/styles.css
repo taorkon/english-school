@@ -1,4 +1,60 @@
 @font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Inter";
   src: url("../../fonts/Inter-Bold.ttf") format("ttf");
   font-weight: 700;
@@ -34,7 +90,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
   height: 70%;
 }
 
@@ -50,54 +106,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #A54A47;
-}
-
-.nice-underline {
-  display: inline-block;
-  position: relative;
-}
-.nice-underline::before {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  height: 7px;
-  transform: skew(-12deg);
-  background: #87A6C6;
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.nice-underline--red {
-  display: inline-block;
-  position: relative;
-}
-.nice-underline--red::before {
-  content: "";
-  position: absolute;
-  bottom: 1px;
-  width: 100%;
-  height: 10px;
-  transform: skew(-12deg);
-  background: #A54A47;
-  opacity: 0.4;
-  z-index: -1;
-}
-
-.nice-underline {
-  display: inline-block;
-  position: relative;
-}
-.nice-underline::before {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  height: 7px;
-  transform: skew(-12deg);
-  background: #87A6C6;
-  opacity: 0.5;
-  z-index: -1;
 }
 
 .nice-underline {
@@ -144,10 +152,9 @@ body {
     border-radius: 35% 75% 65% 40%/40% 45% 65% 60%;
   }
 }
-
 .button-consult {
   display: inline-block;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
@@ -157,13 +164,11 @@ body {
   border-radius: 20px;
   border: #A54A47;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   padding: 22px 86px;
   margin-bottom: 5%;
   margin-top: 5%;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .button-consult:hover {
@@ -184,28 +189,881 @@ body {
 }
 
 .h6 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
   font-size: 36px;
 }
-@media (max-width: 768px) {
-  .h6 {
-    font-size: 30px;
-  }
-}
 
 .h7 {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
   font-size: 24px;
 }
 
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D9CCB9;
+  max-height: 90px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+}
+.header__logo-holder {
+  display: flex;
+  width: 8vw;
+  margin-top: 1vh;
+  margin-left: 6vw;
+}
+.header__logo {
+  width: 100%;
+}
+.header__menu-holder {
+  display: flex;
+}
+.header__menu {
+  display: flex;
+  gap: 3vw;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+.header__link {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+.header__link:hover {
+  text-decoration: underline #87A6C6;
+  opacity: 0.75;
+}
+.header__socials {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-left: 2vw;
+  list-style: none;
+}
+.header__socials-icons > img {
+  width: 70px;
+}
+.header__icons-instagram:hover {
+  filter: drop-shadow(5px 5px 10px #d11d98);
+}
+.header__icons-telegram:hover {
+  filter: drop-shadow(5px 5px 10px #2ca6df);
+}
+.header__icons-whatsapp:hover {
+  filter: drop-shadow(5px 5px 10px #1bb541);
+}
+.header__icons-handset:hover {
+  filter: drop-shadow(5px 5px 10px #1e1b1e);
+}
+
+@media (max-width: 1380px) {
+  .header__link {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1080px) {
+  .header__link {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .header__socials-icons > img {
+    width: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .header__logo-holder {
+    width: 20vw;
+  }
+  .header__menu-holder {
+    display: none;
+  }
+  .header__socials-icons > img {
+    width: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .header__menu-holder {
+    display: none;
+  }
+  .header__logo-holder {
+    width: 30vw;
+  }
+}
+@media (max-width: 320px) {
+  .header__logo-holder {
+    display: none;
+  }
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.intro__container {
+  margin: 8rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1320px;
+  position: relative;
+}
+.intro__description {
+  position: relative;
+  z-index: 2;
+}
+.intro__header {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  font-size: 48px;
+  max-width: 820px;
+  margin-bottom: 3rem;
+}
+.intro__list {
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
+.intro__list__img {
+  padding-right: 1rem;
+  z-index: 1;
+}
+.intro__list__item {
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 500px;
+}
+.intro__img {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+.intro__call-button {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
+  background-color: #A54A47;
+  color: #FFFBF8;
+  padding: 22px 80px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1375px) {
+  .intro .intro__image {
+    width: 550px;
+  }
+  .intro .intro__img {
+    top: 12rem;
+  }
+}
+@media screen and (max-width: 1111px) {
+  .intro .intro__img {
+    position: static;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  .intro .intro__description {
+    margin-left: 5rem;
+  }
+  .intro .intro__container {
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 682px) {
+  .intro .intro__container {
+    margin: 4rem auto;
+  }
+  .intro .intro__call-button {
+    font-size: 28px;
+    padding: 20px 40px;
+  }
+  .intro .intro__header {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .intro .intro__list__item {
+    max-width: 440px;
+  }
+  .intro .intro__image {
+    width: 340px;
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  .intro .intro__description {
+    margin-left: 1rem;
+  }
+  .intro .intro__call-button {
+    font-size: 19px;
+    padding: 12px 25px;
+  }
+  .intro .intro__img {
+    margin-left: 0;
+  }
+  .intro .intro__image {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 410px) {
+  .intro .intro__header {
+    font-size: 26px;
+  }
+  .intro .intro__list__item {
+    font-size: 18px;
+  }
+  .intro .intro__list__img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 369px) {
+  .intro .intro__img {
+    display: none;
+  }
+  .intro .intro__header {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .intro .intro__call-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.about {
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #FFFBF8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 59px;
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 14vh;
+}
+.about__content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about__image-holder {
+  width: 50%;
+  margin-left: 10vw;
+  padding-bottom: 37vh;
+}
+.about__image {
+  height: 44vh;
+  transform: scale(-1, 1);
+}
+.about__text-holder {
+  width: 50%;
+  padding-right: 5vw;
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  color: #000000;
+  line-height: 40px;
+}
+.about__text-2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000000;
+}
+.about__border {
+  position: absolute;
+}
+
+.about-double {
+  display: none;
+}
+
+@media (min-width: 1240px) and (max-width: 1330px) {
+  .about__image-holder {
+    width: 30%;
+    margin-left: 10vw;
+  }
+  .about__image {
+    height: 35vh;
+  }
+  .about-double {
+    display: none;
+  }
+}
+@media (min-width: 921px) and (max-width: 1240px) {
+  .about {
+    display: none;
+  }
+  .about-double {
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-double__container-double {
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #FFFBF8;
+  }
+  .about-double__title-holder-double {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-double__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 59px;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 8vh;
+  }
+  .about-double__content-double {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-double__image-holder-double {
+    width: 40%;
+    margin-bottom: 1vh;
+  }
+  .about-double__image-double {
+    width: 40vh;
+    margin-left: 6vh;
+    margin-top: 7vh;
+    transform: scale(-1, 1);
+  }
+  .about-double__text-holder-double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    padding-left: 16vh;
+    padding-top: 10vh;
+    padding-right: 5vh;
+  }
+  .about-double__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 24px;
+    color: #000000;
+    line-height: 30px;
+    width: 100%;
+  }
+  .about-double__text-2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000000;
+  }
+  .about-double__icon-double {
+    width: 100%;
+    margin-left: 10vh;
+    margin-right: 5vh;
+  }
+}
+@media (min-width: 767px) and (max-width: 921px) {
+  .about__title-holder {
+    height: 25vh;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  .about__image-holder {
+    width: 100%;
+    padding-bottom: 1vh;
+    margin-left: 0vw;
+  }
+  .about__image {
+    width: 100%;
+  }
+  .about__text-holder {
+    width: 100%;
+    padding-left: 8vw;
+    padding-right: 5vw;
+  }
+  .about__text {
+    text-align: center;
+  }
+  .about__text-2 {
+    line-height: 25px;
+  }
+  .text-icon {
+    width: 90%;
+    text-align: left;
+  }
+  .about-double {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .about__title-holder {
+    height: 25vh;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  .about__image-holder {
+    width: 100%;
+    padding-bottom: 1vh;
+    margin-left: 0vw;
+  }
+  .about__image {
+    width: 100%;
+  }
+  .about__text-holder {
+    width: 100%;
+    padding-left: 8vw;
+    padding-right: 5vw;
+  }
+  .about__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 15px;
+  }
+  .about__text-2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .text-icon {
+    width: 90%;
+    text-align: left;
+  }
+  .about-double {
+    display: none;
+  }
+}
+@media (min-width: 250px) and (max-width: 320px) {
+  .about__title-holder {
+    height: 25vh;
+  }
+  .about__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 26px;
+    margin-bottom: 5vh;
+    text-align: left;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  .about__image-holder {
+    width: 100%;
+    padding-bottom: 1vh;
+    margin-left: 0vw;
+  }
+  .about__image {
+    width: 100%;
+  }
+  .about__text-holder {
+    width: 100%;
+    padding-left: 8vw;
+  }
+  .about__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 15px;
+  }
+  .about__text-2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .text-icon {
+    width: 80%;
+    text-align: left;
+  }
+  .about-double {
+    display: none;
+  }
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.levels-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .levels-mobile {
+    display: block;
+    margin: 7rem auto;
+  }
+}
+
 .levels {
   margin: 7rem auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .levels {
+    display: none;
+  }
+}
+.levels__top {
+  max-width: 70%;
+  margin-right: auto;
+}
+.levels__down {
+  max-width: 70%;
+  margin-left: auto;
 }
 .levels__container {
   max-width: 1320px;
@@ -213,7 +1071,7 @@ body {
   padding: 1rem;
 }
 .levels__title {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
@@ -228,6 +1086,16 @@ body {
   place-items: end normal;
   margin-bottom: -2rem;
 }
+@media (min-width: 420px) and (max-width: 768px) {
+  .levels__steps {
+    margin-bottom: -3rem;
+  }
+}
+@media (max-width: 420px) {
+  .levels__steps {
+    margin-bottom: -3.3rem;
+  }
+}
 .levels__step {
   font-family: Montserrat Alternates;
   font-style: normal;
@@ -237,6 +1105,29 @@ body {
   font-size: 70px;
   color: #87A6C6;
   white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .levels__step--up {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .levels__step {
+    font-size: 63px;
+  }
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .levels__step {
+    font-size: 53.5px;
+  }
+}
+@media (max-width: 420px) {
+  .levels__step {
+    font-size: 38px;
+  }
+}
+.levels__arrow {
+  max-width: 100%;
 }
 .levels__prices-wrap {
   display: flex;
@@ -266,6 +1157,74 @@ body {
   margin-left: 0.5rem;
 }
 
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .courses {
   margin: 7rem auto;
 }
@@ -289,7 +1248,7 @@ body {
   }
 }
 .courses__title {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
@@ -301,7 +1260,7 @@ body {
 .courses__left-aside {
   display: flex;
   flex-direction: column;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -356,7 +1315,7 @@ body {
 }
 @media (min-width: 420px) and (max-width: 1200px) and (max-width: 420px) {
   .courses__brief-information {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -364,7 +1323,7 @@ body {
   }
 }
 .courses__article-for-whom, .courses__text {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -374,7 +1333,7 @@ body {
 }
 @media (min-width: 420px) and (max-width: 1200px) {
   .courses__article-for-whom, .courses__text {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -384,7 +1343,7 @@ body {
 }
 @media (max-width: 420px) {
   .courses__article-for-whom, .courses__text {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -401,7 +1360,7 @@ body {
   margin-bottom: 1rem;
 }
 .courses__text-about {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -411,7 +1370,7 @@ body {
 }
 @media (max-width: 420px) {
   .courses__content {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -558,14 +1517,82 @@ body {
   top: 0.1px;
 }
 
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .feedback__container {
   max-width: 1320px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.feedback__header {
-  font-family: Montserrat Alternates;
+.feedback__title {
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
@@ -573,16 +1600,19 @@ body {
   max-width: fit-content;
   display: inline-block;
   padding: 2rem;
-  margin-left: 30%;
+  margin-left: 38%;
+  margin-bottom: 1.4em;
 }
-@media (min-width: 420px) and (max-width: 768px) {
-  .feedback__header {
-    margin-left: 20%;
+@media (min-width: 768px) and (max-width: 1200px) {
+  .feedback__title {
+    margin-left: 30%;
+    font-size: 45px;
   }
 }
-@media (max-width: 420px) {
-  .feedback__header {
-    margin-left: 5%;
+@media (max-width: 768px) {
+  .feedback__title {
+    margin-left: 20%;
+    font-size: 40px;
   }
 }
 .feedback__card {
@@ -590,25 +1620,28 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   min-width: 0;
-  max-height: 35vh;
-  overflow-y: scroll;
+  max-height: fit-content;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .feedback__card {
     flex-direction: column;
-    max-height: 50vh;
   }
 }
 .feedback__img-container {
   position: relative;
   max-width: 25%;
   max-height: 100%;
-  margin: auto;
+  margin-left: 2em;
   flex: 2 1 25%;
 }
 @media (max-width: 768px) {
   .feedback__img-container {
     flex: 2 1 35%;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  .feedback__img-container {
     flex: 2 1 45%;
   }
 }
@@ -648,7 +1681,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -672,192 +1705,293 @@ body {
   }
 }
 .feedback__client-name {
-  font-family: Montserrat Alternates;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
   font-size: 24px;
   margin-top: 1rem;
 }
+.feedback__client-name span {
+  margin-left: 10%;
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .feedback__client-name span {
+    font-size: 23px;
+  }
+}
+@media (max-width: 420px) {
+  .feedback__client-name span {
+    font-size: 20px;
+  }
+}
 .feedback__client-opinion {
   margin: 1rem 0 0 0;
   padding: 0;
 }
+.feedback__client-opinion br {
+  margin-bottom: 0.7em;
+}
+.feedback__text-part {
+  margin-bottom: 0.4em;
+}
 
-.about {
-  max-width: 1920px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about__container {
-  max-width: 1920px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background: #FFFBF8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about__title-holder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about__title {
+@font-face {
   font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+.tutors__container {
+  margin: 8rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1320px;
+}
+.tutors__title {
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
   font-size: 48px;
   color: #000000;
-  margin-bottom: 14vh;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
-.about__content {
-  width: 100%;
+.tutors__columns {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: row;
 }
-.about__image-holder {
-  width: 50%;
-  margin-left: 13vw;
-  padding-bottom: 37vh;
-}
-.about__image {
-  height: 47vh;
-}
-.about__text-holder {
-  width: 50%;
-  padding-right: 5vw;
+.tutors__first-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-basis: 50%;
 }
-.about__text {
-  font-family: Montserrat Alternates;
+.tutors__second-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-top: 18rem;
+}
+.tutors__item {
+  padding: 1.5rem;
+}
+.tutors__img-container {
+  position: relative;
+  max-width: 55%;
+  max-height: 100%;
+  margin: auto;
+}
+.tutors__image {
+  border: 1.43px solid #D9CCB9;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  z-index: 1;
+  animation: animatedBorder 10s infinite;
+}
+.tutors__name {
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
   font-size: 36px;
-  color: #000000;
-  line-height: 40px;
+  color: #A54A47;
+  padding-left: 1rem;
+  padding-top: 0.62rem;
+  padding-bottom: 1rem;
+  margin-top: -3.5rem;
+  margin-left: 3rem;
+  z-index: 2;
+  position: relative;
 }
-@media (max-width: 768px) {
-  .about__text {
-    font-size: 30px;
-  }
-}
-.about__text-2 {
-  font-family: Montserrat Alternates;
+.tutors__description {
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px;
-  font-size: 24px;
-  color: #000000;
   line-height: 40px;
-}
-.about__border {
-  position: absolute;
-}
-
-.tutors__container {
-  margin-left: 100px;
-}
-
-.tutors__title {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 77px;
+  font-size: 15px;
+  font-size: 16px;
   color: #000000;
-  padding-top: 112px;
-  padding-bottom: 25px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
-
-.tutors__items {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 100px;
-}
-
-.tutors__image {
-  padding: 25px;
-}
-
-.tutors__item {
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.tutors__name {
-  font-family: "Inter", sans-serif;
+.tutors__experience {
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  color: #000000;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-.tutors__description {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  line-height: 40px;
   font-size: 24px;
   line-height: 29px;
-  color: #000000;
-  max-width: 293px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-
-.tutors__experience {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 39px;
-  color: #000000;
-  text-align: center;
-  padding: 20px 10px 20px 10px;
-}
-
-.button-consult {
-  display: inline-block;
-  background: #A54A47;
-  color: #FFFBF8;
-  font-family: Montserrat Alternates;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 44px;
-  font-size: 36px;
-  border-radius: 30px;
-  border: #A54A47;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  padding: 22px 86px;
-}
-
-.button-consult:hover {
   color: #87A6C6;
-  opacity: 1;
-  transition: 0.5s;
+  padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+}
+@media screen and (max-width: 1320px) {
+  .tutors .tutors__columns {
+    flex-direction: column;
+  }
+  .tutors .tutors__container {
+    max-width: 800px;
+    margin: 6rem auto;
+  }
+  .tutors .tutors__second-column {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .tutors .tutors__title {
+    font-size: 30px;
+    padding-bottom: 2rem;
+  }
+  .tutors .tutors__name {
+    margin-left: 0;
+    font-size: 30px;
+  }
+  .tutors .tutors__image {
+    width: 220px;
+  }
+  .tutors .tutors__img-container {
+    max-width: 100%;
+  }
+  .tutors .tutors__description {
+    line-height: 30px;
+  }
+  .tutors .tutors__experience {
+    font-size: 18px;
+  }
 }
 
-.tutors__button {
-  display: flex;
-  justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 82px;
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .credentials {
   max-width: 1920px;
   margin: 0 auto;
@@ -870,12 +2004,11 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 59px;
   font-size: 48px;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-bottom: 5%;
 }
@@ -886,16 +2019,13 @@ body {
   align-items: center;
 }
 .credentials__elements__list {
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-width: 30vw;
-       column-width: 30vw;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  column-count: 2;
+  column-width: 30vw;
+  column-gap: 10%;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
   list-style-type: none;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -930,8 +2060,7 @@ body {
 
 @media screen and (max-width: 1320px) {
   .credentials__elements__list {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }
 @media (min-width: 1321px) and (max-width: 1360px) {
@@ -950,14 +2079,14 @@ body {
     padding-right: 0.1%;
   }
   .credentials__header {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
     font-size: 26px;
   }
   .button-consult {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -967,7 +2096,7 @@ body {
 }
 @media (min-width: 420px) and (max-width: 768px) {
   .button-consult {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -979,7 +2108,7 @@ body {
     padding-right: 0.1%;
   }
   .credentials__header {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -988,7 +2117,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .credentials__header {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
@@ -997,7 +2126,7 @@ body {
 }
 @media screen and (max-width: 272px) {
   .button-consult {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -1036,7 +2165,6 @@ body {
     opacity: 1;
   }
 }
-
 .modal1 {
   display: none;
   position: fixed;
@@ -1233,7 +2361,6 @@ body {
     width: 80%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1200px) {
   .modal__content {
     width: 60%;
@@ -1280,7 +2407,6 @@ body {
     width: 40%;
   }
 }
-
 @media screen and (min-width: 1320px) {
   .modal__content {
     width: 30%;
@@ -1304,32 +2430,103 @@ body {
     width: 30%;
   }
 }
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .footer {
   max-width: 1920px;
   background: #D9CCB9;
 }
 .footer__container {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .footer__tel-holder {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  font-size: 20px;
-  padding-top: 3vh;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
+  padding-top: 2vh;
 }
 .footer__tel {
   text-decoration: none;
   color: #A54A47;
 }
+.footer__tel:hover {
+  text-decoration: underline;
+}
 .footer__copy {
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
@@ -1338,11 +2535,18 @@ body {
   align-items: flex-end;
   color: #000000;
 }
+.footer__logo-holder {
+  margin-top: 4vw;
+}
+.footer__logo {
+  max-width: 400px;
+}
 .footer__socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 18vw;
+  width: 100%;
+  margin-top: 2vw;
 }
 .footer__socials-icons {
   list-style-type: none;
@@ -1353,17 +2557,165 @@ body {
 }
 .footer__disclaimer-holder {
   margin-bottom: 4vh;
+  align-content: flex-start;
+  width: 100%;
 }
 .footer__disclaimer {
-  font-family: Montserrat Alternates;
+  font-family: Inter;
   font-style: normal;
-  font-weight: 500;
-  line-height: 44px;
-  font-size: 36px;
+  font-weight: 400;
+  line-height: 10px;
+  font-size: 8px;
   color: #CA8D66;
 }
-@media (max-width: 768px) {
+.footer .logo-instagram:hover {
+  background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg);
+}
+.footer .logo-telegram:hover {
+  background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg);
+}
+.footer .logo-wapp:hover {
+  background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg);
+}
+.footer .logo_handset:hover {
+  background: url(/assets/images/desktop/logo-handset-shadow-svg.svg);
+}
+
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .footer__tel-holder {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 24px;
+    padding-top: 1vh;
+  }
+  .footer__logo {
+    max-width: 250px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1080px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer__tel-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 36px;
+    padding-top: 1vh;
+  }
+  .footer__logo {
+    max-width: 300px;
+  }
+  .footer__disclaimer-holder {
+    margin-bottom: 2vh;
+    align-content: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer__tel-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 26px;
+    padding-top: 1vh;
+  }
+  .footer__copy {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .footer__logo {
+    max-width: 250px;
+  }
+  .footer__disclaimer-holder {
+    margin-bottom: 2vh;
+    align-content: center;
+  }
+}
+@media (min-width: 250px) and (max-width: 320px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer__tel-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 20px;
+    padding-top: 1vh;
+  }
+  .footer__copy {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 10px;
+  }
+  .footer__logo {
+    max-width: 200px;
+  }
+  .footer__disclaimer-holder {
+    margin-bottom: 2vh;
+    align-content: center;
+  }
   .footer__disclaimer {
-    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    font-size: 6px;
+    padding-left: 1vh;
+  }
+  .footer .logo-instagram {
+    width: 95%;
+  }
+  .footer .logo-instagram:hover {
+    background: url(/assets/images/desktop/logo-instagram-shadow-svg.svg);
+    background-size: 98%;
+  }
+  .footer .logo-telegram {
+    width: 95%;
+  }
+  .footer .logo-telegram:hover {
+    background: url(/assets/images/desktop/logo-telegram-shadow-svg.svg);
+    background-size: 98%;
+  }
+  .footer .logo-wapp {
+    width: 95%;
+  }
+  .footer .logo-wapp:hover {
+    background: url(/assets/images/desktop/logo-whatsapp-shadow-svg.svg);
+    background-size: 98%;
+  }
+  .footer .logo_handset {
+    width: 95%;
+  }
+  .footer .logo_handset:hover {
+    background: url(/assets/images/desktop/logo-handset-shadow-svg.svg);
+    background-size: 98%;
   }
 }
