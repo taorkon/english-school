@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="assets/styles/css/normalize.css" />
     <link rel="stylesheet" href="assets/styles/css/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="assets/styles/css/styles.css" />
+    <link rel="stylesheet" href="assets/styles/css/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>English School</title>
@@ -216,10 +215,8 @@
 
 
         </section>
-
         <section class="courses">
             <h2 class="courses__title"><span class="border-animation">Курсы</span></h2>
-
             <div class="courses__container">
                 <div class="courses__left-aside">
                     <div class="courses__common-information">
@@ -1035,15 +1032,75 @@
         </section>
         <!--Маша-->
         <section class="credentials">
-            <div class="credentials__container">
-                <button class="button-consult"></button>
-            </div>
+                <h2 class="credentials__header"><span class="border-animation">Дипломы и сертификаты</span></h2>
+                <div class="credentials__elements">
+                  <ul class="credentials__elements__list">
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal('myModal')">Воронежский Государственный Университет, диплом с отличием от 18.06.2010</a></li>
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal1('myModal1')">Международный экзамен IELTS (8.5 баллов из 9)</a></li>
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal2('myModal2')">Повышение квалификации в Оксфордском университете (2016)</a></li>
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal3('myModal3')">Кандидат филологических наук по специальности 10.02.04 (германские языки - диплом от 28.03.2016)</a></li><br>
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal4('myModal4')">Международный экзамен TKT: эксперт на уровне языка</a></li>
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal5('myModal5')">Международный экзамен TKT: эксперт на уровне планирования и применения ресурсов</a></li>
+                    <li class="credentials__elements__list--li"><a href="javascript://" class="credentials__elements__list--a" onclick="ShowModal6('myModal6')">Международный экзамен TKT: эксперт на уровне преподавания</a></li>
+                  </ul>
+                </div>
+                <div class="credentials__button">
+                  <button class="сredentials__button-consult button-consult">Записаться на курс</button>
+                </div>
         </section>
+        <div id="myModal" class="modal" onclick="HideModal()">
+            <div class="modal__content">
+                <div class="modal__body">
+                    <img src="assets/images/desktop/diploma.jpg" width="100%" alt="Диплом">
+                </div>
+            </div>
+        </div>
+        <div id="myModal1" class="modal1" onclick="HideModal1()">
+            <div class="modal1__content">
+                <div class="modal1__body">
+                    <img src="assets/images/desktop/ielts.jpeg" width="100%" alt="Сертификат IELTS">
+                </div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal2" onclick="HideModal2()">
+            <div class="modal2__content">
+                <div class="modal2__body">
+                    <img src="assets/images/desktop/oxford.jpg" width="100%" alt="Сертификат Oxford">
+                </div>
+            </div>
+        </div>
+        <div id="myModal3" class="modal3" onclick="HideModal3()">
+            <div class="modal3__content">
+                <div class="modal3__body">
+                    <img src="assets/images/desktop/sertificat.jpg" width="100%" alt="Сертификат кандидата филологических наук">
+                </div>
+            </div>
+        </div>
+        <div id="myModal4" class="modal4" onclick="HideModal4()">
+            <div class="modal4__content">
+                <div class="modal4__body">
+                    <img src="assets/images/desktop/tkt-1.jpg" width="100%" alt="Сертификат Cambridge">
+                </div>
+            </div>
+        </div>
+        <div id="myModal5" class="modal5" onclick="HideModal5()">
+            <div class="modal5__content">
+                <div class="modal5__body">
+                    <img src="assets/images/desktop/tkt-2.jpeg" width="100%" alt="Сертификат Cambridge">
+                </div>
+            </div>
+        </div>
+        <div id="myModal6" class="modal6" onclick="HideModal6()">
+            <div class="modal6__content">
+                <div class="modal6__body">
+                    <img src="assets/images/desktop/tkt-3.jpeg" width="100%" alt="Сертификат Cambridge">
+                </div>
+            </div>
+        </div>
     </main>
     <!--Женя-->
     <footer class="footer">
         <div class="footer__container">
-
             <div class="footer__contacts">
                 <div class="footer__tel-holder">
                     <a class="footer__tel" href="tel:+79518514850">+7(951)851-48-50</a>
@@ -1055,7 +1112,6 @@
             <div class="footer__logo-holder">
                 <img class="footer__logo" src="assets/images/desktop/logo-english-school.svg" alt="logo" />
             </div>
-
             <div class="footer__socials-holder">
                 <div class="footer__socials">
                     <ul class="footer__socials-icons">
@@ -1079,8 +1135,8 @@
                 </div>
             </div>
     </footer>
+    <script src="src/diploma.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="src/swiper.js"></script>
 </body>
-
 </html>

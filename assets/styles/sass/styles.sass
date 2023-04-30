@@ -82,9 +82,26 @@ body
 		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
 
 
+
 // Re-usable BEM blocks
 
 .button-consult
+	//style here
+	display: inline-block
+	@include montserrat-500-36
+	background: $red
+	color: $beigeBg
+	border-radius: 20px 
+	border: $red
+	cursor: pointer 
+	user-select: none
+	padding: 22px 86px
+	margin-bottom: 5%
+	margin-top: 5%
+	transition: 1s
+
+.button-consult:hover
+	color: $blue
 
 .text-icon
 	padding-left: 0px
