@@ -2026,7 +2026,7 @@ body {
   font-style: normal;
 }
 .credentials {
-  max-width: 1920px;
+  max-width: 1320px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -2051,9 +2051,6 @@ body {
   align-items: center;
 }
 .credentials__elements__list {
-  column-count: 2;
-  column-width: 30vw;
-  column-gap: 10%;
   padding-left: 12.5%;
   padding-right: 12.5%;
   list-style-type: none;
@@ -2088,16 +2085,6 @@ body {
 @media screen and (max-width: 1320px) {
   .credentials__elements__list {
     column-count: 1;
-  }
-}
-@media (min-width: 1321px) and (max-width: 1360px) {
-  .credentials__elements__list--li:nth-child(4) {
-    margin-bottom: 10%;
-  }
-}
-@media (min-width: 1361px) and (max-width: 1920px) {
-  .credentials__elements__list--li:nth-child(4) {
-    margin-bottom: 16%;
   }
 }
 @media screen and (max-width: 420px) {
