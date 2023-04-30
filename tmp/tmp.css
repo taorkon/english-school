@@ -1,0 +1,16 @@
+body {
+    min-width: 0;
+    min-width: inherit;
+}
+
+.image-slider {
+    padding: 30px 0 70px 0;
+}
+
+.image-slider__image {
+    text-align: center;
+}
+
+img {
+    max-width: 80vw;
+}

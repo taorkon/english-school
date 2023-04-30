@@ -21,58 +21,64 @@
 //Header
 .header
 
+	display: flex
+	justify-content: center
+	align-items: center
+
+	background: $beigeDark
+
+	max-height: 90px
+
 	&__container
 		display: flex
+		justify-content: space-between
+		align-items: center
+
+		width: 100%
 		max-width: 1920px
-		max-height: 80px
-		background: $beigeDark
 
 	&__logo-holder
 		display: flex
-		width: 5vw
-		height: 5vh
-		margin-top: 2.5vh
+		width: 8vw
+
+		margin-top: 1vh
 		margin-left: 6vw
+
+	&__logo
+		width: 100%
 
 	&__menu-holder
 		display: flex
-		width: 65vw
-		height: 5vh
-		margin-top: 1.5vh
-		margin-left: 5vh
 
 	&__menu
-		display: inline-flex
-		box-sizing: border-box
+		display: flex
+		gap: 3vw
+
 		width: 100%
-		padding-top: 0.7vh
+
 		margin: 0
 		list-style: none
 
-	&__menu-item
+	&__link
 		@include montserrat-400-24
 		text-decoration: none
 		color: $black
-		margin-left: 3vw
 
-	&__menu-item:hover
+	&__link:hover
 		text-decoration: underline $blue
 		opacity: 0.75
 
 	&__socials
 		display: flex
-		width: 10vw
-		height: 5vh
+		justify-content: center
+
 		padding: 0
 		margin-left: 2vw
 		margin-top: 2vh
 		list-style: none
 
-	&__socials-icons
-		display: inline-flex
-		width: 100&
-		height: 100%
-		margin: 0
+	&__socials-icons > img
+		width: 70px
 
 	&__icons-instagram:hover
 		filter: drop-shadow(5px 5px 10px #d11d98)
@@ -86,100 +92,43 @@
 	&__icons-handset:hover
 		filter: drop-shadow(5px 5px 10px #1e1b1e)
 
-@media (min-width:1080px) and (max-width: 1380px)
+
+@media (max-width: 1380px)
 	.header
-		&__menu-item
+		&__link
 			@include montserrat-400-20
 
-@media (min-width:767px) and (max-width: 1080px)
+@media  (max-width: 1080px)
 	.header
-		&__logo-holder
-			display: flex
-			width: 3vw
-			height: 3vh
-			margin-top: 3.5vh
-			margin-left: 3vw
 
-		&__menu-holder
-			display: flex
-			width: 60vw
-			margin-left: 3vw
-
-		&__menu-item
+		&__link
 			@include montserrat-400-15
 
-		&__socials-icons
-			display: inline-flex
-			width: 60%
-			height: 70%
-			margin-top: 1vh
-			margin-left: 2vw
+		&__socials-icons > img
+			width: 50px
 
-@media (min-width:320px) and (max-width: 767px)
+@media  (max-width: 800px)
 	.header
+		&__logo-holder
+			width: 20vw
+		&__menu-holder
+			display: none
+		&__socials-icons > img
+			width: 50px
+
+@media  (max-width: 500px)
+	.header
+		&__menu-holder
+			display: none
 
 		&__logo-holder
-			display: flex
-			width: 5vw
-			height: 4vh
-			margin-top: 4vh
-			margin-left: 7vw
+			width: 30vw
 
-		&__menu-holder
-			display: flex
-			width: 80vw
-			margin-left: 1vw
-
-		&__menu
-			box-sizing: border-box
-
-		&__menu-item
-			@include montserrat-400-10
-			margin-left: 1.5vw
-
-		&__socials
-			margin-left: -2vw
-
-		&__socials-icons
-			display: inline-flex
-			width: 10%
-			height: 20%
-			margin-top: 1.7vh
-			margin-left: 0
-
-@media (min-width:250px) and (max-width: 320px)
+@media  (max-width: 320px)
 	.header
-
 		&__logo-holder
-			display: flex
-			width: 2vw
-			height: 1vh
-			margin-top: 4vh
-			margin-left: 2vw
+			display: none
 
-		&__menu-holder
-			display: flex
-			width: 70vw
-			margin-top: 1vh
-			margin-left: 6vw
-
-		&__menu
-			box-sizing: border-box
-			padding: 0
-
-		&__menu-item
-			@include montserrat-400-7
-			margin-left: 1.5vw
-
-		&__socials
-			margin-left: 1vw
-
-		&__socials-icons
-			display: inline-flex
-			width: 10%
-			height: 20%
-			margin-top: 1.7vh
-			margin-left: 0
 //Intro
 
 //About
