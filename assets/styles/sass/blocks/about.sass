@@ -6,14 +6,12 @@
 @import "../mixin"
 
 .about
-    max-width: 1920px
     @include flex-center-center
 
     &__container
-        max-width: 1920px
+        max-width: $max-desktop
         margin: 0 auto
         box-sizing: border-box
-        background: $beigeBg
         @include flex-column-center
 
     &__title-holder
@@ -30,17 +28,17 @@
 
     &__image-holder
         width: 50%
-        margin-left: 10vw
+        //margin-left: 10vw
         padding-bottom: 37vh
 
     &__image
-        height: 44vh
+        width: 100%
         transform: scale(-1, 1)
 
     &__text-holder
         width: 50%
-        padding-right: 05vw
-        padding-left: 2vw
+        //padding-right: 1vw
+        padding-left: 10%
         @include flex-column-center-space-evenly
 
     &__text
@@ -48,9 +46,13 @@
         color: $black
         line-height: 40px
 
+        margin-bottom: 1rem
+
     &__text-2
         @include montserrat-400-20
         color: $black
+
+        margin-bottom: 1rem
 
     &__border
         position: absolute
@@ -64,8 +66,6 @@
             width: 30%
             margin-left: 10vw
 
-        &__image
-            height: 35vh
 
     .about-double
         display: none
@@ -75,14 +75,13 @@
         display: none
 
     .about-double
-        max-width: 1920px
+        max-width: $max-desktop
         @include flex-center-center
 
         &__container-double
             max-width: 1920px
             margin: 0 auto
             box-sizing: border-box
-            background: $beigeBg
 
         &__title-holder-double
             @include flex-column-center
@@ -99,20 +98,19 @@
 
         &__image-holder-double
             width: 40%
-            margin-bottom: 1vh
+            //margin-bottom: 1vh
 
         &__image-double
-            width: 40vh
-            margin-left: 6vh
-            margin-top: 7vh
+            width: 100%
+            padding-right: 5rem
             transform: scale(-1, 1)
 
         &__text-holder-double
             @include flex-column-space-evenly
-            width: 60%
-            padding-left: 16vh
-            padding-top: 10vh
-            padding-right: 5vh
+            width: 50%
+            padding-left: 2rem
+            //padding-top: 10vh
+            //padding-right: 5vh
 
         &__text
             @include montserrat-400-24
@@ -155,7 +153,7 @@
             text-align: center
 
         &__text-2
-            line-height: 25px
+            //line-height: 25px
 
     .text-icon
         width: 90%
@@ -192,8 +190,8 @@
             line-height: 15px
 
         &__text-2
-            @include montserrat-400-15
-            line-height: 15px
+            @include montserrat-400-20
+            //line-height: 15px
 
     .text-icon
         width: 90%
@@ -234,8 +232,8 @@
             line-height: 15px
 
         &__text-2
-            @include montserrat-400-15
-            line-height: 15px
+            @include montserrat-400-20
+            line-height: 30px
 
     .text-icon
         width: 80%

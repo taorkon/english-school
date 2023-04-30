@@ -6,14 +6,17 @@
 @import "../mixin"
 
 .footer
-    max-width: 1920px
     background: $beigeDark
+
+    
 
     &__container
         @include flex-center-space-around
         width: 100%
         margin: 0 auto
         box-sizing: border-box
+
+        max-width: $max-desktop
 
     &__tel-holder
         @include montserrat-500-36
@@ -34,7 +37,8 @@
         margin-top: 4vw
 
     &__logo
-        max-width: 400px
+        width: 200px
+        //max-width: 400px
 
     &__socials
         @include flex-column-center

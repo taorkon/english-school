@@ -85,23 +85,52 @@ body
 
 // Re-usable BEM blocks
 
+// button
+
+.button-holder
+	@include flex-center-center
+
+.button-link
+	text-decoration: none
+	color: white
+	
+
 .button-consult
-	//style here
+	
 	display: inline-block
-	@include montserrat-500-36
+	
 	background: $red
 	color: $beigeBg
-	border-radius: 20px 
+	border-radius: 20px
 	border: $red
-	cursor: pointer 
+	cursor: pointer
 	user-select: none
 	padding: 22px 86px
 	margin-bottom: 5%
 	margin-top: 5%
 	transition: 1s
+	@include montserrat-500-36
+
 
 .button-consult:hover
 	color: $blue
+
+@media screen and (max-width: $mobile)
+	.button-consult
+		@include montserrat-500-20
+		padding: 10px 25px
+
+@media (min-width: $mobile) and (max-width: $tablet)
+	.button-consult
+		@include montserrat-500-26
+		padding: 16px 50px
+
+@media screen and (max-width: 272px)
+	.button-consult
+		@include montserrat-400-15
+		padding: 6px 14px
+
+//text-blocks
 
 .text-icon
 	padding-left: 0px
@@ -115,6 +144,9 @@ body
 
 .h6
 	@include montserrat-500-36
+
+	@media screen and (max-width: $tablet)
+		font-size: 24px
 .h7
 	@include montserrat-400-24
 
