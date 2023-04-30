@@ -330,11 +330,12 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1320px;
 }
 .header__logo-holder {
   display: flex;
   width: 8vw;
+  max-width: 150px;
   margin-top: 1vh;
   margin-left: 6vw;
 }
@@ -347,7 +348,6 @@ body {
 .header__menu {
   display: flex;
   gap: 3vw;
-  width: 100%;
   margin: 0;
   list-style: none;
 }
