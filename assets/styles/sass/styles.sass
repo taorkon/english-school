@@ -6,181 +6,117 @@
 
 //General settings
 
+body
+	box-sizing: border-box
+	min-width: 0
+
 *,
 * ::before,
 * ::after
 	box-sizing: inherit
+	margin: 0
+	min-width: inherit
+	font-optical-sizing: auto
+
+///swiper styles
+.swiper-pagination
+	position: static
+	margin-top: 2rem
+
+.swiper-pagination-bullet
+	background-color: #A54A47
+
+// custom scrollbar
+
+::-webkit-scrollbar
+	width: 10px
+	height: 70%
+
+::-webkit-scrollbar-track
+	background: #f1f1f1
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb
+	background: $blue
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb:hover
+	background: $red
+
+// underline
+.nice-underline
+	display: inline-block
+	position: relative
+
+	&::before
+		content: ""
+		position: absolute
+		bottom: 5px
+		width: 100%
+		height: 7px
+		transform: skew(-12deg)
+		background: $blue
+		opacity: .5
+		z-index: -1
+
+//border-animation
+.border-animation
+	display: inline-block
+	padding: 1rem 2rem
+	border: 2px solid #D9CCB9
+	border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
+	animation: animatedHeader 10s infinite
+
+@keyframes animatedHeader
+	0%
+		border-radius: 30% 80% 60% 40%/40% 40% 70% 60%
+	10%
+		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
+	25%
+		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
+	40%
+		border-radius: 42% 80% 72% 25%/65% 55% 55% 30%
+	55%
+		border-radius: 40% 78% 68% 30%/60% 49% 60% 45%
+	75%
+		border-radius: 35% 75% 65% 40%/40% 45% 65% 60%
+
 
 // Re-usable BEM blocks
 
 .button-consult
-		//style here
 
-//Section styles
+.text-icon
+	padding-left: 0px
+	list-style-image: url(/assets/images/desktop/icon-about.png)
 
-//Header
-.header
+.text-blue
+	color: $blue
 
-	display: flex
-	justify-content: center
-	align-items: center
+.text-red
+	color: $red
 
-	background: $beigeDark
-
-	max-height: 90px
-
-	&__container
-		display: flex
-		justify-content: space-between
-		align-items: center
-
-		width: 100%
-		max-width: 1920px
-
-	&__logo-holder
-		display: flex
-		width: 8vw
-
-		margin-top: 1vh
-		margin-left: 6vw
-
-	&__logo
-		width: 100%
-
-	&__menu-holder
-		display: flex
-
-	&__menu
-		display: flex
-		gap: 3vw
-
-		width: 100%
-
-		margin: 0
-		list-style: none
-
-	&__link
-		@include montserrat-400-24
-		text-decoration: none
-		color: $black
-
-	&__link:hover
-		text-decoration: underline $blue
-		opacity: 0.75
-
-	&__socials
-		display: flex
-		justify-content: center
-
-		padding: 0
-		margin-left: 2vw
-		margin-top: 2vh
-		list-style: none
-
-	&__socials-icons > img
-		width: 70px
-
-	&__icons-instagram:hover
-		filter: drop-shadow(5px 5px 10px #d11d98)
-
-	&__icons-telegram:hover
-		filter: drop-shadow(5px 5px 10px #2ca6df)
-
-	&__icons-whatsapp:hover
-		filter: drop-shadow(5px 5px 10px #1bb541)
-
-	&__icons-handset:hover
-		filter: drop-shadow(5px 5px 10px #1e1b1e)
+.h6
+	@include montserrat-500-36
+.h7
+	@include montserrat-400-24
 
 
-@media (max-width: 1380px)
-	.header
-		&__link
-			@include montserrat-400-20
-
-@media  (max-width: 1080px)
-	.header
-
-		&__link
-			@include montserrat-400-15
-
-		&__socials-icons > img
-			width: 50px
-
-@media  (max-width: 800px)
-	.header
-		&__logo-holder
-			width: 20vw
-		&__menu-holder
-			display: none
-		&__socials-icons > img
-			width: 50px
-
-@media  (max-width: 500px)
-	.header
-		&__menu-holder
-			display: none
-
-		&__logo-holder
-			width: 30vw
-
-@media  (max-width: 320px)
-	.header
-		&__logo-holder
-			display: none
-
-//Intro
-
-//About
-
-//Courses
-
+// Header
+@import "blocks/header"
+// Intro
+@import "blocks/intro"
+// About
+@import "blocks/about"
+// Levels
+@import "blocks/levels"
+// Courses
+@import "blocks/courses"
 // Feedback
-
-.feedback
-	&__container
-		max-width: 1320px
-
-		margin-left: auto
-		margin-right: auto
-
-	&__card-wrap
-		max-width: 45%
-
-	&__card
-		display: flex
-		justify-content: space-between
-		align-items: flex-start
-		min-width: 0
-
-		padding: 1em
-
-	&__img-container
-		max-width: 25%
-		max-height: 100%
-
-		flex: 2 1 25%
-
-		img
-			@include img-fit
-			border-radius: 50%
-
-	&__text-side
-		@include flex-column-space-evenly
-		flex: 1 2 75%
-		padding: 0 10px
-
-	&__client-name
-		margin: 1rem 0 0 0
-
-	&__client-opinion
-		margin: 1rem 0 0 0
-		padding: 0
-
-//Tutors
-
-//Cases
-
-//Credentials
-
-//Footer
+@import "blocks/feedback"
+// Tutors
+@import "blocks/tutors"
+// Credentials
+@import "blocks/credentials"
+// Footer
+@import "blocks/footer"

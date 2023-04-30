@@ -1,0 +1,109 @@
+//tutors styles
+
+@import "../breakpoints"
+@import "../colors"
+@import "../fonts"
+@import "../mixin"
+
+.tutors
+	&__container
+		margin: 8rem auto
+		padding: 1rem
+		width: 100%
+		max-width: 1320px
+
+	&__title
+		@include montserrat-500-48
+
+		color: $black
+		text-align: center
+		padding-top: 1rem
+		padding-bottom: 4rem
+
+	&__columns
+		display: flex
+		flex-direction: row
+
+	&__first-column
+		display: flex
+		flex-direction: column
+		flex-basis: 50%
+
+	&__second-column
+		display: flex
+		flex-direction: column
+		flex-basis: 50%
+		margin-top: 18rem
+
+	&__item
+		padding: 1.5rem
+
+	&__img-container
+		position: relative
+		max-width: 55%
+		max-height: 100%
+		margin: auto
+
+	&__image
+		border: 1.43px solid #D9CCB9
+		border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+		z-index: 1
+		animation: animatedBorder 10s infinite
+
+	&__name
+		@include montserrat-500-36
+		color: $red
+		padding-left: 1rem
+		padding-top: 0.62rem
+		padding-bottom: 1rem
+		margin-top: -3.5rem
+		margin-left: 3rem
+		z-index: 2
+		position: relative
+
+	&__description
+		@include montserrat-400-15
+		font-size: 16px
+		color: $black
+		padding-left: 1rem
+		padding-bottom: 1rem
+
+	&__experience
+		@include montserrat-700-24
+		line-height: 29px
+		color: $blue
+		padding: 1.25rem 0.625rem 1.25rem 0.625rem
+
+	@media screen and (max-width:1320px)
+		.tutors
+			&__columns
+				flex-direction: column
+
+			&__container
+				max-width: 800px
+				margin: 6rem auto
+
+			&__second-column
+				margin-top: 0
+
+	@media screen and (max-width:560px)
+		.tutors
+			&__title
+				font-size: 30px
+				padding-bottom: 2rem
+
+			&__name
+				margin-left: 0
+				font-size: 30px
+
+			&__image
+				width: 220px
+
+			&__img-container
+				max-width: 100%
+
+			&__description
+				line-height: 30px
+
+			&__experience
+				font-size: 18px
