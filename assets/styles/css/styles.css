@@ -249,6 +249,120 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D9CCB9;
+  max-height: 90px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+}
+.header__logo-holder {
+  display: flex;
+  width: 8vw;
+  margin-top: 1vh;
+  margin-left: 6vw;
+}
+.header__logo {
+  width: 100%;
+}
+.header__menu-holder {
+  display: flex;
+}
+.header__menu {
+  display: flex;
+  gap: 3vw;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+.header__link {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+.header__link:hover {
+  text-decoration: underline #87A6C6;
+  opacity: 0.75;
+}
+.header__socials {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-left: 2vw;
+  list-style: none;
+}
+.header__socials-icons > img {
+  width: 70px;
+}
+.header__icons-instagram:hover {
+  filter: drop-shadow(5px 5px 10px #d11d98);
+}
+.header__icons-telegram:hover {
+  filter: drop-shadow(5px 5px 10px #2ca6df);
+}
+.header__icons-whatsapp:hover {
+  filter: drop-shadow(5px 5px 10px #1bb541);
+}
+.header__icons-handset:hover {
+  filter: drop-shadow(5px 5px 10px #1e1b1e);
+}
+
+@media (max-width: 1380px) {
+  .header__link {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1080px) {
+  .header__link {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .header__socials-icons > img {
+    width: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .header__logo-holder {
+    width: 20vw;
+  }
+  .header__menu-holder {
+    display: none;
+  }
+  .header__socials-icons > img {
+    width: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .header__menu-holder {
+    display: none;
+  }
+  .header__logo-holder {
+    width: 30vw;
+  }
+}
+@media (max-width: 320px) {
+  .header__logo-holder {
+    display: none;
+  }
+}
 @font-face {
   font-family: Montserrat Alternates;
   src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");

@@ -4,3 +4,111 @@
 @import "../colors"
 @import "../fonts"
 @import "../mixin"
+
+.header
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    background: $beigeDark
+
+    max-height: 90px
+
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        width: 100%
+        max-width: 1920px
+
+    &__logo-holder
+        display: flex
+        width: 8vw
+
+        margin-top: 1vh
+        margin-left: 6vw
+
+    &__logo
+        width: 100%
+
+    &__menu-holder
+        display: flex
+
+    &__menu
+        display: flex
+        gap: 3vw
+
+        width: 100%
+
+        margin: 0
+        list-style: none
+
+    &__link
+        @include montserrat-400-24
+        text-decoration: none
+        color: $black
+
+    &__link:hover
+        text-decoration: underline $blue
+        opacity: 0.75
+
+    &__socials
+        display: flex
+        justify-content: center
+
+        padding: 0
+        margin-left: 2vw
+        list-style: none
+
+    &__socials-icons > img
+        width: 70px
+
+    &__icons-instagram:hover
+        filter: drop-shadow(5px 5px 10px #d11d98)
+
+    &__icons-telegram:hover
+        filter: drop-shadow(5px 5px 10px #2ca6df)
+
+    &__icons-whatsapp:hover
+        filter: drop-shadow(5px 5px 10px #1bb541)
+
+    &__icons-handset:hover
+        filter: drop-shadow(5px 5px 10px #1e1b1e)
+
+@media (max-width: 1380px)
+    .header
+        &__link
+            @include montserrat-400-20
+
+@media  (max-width: 1080px)
+    .header
+
+        &__link
+            @include montserrat-400-15
+
+        &__socials-icons > img
+            width: 50px
+
+@media  (max-width: 800px)
+    .header
+        &__logo-holder
+            width: 20vw
+        &__menu-holder
+            display: none
+        &__socials-icons > img
+            width: 50px
+
+@media  (max-width: 500px)
+    .header
+        &__menu-holder
+            display: none
+
+        &__logo-holder
+            width: 30vw
+
+@media  (max-width: 320px)
+    .header
+        &__logo-holder
+            display: none
