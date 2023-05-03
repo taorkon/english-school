@@ -319,6 +319,8 @@ body {
   font-style: normal;
 }
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,6 +333,35 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1320px;
+}
+.header__burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+}
+@media (max-width: 800px) {
+  .header__burger-btn {
+    display: block;
+  }
+}
+.header__line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+.header__line--first {
+  transform: translateY(-10px);
+}
+.header__line--third {
+  transform: translateY(10px);
 }
 .header__logo-holder {
   display: flex;
@@ -345,11 +376,29 @@ body {
 .header__menu-holder {
   display: flex;
 }
+@media (max-width: 800px) {
+  .header__menu-holder {
+    position: absolute;
+    width: 280px;
+    left: -280px;
+    top: 0;
+    background-color: #D9CCB9;
+    opacity: 97%;
+    padding: 83px 20px 20px 20px;
+    transition: transform 0.5s;
+    z-index: 4;
+  }
+}
 .header__menu {
   display: flex;
   gap: 3vw;
   margin: 0;
   list-style: none;
+}
+@media (max-width: 800px) {
+  .header__menu {
+    flex-direction: column;
+  }
 }
 .header__link {
   font-family: "Montserrat Alternates", sans-serif;
@@ -412,24 +461,23 @@ body {
   .header__logo-holder {
     width: 20vw;
   }
-  .header__menu-holder {
-    display: none;
-  }
   .header__socials-icons > img {
     width: 50px;
   }
-}
-@media (max-width: 500px) {
-  .header__menu-holder {
-    display: none;
+  .header.open .header__menu-holder {
+    transform: translateX(100%);
   }
-  .header__logo-holder {
-    width: 30vw;
+  .header.open .header__line {
+    background-color: #fff;
   }
-}
-@media (max-width: 320px) {
-  .header__logo-holder {
-    display: none;
+  header.open .header__line--second {
+    opacity: 0;
+  }
+  header.open .header__line--first {
+    transform: translateY(0) rotate(45deg);
+  }
+  header.open .header__line--third {
+    transform: translateY(0) rotate(-45deg);
   }
 }
 @font-face {

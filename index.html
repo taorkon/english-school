@@ -16,8 +16,15 @@
 
 <body class="body">
     <!--Юля-->
-    <header class="header">
+    <header class="header open">
         <div class="header__container">
+
+            <button class="header__burger-btn" id="burger">
+                <span class="header__line header__line--first"></span>
+                <span class="header__line header__line--second"></span>
+                <span class="header__line header__line--third"></span>
+            </button>
+
             <div class="header__logo-holder"><img class="header__logo"
                     src="assets/images/desktop/logo-english-school.svg" alt="logo"></div>
             <nav class="header__menu-holder">
@@ -1170,6 +1177,7 @@
     <script src="src/diploma.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="src/swiper.js"></script>
+    <script defer src="src/header.js"></script>
 </body>
 
 </html>
