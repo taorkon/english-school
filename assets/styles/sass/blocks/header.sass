@@ -6,7 +6,6 @@
 @import "../mixin"
 
 .header
-    position: sticky
     top: 0
     display: flex
     justify-content: center
@@ -31,7 +30,7 @@
         margin-left: 5px
         border: none
         background-color: transparent
-        z-index: 5
+        z-index: 55
 
         @media (max-width: 800px)
             display: block
@@ -58,6 +57,9 @@
         margin-top: 1vh
         margin-left: 6vw
 
+        @media (max-width: 800px)
+            margin-left: auto
+
     &__logo
         width: 100%
 
@@ -65,14 +67,14 @@
         display: flex
         @media (max-width: 800px)
             position: absolute
-            width: 280px
-            left: -280px
+            width: 250px
+            left: -250px
             top: 0
             background-color: $beigeDark
             opacity: 97%
             padding: 83px 20px 20px 20px 
             transition: transform .5s
-            z-index: 4
+            z-index: 50
 
     &__menu
         display: flex
@@ -85,11 +87,15 @@
 
         @media (max-width: 800px)
             flex-direction: column
+            padding-left: 20px
 
     &__link
         @include montserrat-400-24
         text-decoration: none
         color: $black
+
+        @media (max-width: 800px)
+            font-size: 20px !important
 
     &__link:hover
         text-decoration: underline $blue
@@ -109,16 +115,18 @@
     &__icons-instagram:hover
         filter: drop-shadow(5px 5px 10px #d11d98)
 
+
     &__icons-telegram:hover
         filter: drop-shadow(5px 5px 10px #2ca6df)
 
     &__icons-whatsapp:hover
         filter: drop-shadow(5px 5px 10px #1bb541)
 
+
     &__icons-handset:hover
         filter: drop-shadow(5px 5px 10px #1e1b1e)
 
- 
+
 @media (max-width: 1380px)
     .header
         &__link
