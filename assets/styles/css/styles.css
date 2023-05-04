@@ -69,6 +69,7 @@
 body {
   box-sizing: border-box;
   min-width: 0;
+  border: 5px solid red;
 }
 
 *,
@@ -78,6 +79,7 @@ body {
   margin: 0;
   min-width: inherit;
   font-optical-sizing: auto;
+  border: inherit;
 }
 
 .swiper-pagination {
@@ -720,6 +722,7 @@ body {
 }
 .about__image-holder {
   width: 50vw;
+  max-width: 550px;
   padding-bottom: 37vh;
 }
 .about__image {
@@ -2685,3 +2688,5 @@ body {
     background-size: 98%;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
