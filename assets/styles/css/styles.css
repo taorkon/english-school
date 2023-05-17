@@ -324,7 +324,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #D9CCB9;
-  max-height: 90px;
+  max-height: 65px;
 }
 .header__container {
   display: flex;
@@ -332,6 +332,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1320px;
+  padding-top: 10px;
 }
 .header__burger-btn {
   display: none;
@@ -366,12 +367,17 @@ body {
   display: flex;
   width: 8vw;
   max-width: 150px;
-  margin-top: 1vh;
+  margin-top: 2.2vh;
   margin-left: 6vw;
 }
 @media (max-width: 800px) {
   .header__logo-holder {
     margin-left: auto;
+  }
+}
+@media (max-width: 600px) {
+  .header__logo-holder {
+    display: none;
   }
 }
 .header__logo {

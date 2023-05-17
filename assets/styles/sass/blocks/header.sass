@@ -11,7 +11,7 @@
     justify-content: center
     align-items: center
     background: $beigeDark
-    max-height: 90px
+    max-height: 65px
 
 
     &__container
@@ -21,6 +21,7 @@
 
         width: 100%
         max-width: $max-desktop
+        padding-top: 10px
 
     &__burger-btn
         display: none
@@ -54,11 +55,13 @@
         width: 8vw
         max-width: 150px
 
-        margin-top: 1vh
+        margin-top: 2.2vh
         margin-left: 6vw
 
         @media (max-width: 800px)
             margin-left: auto
+        @media (max-width: 600px)
+            display: none
 
     &__logo
         width: 100%
