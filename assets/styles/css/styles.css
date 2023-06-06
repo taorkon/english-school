@@ -355,8 +355,8 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px;
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 20px;
   text-decoration: none;
   color: #000000;
 }
@@ -2754,11 +2754,17 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-* a {
+* {
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.9, 0.9, 1.5);
+}
+
+a {
   text-decoration: none;
   color: #A54A47;
 }
-* fieldset {
+
+fieldset {
   border: 0 none;
   max-width: 70vw;
   width: 70vw;
@@ -2804,6 +2810,7 @@ label:hover {
 
 .test {
   background-color: #F5F5F5;
+  height: 100vh;
   max-width: 100%;
   padding-top: 10vh;
   padding-bottom: 20vh;
@@ -2842,6 +2849,9 @@ label:hover {
   margin-top: 25px;
   font-size: 24px;
 }
+.test__text a {
+  cursor: pointer;
+}
 .test__img-wrap {
   position: absolute;
   right: -5vw;
@@ -2852,7 +2862,7 @@ label:hover {
   max-width: 100%;
   width: 100%;
 }
-.test__start {
+.test__start, .test__end {
   margin-top: 25px;
   color: #FFFBF8;
   background-color: #A54A47;
@@ -2867,11 +2877,11 @@ label:hover {
   line-height: 44px;
   font-size: 36px;
 }
-.test__start:hover {
+.test__start:hover, .test__end:hover {
   color: #A54A47;
   background-color: #FFFBF8;
 }
-.test__start:active {
+.test__start:active, .test__end:active {
   color: #000000;
   border: #000000 solid 2px;
 }
@@ -2892,4 +2902,14 @@ label:hover {
   line-height: 40px;
   font-size: 20px;
   color: #A54A47;
+}
+
+#btn-end {
+  color: #FFFBF8;
+}
+#btn-end:hover {
+  color: #A54A47;
+}
+#btn-end:active {
+  color: #000000;
 }

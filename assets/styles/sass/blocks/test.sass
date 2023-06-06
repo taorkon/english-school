@@ -6,22 +6,25 @@
 @import "../mixin"
 
 *
-    a 
-        text-decoration: none
-        color: $red
-    fieldset
-        border: 0 none
-        max-width: 70vw
-        width: 70vw
-        margin-left: auto
-        margin-right: auto
-        margin-top: 30px
-        
+    transition-duration: .5s
+    transition-timing-function: cubic-bezier(.1, .9, .9, 1.5)
 
-        min-height: 50vh
-        display: flex
-        flex-direction: column
-        @include montserrat-700-32
+a 
+    text-decoration: none
+    color: $red
+
+fieldset
+    border: 0 none
+    max-width: 70vw
+    width: 70vw
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+        
+    min-height: 50vh
+    display: flex
+    flex-direction: column
+    @include montserrat-700-32
 
 legend
     margin-top: 30px
@@ -48,6 +51,7 @@ label
 
 .test 
     background-color: $soft-grey
+    height: 100vh
     max-width: 100%
     padding-top: 10vh
     padding-bottom: 20vh
@@ -84,6 +88,9 @@ label
         margin-top: 25px
         font-size: 24px
 
+        a
+            cursor: pointer
+
     &__img-wrap
         position: absolute
         right: -5vw
@@ -94,7 +101,7 @@ label
         max-width: 100%
         width: 100%
 
-    &__start
+    &__start, &__end
         margin-top: 25px
         color: $beigeBg
         background-color: $red
@@ -126,3 +133,9 @@ label
         @include montserrat-700-20
         color: $red
 
+#btn-end
+    color: $beigeBg
+    &:hover
+        color: $red
+    &:active
+        color: $black

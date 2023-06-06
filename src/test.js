@@ -1140,11 +1140,16 @@ const getUserLevel = (points) => {
 const makeDivResult = (totalPoints, userLevel) => {
     const divResult = `<div class="test__text-wrap" id="divResult">
         <strong class="test__header test__header--result">
-        Здорово, вы набрали ${totalPoints} баллов!
+        Ваш результат: ${totalPoints} баллов!
         </strong>
         <p class="test__text">
-        По результатам теста ваш уровень - ${userLevel}!
+        Ваш уровень: ${userLevel}!
         </p>
+        <p class="test__text">
+        Рекомендуемый курс: ${userLevel}.
+        </p>
+        <button class="test__end"><a target="_blank" href="https://forms.gle/M6kYzTVJzui6hTAy8" class="test__endlink" id="btn-end">Записаться!</a></button>
+
         </div>
         <div class="test__img-wrap" id="preview-img">
         <img class="test__img" src="assets/images/desktop/test.png" alt="Тест на уровень английского языка">
