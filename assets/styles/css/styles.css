@@ -415,8 +415,8 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px;
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 20px;
   text-decoration: none;
   color: #000000;
 }
@@ -2750,5 +2750,230 @@ body {
     background-size: 98%;
   }
 }
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat Alternates;
+  src: url("../../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-LightBETA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.9, 0.9, 1.5);
+}
 
-/*# sourceMappingURL=styles.css.map */
+a {
+  text-decoration: none;
+  color: #A54A47;
+}
+
+fieldset {
+  border: 0 none;
+  max-width: 70vw;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 32px;
+}
+
+legend {
+  margin-top: 30px;
+  color: #A54A47;
+}
+
+input[type=radio] {
+  opacity: 0;
+}
+
+label {
+  display: block;
+  width: 50%;
+  height: 8vh;
+  min-height: fit-content;
+  border-radius: 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+}
+label:active {
+  border: 4px solid #87A6C6;
+}
+label:hover {
+  background-color: rgba(217, 204, 185, 0.6);
+}
+
+.test {
+  background-color: #F5F5F5;
+  height: 100vh;
+  max-width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+.test__wrap {
+  position: relative;
+  max-width: 70vw;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #FFFBF8;
+  border: 2px solid #D9CCB9;
+}
+.test__text-wrap {
+  padding-top: 50px;
+  padding-left: 25px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 32px;
+}
+.test__header {
+  color: #A54A47;
+  margin-bottom: 15px;
+}
+.test__header--result {
+  font-size: 40px;
+}
+.test__text {
+  color: #87A6C6;
+  margin-top: 25px;
+  font-size: 24px;
+}
+.test__text a {
+  cursor: pointer;
+}
+.test__img-wrap {
+  position: absolute;
+  right: -5vw;
+  bottom: -20vh;
+  max-width: 26vw;
+}
+.test__img {
+  max-width: 100%;
+  width: 100%;
+}
+.test__start, .test__end {
+  margin-top: 25px;
+  color: #FFFBF8;
+  background-color: #A54A47;
+  padding: 20px 76px;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  border: #A54A47 solid 2px;
+  border-radius: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  font-size: 36px;
+}
+.test__start:hover, .test__end:hover {
+  color: #A54A47;
+  background-color: #FFFBF8;
+}
+.test__start:active, .test__end:active {
+  color: #000000;
+  border: #000000 solid 2px;
+}
+.test__nextQuestion {
+  display: none;
+}
+
+.card {
+  position: relative;
+}
+.card__total {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 20px;
+  color: #A54A47;
+}
+
+#btn-end {
+  color: #FFFBF8;
+}
+#btn-end:hover {
+  color: #A54A47;
+}
+#btn-end:active {
+  color: #000000;
+}

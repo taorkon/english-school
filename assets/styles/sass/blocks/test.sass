@@ -1,0 +1,141 @@
+// Test styles
+    
+@import "../breakpoints"
+@import "../colors"
+@import "../fonts"
+@import "../mixin"
+
+*
+    transition-duration: .5s
+    transition-timing-function: cubic-bezier(.1, .9, .9, 1.5)
+
+a 
+    text-decoration: none
+    color: $red
+
+fieldset
+    border: 0 none
+    max-width: 70vw
+    width: 70vw
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+        
+    min-height: 50vh
+    display: flex
+    flex-direction: column
+    @include montserrat-700-32
+
+legend
+    margin-top: 30px
+    color: $red
+
+input[type="radio"]
+    opacity: 0
+
+label
+    display: block
+    width: 50%
+    height: 8vh
+    min-height: fit-content
+    border-radius: 10px
+    padding-left: 20px
+    display: flex
+    align-items: center
+    font-size: 27px
+    &:active
+        border: 4px solid $blue
+
+    &:hover
+        background-color: #D9CCB999
+
+.test 
+    background-color: $soft-grey
+    height: 100vh
+    max-width: 100%
+    padding-top: 10vh
+    padding-bottom: 20vh
+
+    &__wrap
+        position: relative
+
+        max-width: 70vw
+        width: 70vw
+        margin-left: auto
+        margin-right: auto
+
+        border-radius: 10px
+        background-color: $beigeBg
+        border: 2px solid $beigeDark
+
+    &__text-wrap
+        padding-top: 50px
+        padding-left: 25px
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+
+        @include montserrat-700-32
+
+    &__header
+        color: $red
+        margin-bottom: 15px
+        &--result
+            font-size: 40px
+
+    &__text
+        color: $blue
+        margin-top: 25px
+        font-size: 24px
+
+        a
+            cursor: pointer
+
+    &__img-wrap
+        position: absolute
+        right: -5vw
+        bottom: -20vh
+        max-width: 26vw
+
+    &__img
+        max-width: 100%
+        width: 100%
+
+    &__start, &__end
+        margin-top: 25px
+        color: $beigeBg
+        background-color: $red
+        padding: 20px 76px
+        margin-top: 7vh
+        margin-bottom: 7vh
+
+        border: $red solid 2px
+        border-radius: 30px
+
+        @include montserrat-500-36
+
+        &:hover
+            color: $red
+            background-color: $beigeBg
+        &:active
+            color: $black
+            border: $black solid 2px
+
+    &__nextQuestion
+        display: none
+
+.card
+    position: relative
+    &__total
+        position: absolute
+        right: 10px
+        bottom: 10px
+        @include montserrat-700-20
+        color: $red
+
+#btn-end
+    color: $beigeBg
+    &:hover
+        color: $red
+    &:active
+        color: $black
